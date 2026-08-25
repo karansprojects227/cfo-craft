@@ -1,0 +1,727 @@
+import { useState } from "react";
+import {
+  ArrowRight,
+  Clock3,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Pencil,
+  Phone,
+  UserRound,
+  FileText,
+  CheckCircle2,
+} from "lucide-react";
+
+function ContactInfo({ icon, title, children, last = false }) {
+  return (
+    <div
+      className={`
+        group
+        flex
+        items-start
+        gap-3.5
+        py-3
+        ${
+          !last
+            ? "border-b border-white/[0.07]"
+            : ""
+        }
+      `}
+    >
+      {/* Icon */}
+      <div
+        className="
+          flex
+          h-10
+          w-10
+          shrink-0
+          items-center
+          justify-center
+          rounded-full
+          border
+          border-[#E5483F]/30
+          bg-[#E5483F]/[0.035]
+          text-[#E5483F]
+          transition-all
+          duration-300
+          group-hover:border-[#E5483F]/70
+          group-hover:bg-[#E5483F]/[0.08]
+        "
+      >
+        {icon}
+      </div>
+
+      {/* Content */}
+      <div className="min-w-0 pt-0.5">
+        <h3
+          className="
+            text-sm
+            font-bold
+            leading-5
+            text-[#F4F1EA]
+          "
+        >
+          {title}
+        </h3>
+
+        <div
+          className="
+            mt-0.5
+            text-[13px]
+            leading-5
+            text-[#858780]
+          "
+        >
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function FormField({ icon, children, textarea = false }) {
+  return (
+    <div
+      className={`
+        group
+        rounded-xl
+        border
+        border-white/[0.10]
+        bg-[#0D0F10]/70
+        px-4
+        transition-all
+        duration-300
+        focus-within:border-[#E5483F]/55
+        focus-within:bg-[#111314]
+        ${
+          textarea
+            ? "py-3"
+            : "flex h-[52px] items-center"
+        }
+      `}
+    >
+      <div
+        className="
+          flex
+          w-full
+          items-start
+          gap-3
+          text-[#686B67]
+          transition-colors
+          duration-300
+          group-focus-within:text-[#E5483F]
+        "
+      >
+        <span className="shrink-0 pt-0.5">
+          {icon}
+        </span>
+
+        <div className="min-w-0 flex-1">
+          {children}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormData((previous) => ({
+      ...previous,
+      [name]: value,
+    }));
+
+    setSubmitted(false);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    console.log("Contact Form:", formData);
+
+    setSubmitted(true);
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  };
+
+  return (
+    <section
+      id="contact"
+      className="
+        mt-20
+        relative
+        isolate
+        overflow-hidden
+        bg-[#090A09]
+        text-[#F4F1EA]
+        scroll-mt-20
+        lg:min-h-[calc(100vh-80px)]
+      "
+    >
+      {/* =====================================================
+          BACKGROUND
+      ====================================================== */}
+
+      {/* Top-right red glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#E5483F]/[0.075]
+          blur-[150px]
+        "
+      />
+
+      {/* Bottom-left red glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[260px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#E5483F]/[0.045]
+          blur-[150px]
+        "
+      />
+
+      {/* Center subtle light */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-0
+          -z-10
+          bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,0.018),transparent_58%)]
+        "
+      />
+
+      {/* Dot texture */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          left-0
+          top-24
+          -z-10
+          h-56
+          w-56
+          opacity-20
+          [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
+          [background-size:14px_14px]
+          [mask-image:linear-gradient(to_right,black,transparent)]
+        "
+      />
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          bottom-16
+          right-0
+          -z-10
+          h-52
+          w-52
+          opacity-15
+          [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
+          [background-size:14px_14px]
+          [mask-image:linear-gradient(to_left,black,transparent)]
+        "
+      />
+
+      {/* =====================================================
+          MAIN CONTAINER
+      ====================================================== */}
+
+      <div
+        className="
+          relative
+          mx-auto
+          flex
+          min-h-full
+          max-w-7xl
+          items-center
+          px-5
+          py-10
+          sm:px-6
+          sm:py-12
+          lg:px-8
+          lg:py-8
+        "
+      >
+        <div
+          className="
+            grid
+            w-full
+            grid-cols-1
+            items-center
+            gap-9
+            lg:grid-cols-[0.85fr_1.15fr]
+            lg:gap-12
+            xl:gap-16
+          "
+        >
+          {/* =================================================
+              LEFT CONTENT
+          ================================================= */}
+
+          <div className="w-full">
+            {/* Label */}
+            <div className="mb-4 flex items-center gap-4">
+              <span className="h-px w-10 bg-[#E5483F]/70" />
+
+              <span
+                className="
+                  text-[11px]
+                  font-bold
+                  uppercase
+                  tracking-[0.3em]
+                  text-[#E5483F]
+                "
+              >
+                Get In Touch
+              </span>
+            </div>
+
+            {/* Heading */}
+            <h1
+              className="
+                text-4xl
+                font-black
+                leading-[1.02]
+                tracking-[-0.045em]
+                text-[#F4F1EA]
+                sm:text-5xl
+                lg:text-[56px]
+              "
+            >
+              Contact{" "}
+              <span className="text-[#E5483F]">
+                Us
+              </span>
+            </h1>
+
+            {/* Accent */}
+            <div className="mt-5 h-px w-14 bg-[#E5483F]" />
+
+            {/* Description */}
+            <p
+              className="
+                mt-5
+                max-w-[520px]
+                text-sm
+                leading-6
+                text-[#969994]
+                sm:text-[15px]
+                sm:leading-7
+              "
+            >
+              Have a question, project in mind, or just
+              want to say hello? We'd love to hear from
+              you. Fill out the form or reach us directly
+              using the details below.
+            </p>
+
+            {/* =================================================
+                CONTACT DETAILS
+            ================================================= */}
+
+            <div className="mt-6 max-w-[540px]">
+              <ContactInfo
+                icon={<MapPin size={18} strokeWidth={1.8} />}
+                title="Our Office"
+              >
+                <p>123 Business Park, Sector 62</p>
+                <p>Noida, Uttar Pradesh - 201309</p>
+              </ContactInfo>
+
+              <ContactInfo
+                icon={<Mail size={18} strokeWidth={1.8} />}
+                title="Email Us"
+              >
+                <a
+                  href="mailto:info@cfocraft.com"
+                  className="
+                    transition-colors
+                    duration-300
+                    hover:text-[#E5483F]
+                  "
+                >
+                  info@cfocraft.com
+                </a>
+              </ContactInfo>
+
+              <ContactInfo
+                icon={<Phone size={18} strokeWidth={1.8} />}
+                title="Call Us"
+              >
+                <a
+                  href="tel:+919876543210"
+                  className="
+                    transition-colors
+                    duration-300
+                    hover:text-[#E5483F]
+                  "
+                >
+                  +91 98765 43210
+                </a>
+              </ContactInfo>
+
+              <ContactInfo
+                icon={<Clock3 size={18} strokeWidth={1.8} />}
+                title="Working Hours"
+                last
+              >
+                <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+              </ContactInfo>
+            </div>
+
+            {/* =================================================
+                SMALL CTA
+            ================================================= */}
+
+            <div className="mt-5 flex items-center gap-3">
+              {/* Left: Icon */}
+              <div
+                className="
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-[#E5483F]/40
+                  bg-[#E5483F]/[0.05]
+                  text-[#E5483F]
+                "
+              >
+                <MessageCircle size={18} />
+              </div>
+                        
+              {/* Middle: Text */}
+              <div className="min-w-0 flex-1">
+                <p className="text-xs font-bold text-[#F4F1EA]">
+                  Prefer to talk?
+                </p>
+                        
+                <p className="mt-0.5 text-xs text-[#777]">
+                  Let's connect over a quick call.
+                </p>
+              </div>
+                        
+              {/* Right: Button */}
+              <button
+                type="button"
+                className="
+                  group
+                  inline-flex
+                  shrink-0
+                  items-center
+                  gap-2
+                  rounded-lg
+                  border
+                  border-[#E5483F]
+                  px-4
+                  py-2.5
+                  text-xs
+                  font-semibold
+                  text-[#E5483F]
+                  transition-all
+                  duration-300
+                  hover:bg-[#E5483F]
+                  hover:text-white
+                "
+              >
+                Schedule a Call
+                        
+                <ArrowRight
+                  size={15}
+                  className="
+                    transition-transform
+                    duration-300
+                    group-hover:translate-x-1
+                  "
+                />
+              </button>
+            </div>
+          </div>
+
+          {/* =================================================
+              RIGHT — CONTACT FORM
+          ================================================= */}
+
+          <div
+            className="
+              relative
+              w-full
+              rounded-2xl
+              border
+              border-white/[0.10]
+              bg-[#0D0F10]/80
+              p-5
+              shadow-[0_0_45px_rgba(229,72,63,0.035)]
+              backdrop-blur-xl
+              sm:p-6
+              lg:p-7
+              xl:p-8
+            "
+          >
+            {/* Form glow */}
+            <div
+              className="
+                pointer-events-none
+                absolute
+                -right-20
+                -top-20
+                h-44
+                w-44
+                rounded-full
+                bg-[#E5483F]/[0.055]
+                blur-[80px]
+              "
+            />
+
+            <div className="relative z-10">
+              {/* Form Header */}
+              <div className="mb-5">
+                <h2
+                  className="
+                    text-2xl
+                    font-black
+                    leading-tight
+                    tracking-[-0.025em]
+                    text-[#F4F1EA]
+                    sm:text-[26px]
+                  "
+                >
+                  Send Us a Message
+                </h2>
+
+                <div className="mt-3 h-px w-14 bg-[#E5483F]" />
+              </div>
+
+              {/* Success */}
+              {submitted && (
+                <div
+                  className="
+                    mb-4
+                    flex
+                    items-center
+                    gap-2.5
+                    rounded-xl
+                    border
+                    border-green-500/20
+                    bg-green-500/[0.05]
+                    px-3
+                    py-2.5
+                    text-xs
+                    text-green-400
+                  "
+                >
+                  <CheckCircle2 size={16} />
+
+                  <span>
+                    Your message has been sent successfully.
+                  </span>
+                </div>
+              )}
+
+              {/* Form */}
+              <form
+                onSubmit={handleSubmit}
+                className="space-y-3.5"
+              >
+                {/* Name + Email */}
+                <div
+                  className="
+                    grid
+                    grid-cols-1
+                    gap-3.5
+                    sm:grid-cols-2
+                  "
+                >
+                  <FormField
+                    icon={
+                      <UserRound
+                        size={17}
+                        strokeWidth={1.7}
+                      />
+                    }
+                  >
+                    <input
+                      type="text"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      placeholder="Your Name"
+                      required
+                      className="contact-input"
+                    />
+                  </FormField>
+
+                  <FormField
+                    icon={
+                      <Mail
+                        size={17}
+                        strokeWidth={1.7}
+                      />
+                    }
+                  >
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      placeholder="Your Email"
+                      required
+                      className="contact-input"
+                    />
+                  </FormField>
+                </div>
+
+                {/* Subject */}
+                <FormField
+                  icon={
+                    <FileText
+                      size={17}
+                      strokeWidth={1.7}
+                    />
+                  }
+                >
+                  <input
+                    type="text"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={handleChange}
+                    placeholder="Subject"
+                    required
+                    className="contact-input"
+                  />
+                </FormField>
+
+                {/* Message */}
+                <FormField
+                  textarea
+                  icon={
+                    <Pencil
+                      size={17}
+                      strokeWidth={1.7}
+                    />
+                  }
+                >
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    placeholder="Your Message"
+                    required
+                    rows={4}
+                    className="
+                      contact-input
+                      resize-none
+                    "
+                  />
+                </FormField>
+
+                {/* Submit */}
+                <button
+                  type="submit"
+                  className="
+                    group
+                    flex
+                    w-full
+                    items-center
+                    justify-center
+                    gap-3
+                    rounded-xl
+                    bg-[#E5483F]
+                    px-5
+                    py-3.5
+                    text-sm
+                    font-bold
+                    text-white
+                    transition-all
+                    duration-300
+                    hover:-translate-y-0.5
+                    hover:bg-[#d83f37]
+                    hover:shadow-[0_10px_30px_rgba(229,72,63,0.20)]
+                  "
+                >
+                  Send Message
+
+                  <ArrowRight
+                    size={17}
+                    strokeWidth={2}
+                    className="
+                      transition-transform
+                      duration-300
+                      group-hover:translate-x-1
+                    "
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* =====================================================
+          INPUT STYLES
+      ====================================================== */}
+
+      <style>{`
+        .contact-input {
+          width: 100%;
+          border: none;
+          outline: none;
+          background: transparent;
+          color: #f4f1ea;
+          font-size: 14px;
+          line-height: 1.5;
+        }
+
+        .contact-input::placeholder {
+          color: #70736f;
+        }
+
+        .contact-input:focus::placeholder {
+          color: #555853;
+        }
+
+        textarea.contact-input {
+          min-height: 112px;
+          padding-top: 1px;
+        }
+      `}</style>
+    </section>
+  );
+}
+
+export default Contact;

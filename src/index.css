@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* =========================================
+     CFO CRAFT CORPORATE COLOR SYSTEM
+  ========================================== */
+
+  --color-cfo-bg: #171817;
+  --color-cfo-bg-soft: #1C1D1B;
+
+  --color-cfo-card: #20211F;
+  --color-cfo-card-hover: #272824;
+
+  /* Corporate Burgundy */
+  --color-cfo-green: #A63D36;
+  --color-cfo-green-dark: #8F302B;
+
+  /* Typography */
+  --color-cfo-text: #F4F1EA;
+  --color-cfo-muted: #AAA9A3;
+
+  /* Borders */
+  --color-cfo-border: rgba(255, 255, 255, 0.09);
+}
+
+
+/* =========================================
+   ROOT
+========================================= */
+
+:root {
+  font-family: "Manrope", sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #F4F1EA;
+
+  /*
+    IMPORTANT:
+    Navbar + Hero + Body all use SAME background.
+  */
+
+  background: #171817;
+
+  font-synthesis: none;
+
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* =========================================
+   GLOBAL BOX SIZING
+========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   HTML
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+
+  background: #171817;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+  margin: 0;
+
+  min-width: 320px;
+  min-height: 100vh;
+
+  background: #171817;
+
+  color: #F4F1EA;
+}
+
+
+/* =========================================
+   ROOT APP
+========================================= */
+
+#root {
+  min-height: 100vh;
+
+  background: #171817;
+}
+
+
+/* =========================================
+   LINKS & BUTTONS
+========================================= */
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+button {
+  font-family: inherit;
+}
+
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+}
+
+
+/* =========================================
+   TEXT SELECTION
+========================================= */
+
+::selection {
+  background: #A63D36;
+
+  color: #FFFFFF;
+}
+
+
+/* =========================================
+   SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #171817;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #3A3B38;
+
+  border-radius: 999px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A63D36;
+}

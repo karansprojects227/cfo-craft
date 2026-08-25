@@ -1,0 +1,554 @@
+import {
+  ArrowUpRight,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer
+      className="
+        relative
+        overflow-hidden
+        border-t
+        border-white/[0.08]
+        bg-[#070807]
+        text-[#F4F1EA]
+      "
+    >
+      {/* Background Glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-40
+          -top-40
+          h-[420px]
+          w-[420px]
+          rounded-full
+          bg-[#E5483F]/[0.06]
+          blur-[140px]
+        "
+      />
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-40
+          -left-40
+          h-[380px]
+          w-[380px]
+          rounded-full
+          bg-[#E5483F]/[0.04]
+          blur-[130px]
+        "
+      />
+
+      {/* Main Container */}
+      <div
+        className="
+          relative
+          mx-auto
+          max-w-7xl
+          px-5
+          py-14
+          sm:px-6
+          lg:px-8
+          lg:py-16
+        "
+      >
+        {/* =========================================
+            FOOTER GRID
+        ========================================== */}
+
+        <div
+          className="
+            grid
+            grid-cols-1
+            gap-10
+            md:grid-cols-2
+            lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]
+            lg:gap-12
+          "
+        >
+          {/* =====================================
+              BRAND
+          ====================================== */}
+
+          <div>
+            {/* Logo */}
+            <a
+              href="#"
+              className="
+                inline-flex
+                items-center
+                text-2xl
+                font-black
+                tracking-[-0.04em]
+              "
+            >
+              <span className="text-[#F4F1EA]">
+                CFO
+              </span>
+
+              <span className="ml-1 text-[#E5483F]">
+                CRAFT
+              </span>
+            </a>
+
+            {/* Description */}
+            <p
+              className="
+                mt-5
+                max-w-sm
+                text-sm
+                leading-7
+                text-[#8E918B]
+              "
+            >
+              Strategic CFO support for startups, MSMEs,
+              and ambitious businesses ready to grow with
+              clarity, control, and confidence.
+            </p>
+
+          </div>
+
+          {/* =====================================
+              QUICK LINKS
+          ====================================== */}
+
+          <div>
+            <h3
+              className="
+                text-xs
+                font-bold
+                uppercase
+                tracking-[0.22em]
+                text-[#E5483F]
+              "
+            >
+              Quick Links
+            </h3>
+
+            <ul className="mt-5 space-y-3">
+              <li>
+                <a
+                  href="/"
+                  className="
+                    group
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    text-sm
+                    text-[#92958F]
+                    transition-colors
+                    duration-300
+                    hover:text-[#F4F1EA]
+                  "
+                >
+                  Home
+
+                  <ArrowUpRight
+                    size={13}
+                    className="
+                      opacity-0
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      group-hover:opacity-100
+                    "
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#services"
+                  className="
+                    group
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    text-sm
+                    text-[#92958F]
+                    transition-colors
+                    duration-300
+                    hover:text-[#F4F1EA]
+                  "
+                >
+                  Services
+
+                  <ArrowUpRight
+                    size={13}
+                    className="
+                      opacity-0
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      group-hover:opacity-100
+                    "
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#case-studies"
+                  className="
+                    group
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    text-sm
+                    text-[#92958F]
+                    transition-colors
+                    duration-300
+                    hover:text-[#F4F1EA]
+                  "
+                >
+                  Case Studies
+
+                  <ArrowUpRight
+                    size={13}
+                    className="
+                      opacity-0
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      group-hover:opacity-100
+                    "
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#faq"
+                  className="
+                    group
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    text-sm
+                    text-[#92958F]
+                    transition-colors
+                    duration-300
+                    hover:text-[#F4F1EA]
+                  "
+                >
+                  FAQ
+
+                  <ArrowUpRight
+                    size={13}
+                    className="
+                      opacity-0
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      group-hover:opacity-100
+                    "
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="/contact"
+                  className="
+                    group
+                    inline-flex
+                    items-center
+                    gap-1.5
+                    text-sm
+                    text-[#92958F]
+                    transition-colors
+                    duration-300
+                    hover:text-[#F4F1EA]
+                  "
+                >
+                  Contact
+
+                  <ArrowUpRight
+                    size={13}
+                    className="
+                      opacity-0
+                      transition-all
+                      duration-300
+                      group-hover:translate-x-0.5
+                      group-hover:-translate-y-0.5
+                      group-hover:opacity-100
+                    "
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* =====================================
+              SERVICES
+          ====================================== */}
+
+          <div>
+            <h3
+              className="
+                text-xs
+                font-bold
+                uppercase
+                tracking-[0.22em]
+                text-[#E5483F]
+              "
+            >
+              Services
+            </h3>
+
+            <ul className="mt-5 space-y-3">
+              <li className="text-sm text-[#92958F]">
+                CFO Services
+              </li>
+
+              <li className="text-sm text-[#92958F]">
+                Cash Flow Management
+              </li>
+
+              <li className="text-sm text-[#92958F]">
+                Profitability Diagnostics
+              </li>
+
+              <li className="text-sm text-[#92958F]">
+                MIS & SOP Transformation
+              </li>
+
+              <li className="text-sm text-[#92958F]">
+                Financial Projections
+              </li>
+
+              <li className="text-sm text-[#92958F]">
+                Business Strategy
+              </li>
+            </ul>
+          </div>
+
+          {/* =====================================
+              CONTACT
+          ====================================== */}
+
+          <div>
+            <h3
+              className="
+                text-xs
+                font-bold
+                uppercase
+                tracking-[0.22em]
+                text-[#E5483F]
+              "
+            >
+              Get In Touch
+            </h3>
+
+            <div className="mt-5 space-y-4">
+              {/* Email */}
+              <a
+                href="mailto:info@cfocraft.com"
+                className="
+                  flex
+                  items-start
+                  gap-3
+                  text-sm
+                  text-[#92958F]
+                  transition-colors
+                  duration-300
+                  hover:text-[#F4F1EA]
+                "
+              >
+                <Mail
+                  size={17}
+                  className="
+                    mt-0.5
+                    shrink-0
+                    text-[#E5483F]
+                  "
+                />
+
+                <span>
+                  info@cfocraft.com
+                </span>
+              </a>
+
+              {/* Phone */}
+              <a
+                href="tel:+91%209892560660"
+                className="
+                  flex
+                  items-start
+                  gap-3
+                  text-sm
+                  text-[#92958F]
+                  transition-colors
+                  duration-300
+                  hover:text-[#F4F1EA]
+                "
+              >
+                <Phone
+                  size={17}
+                  className="
+                    mt-0.5
+                    shrink-0
+                    text-[#E5483F]
+                  "
+                />
+
+                <span>
+                  +91 9892560660
+                </span>
+              </a>
+
+              {/* Location */}
+              <div
+                className="
+                  flex
+                  items-start
+                  gap-3
+                  text-sm
+                  leading-6
+                  text-[#92958F]
+                "
+              >
+                <MapPin
+                  size={17}
+                  className="
+                    mt-0.5
+                    shrink-0
+                    text-[#E5483F]
+                  "
+                />
+
+                <span>
+                  India
+                </span>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <a
+              href="https://web.whatsapp.com/send?phone=919892560660&text="
+              target="_blank"
+              className="
+                group
+                mt-6
+                inline-flex
+                items-center
+                gap-2
+                rounded-lg
+                bg-[#E5483F]
+                px-5
+                py-3
+                text-sm
+                font-bold
+                text-white
+                transition-all
+                duration-300
+                hover:-translate-y-0.5
+                hover:bg-[#FF6258]
+                hover:shadow-xl
+                hover:shadow-[#E5483F]/20
+              "
+            >
+              Talk To Our Expert
+
+              <ArrowUpRight
+                size={16}
+                className="
+                  transition-transform
+                  duration-300
+                  group-hover:translate-x-0.5
+                  group-hover:-translate-y-0.5
+                "
+              />
+            </a>
+          </div>
+        </div>
+
+        {/* =========================================
+            DIVIDER
+        ========================================== */}
+
+        <div
+          className="
+            my-10
+            h-px
+            bg-white/[0.08]
+          "
+        />
+
+        {/* =========================================
+            BOTTOM FOOTER
+        ========================================== */}
+
+        <div
+          className="
+            flex
+            flex-col
+            gap-4
+            text-xs
+            text-[#6F726D]
+            sm:flex-row
+            sm:items-center
+            sm:justify-between
+          "
+        >
+          {/* Copyright */}
+          <p>
+            © {new Date().getFullYear()} CFO CRAFT.
+            All rights reserved.
+          </p>
+
+          {/* Developer */}
+          <p>
+            Developed by{" "}
+            <span
+              className="
+                font-semibold
+                text-[#E5483F]
+              "
+            >
+              Karan Kumar
+            </span>
+          </p>
+
+          {/* Legal */}
+          <div className="flex items-center gap-4">
+            <a
+              href="#"
+              className="
+                transition-colors
+                duration-300
+                hover:text-[#F4F1EA]
+              "
+            >
+              Privacy Policy
+            </a>
+
+            <a
+              href="#"
+              className="
+                transition-colors
+                duration-300
+                hover:text-[#F4F1EA]
+              "
+            >
+              Terms
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
