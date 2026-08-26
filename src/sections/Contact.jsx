@@ -21,11 +21,7 @@ function ContactInfo({ icon, title, children, last = false }) {
         items-start
         gap-3.5
         py-3
-        ${
-          !last
-            ? "border-b border-white/[0.07]"
-            : ""
-        }
+        ${!last ? "border-b border-white/[0.07]" : ""}
       `}
     >
       {/* Icon */}
@@ -93,11 +89,7 @@ function FormField({ icon, children, textarea = false }) {
         duration-300
         focus-within:border-[#E5483F]/55
         focus-within:bg-[#111314]
-        ${
-          textarea
-            ? "py-3"
-            : "flex h-[52px] items-center"
-        }
+        ${textarea ? "py-3" : "flex h-[52px] items-center"}
       `}
     >
       <div
@@ -112,13 +104,9 @@ function FormField({ icon, children, textarea = false }) {
           group-focus-within:text-[#E5483F]
         "
       >
-        <span className="shrink-0 pt-0.5">
-          {icon}
-        </span>
+        <span className="shrink-0 pt-0.5">{icon}</span>
 
-        <div className="min-w-0 flex-1">
-          {children}
-        </div>
+        <div className="min-w-0 flex-1">{children}</div>
       </div>
     </div>
   );
@@ -152,12 +140,19 @@ function Contact() {
 
     setSubmitted(true);
 
+    setSubmitted(true);
+    
     setFormData({
       name: "",
       email: "",
       subject: "",
       message: "",
     });
+    
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 2500);
+    
   };
 
   return (
@@ -320,10 +315,7 @@ function Contact() {
                 lg:text-[56px]
               "
             >
-              Contact{" "}
-              <span className="text-[#E5483F]">
-                Us
-              </span>
+              Contact <span className="text-[#E5483F]">Us</span>
             </h1>
 
             {/* Accent */}
@@ -341,9 +333,8 @@ function Contact() {
                 sm:leading-7
               "
             >
-              Have a question, project in mind, or just
-              want to say hello? We'd love to hear from
-              you. Fill out the form or reach us directly
+              Have a question, project in mind, or just want to say hello? We'd
+              love to hear from you. Fill out the form or reach us directly
               using the details below.
             </p>
 
@@ -424,18 +415,18 @@ function Contact() {
               >
                 <MessageCircle size={18} />
               </div>
-                        
+
               {/* Middle: Text */}
               <div className="min-w-0 flex-1">
                 <p className="text-xs font-bold text-[#F4F1EA]">
                   Prefer to talk?
                 </p>
-                        
+
                 <p className="mt-0.5 text-xs text-[#777]">
                   Let's connect over a quick call.
                 </p>
               </div>
-                        
+
               {/* Right: Button */}
               <button
                 type="button"
@@ -460,7 +451,6 @@ function Contact() {
                 "
               >
                 Schedule a Call
-                        
                 <ArrowRight
                   size={15}
                   className="
@@ -548,16 +538,14 @@ function Contact() {
                   <CheckCircle2 size={16} />
 
                   <span>
-                    Your message has been sent successfully.
+                    Message sent successfully. Thank you for reaching out. Our
+                    team will get back to you shortly.
                   </span>
                 </div>
               )}
 
               {/* Form */}
-              <form
-                onSubmit={handleSubmit}
-                className="space-y-3.5"
-              >
+              <form onSubmit={handleSubmit} className="space-y-3.5">
                 {/* Name + Email */}
                 <div
                   className="
@@ -567,14 +555,7 @@ function Contact() {
                     sm:grid-cols-2
                   "
                 >
-                  <FormField
-                    icon={
-                      <UserRound
-                        size={17}
-                        strokeWidth={1.7}
-                      />
-                    }
-                  >
+                  <FormField icon={<UserRound size={17} strokeWidth={1.7} />}>
                     <input
                       type="text"
                       name="name"
@@ -586,14 +567,7 @@ function Contact() {
                     />
                   </FormField>
 
-                  <FormField
-                    icon={
-                      <Mail
-                        size={17}
-                        strokeWidth={1.7}
-                      />
-                    }
-                  >
+                  <FormField icon={<Mail size={17} strokeWidth={1.7} />}>
                     <input
                       type="email"
                       name="email"
@@ -607,14 +581,7 @@ function Contact() {
                 </div>
 
                 {/* Subject */}
-                <FormField
-                  icon={
-                    <FileText
-                      size={17}
-                      strokeWidth={1.7}
-                    />
-                  }
-                >
+                <FormField icon={<FileText size={17} strokeWidth={1.7} />}>
                   <input
                     type="text"
                     name="subject"
@@ -629,12 +596,7 @@ function Contact() {
                 {/* Message */}
                 <FormField
                   textarea
-                  icon={
-                    <Pencil
-                      size={17}
-                      strokeWidth={1.7}
-                    />
-                  }
+                  icon={<Pencil size={17} strokeWidth={1.7} />}
                 >
                   <textarea
                     name="message"
@@ -675,7 +637,6 @@ function Contact() {
                   "
                 >
                   Send Message
-
                   <ArrowRight
                     size={17}
                     strokeWidth={2}
