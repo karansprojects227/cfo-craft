@@ -142,7 +142,6 @@ function Contact() {
       updatedFormData.message.trim() !== "";
 
     setIsFormValid(valid);
-    console.log("Is Form Valid:", valid);
   };
 
   const handleSubmit = async (event) => {
@@ -511,7 +510,7 @@ function Contact() {
           <div
             className="
               relative
-              w-full
+              w-3/4
               rounded-2xl
               border
               border-white/[0.10]
@@ -521,6 +520,8 @@ function Contact() {
               backdrop-blur-xl
               sm:p-6
               lg:p-7
+              lg:mr-8
+              lg:ml-auto
               xl:p-8
             "
           >
@@ -765,8 +766,8 @@ function Contact() {
                       }`}
                     >
                       <div className="step-icon">
-                        {/* SUCCESS ICON */}
-                        {formStatus === "success" && (
+                        {/* SUCCESS + PENDING ICON */}
+                        {formStatus !== "error" && (
                           <svg
                             viewBox="0 0 24 24"
                             fill="none"
@@ -793,19 +794,10 @@ function Contact() {
                             <path d="m6 6 12 12" />
                           </svg>
                         )}
-
-                        {/* PENDING NUMBER */}
-                        {formStatus === "sending" && (
-                          <span className="step-number">3</span>
-                        )}
                       </div>
 
                       <span>
-                        {formStatus === "success"
-                          ? "3. Success"
-                          : formStatus === "error"
-                            ? "3. Failed"
-                            : "3. Success"}
+                        {formStatus === "error" ? "3. Failed" : "3. Success"}
                       </span>
                     </div>
                   </div>
