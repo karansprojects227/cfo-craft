@@ -387,8 +387,10 @@ function Contact() {
                 icon={<MapPin size={18} strokeWidth={1.8} />}
                 title="Our Office"
               >
-                <p>123 Business Park, Sector 62</p>
-                <p>Noida, Uttar Pradesh - 201309</p>
+                <p>CFO CRAFT Advisory Services Pvt Ltd</p>
+                <p>Aditya Heritage, 502,</p>
+                <p>Near Rustomjee Elanza Avenue, Mindspace, Malad West,</p>
+                <p>Mumbai 400064</p>
               </ContactInfo>
 
               <ContactInfo
@@ -419,7 +421,7 @@ function Contact() {
                     hover:text-[#E5483F]
                   "
                 >
-                  +91 98765 43210
+                  +91 9892560660
                 </a>
               </ContactInfo>
 
