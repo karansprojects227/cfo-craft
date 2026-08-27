@@ -1234,3 +1234,9 @@ textarea:-webkit-autofill:focus {
     max-width: 280px;
   }
 }
+
+.contact-submit-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

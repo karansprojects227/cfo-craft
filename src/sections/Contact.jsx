@@ -10,7 +10,6 @@ import {
   Phone,
   UserRound,
   FileText,
-  CheckCircle2,
 } from "lucide-react";
 
 function ContactInfo({ icon, title, children, last = false }) {
@@ -123,16 +122,27 @@ function Contact() {
 
   const [formStatus, setFormStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  let [isFormValid, setIsFormValid] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    setFormData((previous) => ({
-      ...previous,
+    const updatedFormData = {
+      ...formData,
       [name]: value,
-    }));
+    };
 
-    setSubmitted(false);
+    setFormData(updatedFormData);
+
+    const valid =
+      updatedFormData.name.trim() !== "" &&
+      updatedFormData.email.trim() !== "" &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(updatedFormData.email) &&
+      updatedFormData.subject.trim() !== "" &&
+      updatedFormData.message.trim() !== "";
+
+    setIsFormValid(valid);
+    console.log("Is Form Valid:", valid);
   };
 
   const handleSubmit = async (event) => {
@@ -559,7 +569,6 @@ function Contact() {
                           value={formData.name}
                           onChange={handleChange}
                           placeholder="Your Name"
-                          required
                           className="contact-input"
                         />
                       </FormField>
@@ -571,7 +580,6 @@ function Contact() {
                           value={formData.email}
                           onChange={handleChange}
                           placeholder="Your Email"
-                          required
                           className="contact-input"
                         />
                       </FormField>
@@ -585,7 +593,6 @@ function Contact() {
                         value={formData.subject}
                         onChange={handleChange}
                         placeholder="Subject"
-                        required
                         className="contact-input"
                       />
                     </FormField>
@@ -600,7 +607,6 @@ function Contact() {
                         value={formData.message}
                         onChange={handleChange}
                         placeholder="Your Message"
-                        required
                         rows={4}
                         className="
               contact-input
@@ -612,26 +618,28 @@ function Contact() {
                     {/* Submit */}
                     <button
                       type="submit"
+                      disabled={!isFormValid || formStatus === "sending"}
                       className="
-            group
-            flex
-            w-full
-            items-center
-            justify-center
-            gap-3
-            rounded-xl
-            bg-[#E5483F]
-            px-5
-            py-3.5
-            text-sm
-            font-bold
-            text-white
-            transition-all
-            duration-300
-            hover:-translate-y-0.5
-            hover:bg-[#d83f37]
-            hover:shadow-[0_10px_30px_rgba(229,72,63,0.20)]
-          "
+                        contact-submit-btn
+                        group
+                        flex
+                        w-full
+                        items-center
+                        justify-center
+                        gap-3
+                        rounded-xl
+                        bg-[#E5483F]
+                        px-5
+                        py-3.5
+                        text-sm
+                        font-bold
+                        text-white
+                        transition-all
+                        duration-300
+                        hover:-translate-y-0.5
+                        hover:bg-[#d83f37]
+                        hover:shadow-[0_10px_30px_rgba(229,72,63,0.20)]
+                      "
                     >
                       Send Message
                       <ArrowRight
