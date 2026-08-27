@@ -148,6 +148,21 @@ function Contact() {
   const handleSubmit = async (event) => {
     event.preventDefault();
 
+    const valid =
+      formData.name.trim() !== "" &&
+      formData.email.trim() !== "" &&
+      /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email) &&
+      formData.subject.trim() !== "" &&
+      formData.message.trim() !== "";
+
+    if (!valid) {
+      setErrorMessage(
+        "Please fill in all fields and enter a valid email address.",
+      );
+      setFormStatus("error");
+      return;
+    }
+
     setFormStatus("sending");
     setErrorMessage("");
 
