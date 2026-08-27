@@ -354,7 +354,7 @@ function Navbar() {
             ================================================== */}
 
             <a
-              href="#contact"
+              href="/contact"
               onClick={() => setIsMenuOpen(false)}
               className="
                 mt-3

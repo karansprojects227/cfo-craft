@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 import {
   ArrowRight,
   Clock3,
@@ -120,7 +121,8 @@ function Contact() {
     message: "",
   });
 
-  const [submitted, setSubmitted] = useState(false);
+  const [formStatus, setFormStatus] = useState("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -133,26 +135,40 @@ function Contact() {
     setSubmitted(false);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
-    console.log("Contact Form:", formData);
+    setFormStatus("sending");
+    setErrorMessage("");
 
-    setSubmitted(true);
+    try {
+      await emailjs.send(
+        "service_83pka7i",
+        "template_zszc3hw",
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        },
+        "fY3JLmicNAcHHh5kT",
+      );
 
-    setSubmitted(true);
-    
-    setFormData({
-      name: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
-    
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 2500);
-    
+      setFormStatus("success");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      setErrorMessage(
+        "Something went wrong while sending your message. Please try again.",
+      );
+      setFormStatus("error");
+    }
   };
 
   return (
@@ -274,7 +290,7 @@ function Contact() {
             grid
             w-full
             grid-cols-1
-            items-center
+            items-start
             gap-9
             lg:grid-cols-[0.85fr_1.15fr]
             lg:gap-12
@@ -499,155 +515,416 @@ function Contact() {
             />
 
             <div className="relative z-10">
-              {/* Form Header */}
-              <div className="mb-5">
-                <h2
-                  className="
-                    text-2xl
-                    font-black
-                    leading-tight
-                    tracking-[-0.025em]
-                    text-[#F4F1EA]
-                    sm:text-[26px]
-                  "
-                >
-                  Send Us a Message
-                </h2>
+              {/* ================================================= */}
+              {/* CONTACT FORM */}
+              {/* ================================================= */}
 
-                <div className="mt-3 h-px w-14 bg-[#E5483F]" />
-              </div>
+              {formStatus === "idle" && (
+                <>
+                  {/* Form Header */}
+                  <div className="mb-5">
+                    <h2
+                      className="
+            text-2xl
+            font-black
+            leading-tight
+            tracking-[-0.025em]
+            text-[#F4F1EA]
+            sm:text-[26px]
+          "
+                    >
+                      Send Us a Message
+                    </h2>
 
-              {/* Success */}
-              {submitted && (
-                <div
-                  className="
-                    mb-4
-                    flex
-                    items-center
-                    gap-2.5
-                    rounded-xl
-                    border
-                    border-green-500/20
-                    bg-green-500/[0.05]
-                    px-3
-                    py-2.5
-                    text-xs
-                    text-green-400
-                  "
-                >
-                  <CheckCircle2 size={16} />
+                    <div className="mt-3 h-px w-14 bg-[#E5483F]" />
+                  </div>
 
-                  <span>
-                    Message sent successfully. Thank you for reaching out. Our
-                    team will get back to you shortly.
-                  </span>
-                </div>
+                  {/* Form */}
+                  <form onSubmit={handleSubmit} className="space-y-3.5">
+                    {/* Name + Email */}
+                    <div
+                      className="
+            grid
+            grid-cols-1
+            gap-3.5
+            sm:grid-cols-2
+          "
+                    >
+                      <FormField
+                        icon={<UserRound size={17} strokeWidth={1.7} />}
+                      >
+                        <input
+                          type="text"
+                          name="name"
+                          value={formData.name}
+                          onChange={handleChange}
+                          placeholder="Your Name"
+                          required
+                          className="contact-input"
+                        />
+                      </FormField>
+
+                      <FormField icon={<Mail size={17} strokeWidth={1.7} />}>
+                        <input
+                          type="email"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          placeholder="Your Email"
+                          required
+                          className="contact-input"
+                        />
+                      </FormField>
+                    </div>
+
+                    {/* Subject */}
+                    <FormField icon={<FileText size={17} strokeWidth={1.7} />}>
+                      <input
+                        type="text"
+                        name="subject"
+                        value={formData.subject}
+                        onChange={handleChange}
+                        placeholder="Subject"
+                        required
+                        className="contact-input"
+                      />
+                    </FormField>
+
+                    {/* Message */}
+                    <FormField
+                      textarea
+                      icon={<Pencil size={17} strokeWidth={1.7} />}
+                    >
+                      <textarea
+                        name="message"
+                        value={formData.message}
+                        onChange={handleChange}
+                        placeholder="Your Message"
+                        required
+                        rows={4}
+                        className="
+              contact-input
+              resize-none
+            "
+                      />
+                    </FormField>
+
+                    {/* Submit */}
+                    <button
+                      type="submit"
+                      className="
+            group
+            flex
+            w-full
+            items-center
+            justify-center
+            gap-3
+            rounded-xl
+            bg-[#E5483F]
+            px-5
+            py-3.5
+            text-sm
+            font-bold
+            text-white
+            transition-all
+            duration-300
+            hover:-translate-y-0.5
+            hover:bg-[#d83f37]
+            hover:shadow-[0_10px_30px_rgba(229,72,63,0.20)]
+          "
+                    >
+                      Send Message
+                      <ArrowRight
+                        size={17}
+                        strokeWidth={2}
+                        className="
+              transition-transform
+              duration-300
+              group-hover:translate-x-1
+            "
+                      />
+                    </button>
+                  </form>
+                </>
               )}
 
-              {/* Form */}
-              <form onSubmit={handleSubmit} className="space-y-3.5">
-                {/* Name + Email */}
-                <div
-                  className="
-                    grid
-                    grid-cols-1
-                    gap-3.5
-                    sm:grid-cols-2
-                  "
-                >
-                  <FormField icon={<UserRound size={17} strokeWidth={1.7} />}>
-                    <input
-                      type="text"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your Name"
-                      required
-                      className="contact-input"
-                    />
-                  </FormField>
+              {/* ================================================= */}
+              {/* STATUS SCREEN */}
+              {/* ================================================= */}
 
-                  <FormField icon={<Mail size={17} strokeWidth={1.7} />}>
-                    <input
-                      type="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="Your Email"
-                      required
-                      className="contact-input"
+              {formStatus !== "idle" && (
+                <div className="form-success-container">
+                  {/* ============================================= */}
+                  {/* TOP PROGRESS TRACKER */}
+                  {/* ============================================= */}
+
+                  <div className="success-progress">
+                    {/* =========================================== */}
+                    {/* STEP 1 - YOUR MESSAGE */}
+                    {/* =========================================== */}
+
+                    <div className="progress-step completed">
+                      <div className="step-icon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 20h9" />
+                          <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z" />
+                        </svg>
+                      </div>
+
+                      <span>1. Your Message</span>
+                    </div>
+
+                    {/* LINE 1 */}
+                    <div className="progress-line active" />
+
+                    {/* =========================================== */}
+                    {/* STEP 2 - SENDING */}
+                    {/* =========================================== */}
+
+                    <div
+                      className={`progress-step ${
+                        formStatus === "sending"
+                          ? "sending"
+                          : formStatus === "success"
+                            ? "completed"
+                            : "error"
+                      }`}
+                    >
+                      <div className="step-icon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m22 2-7 20-4-9-9-4Z" />
+                          <path d="M22 2 11 13" />
+                        </svg>
+                      </div>
+
+                      <span>2. Sending</span>
+                    </div>
+
+                    {/* =========================================== */}
+                    {/* LINE 2 */}
+                    {/* =========================================== */}
+
+                    <div
+                      className={`progress-line ${
+                        formStatus === "success"
+                          ? "active"
+                          : formStatus === "error"
+                            ? "error"
+                            : ""
+                      }`}
                     />
-                  </FormField>
+
+                    {/* =========================================== */}
+                    {/* STEP 3 - RESULT */}
+                    {/* =========================================== */}
+
+                    <div
+                      className={`progress-step ${
+                        formStatus === "success"
+                          ? "success"
+                          : formStatus === "error"
+                            ? "error"
+                            : "pending"
+                      }`}
+                    >
+                      <div className="step-icon">
+                        {/* SUCCESS ICON */}
+                        {formStatus === "success" && (
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="m5 12 4 4L19 6" />
+                          </svg>
+                        )}
+
+                        {/* ERROR ICON */}
+                        {formStatus === "error" && (
+                          <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M18 6 6 18" />
+                            <path d="m6 6 12 12" />
+                          </svg>
+                        )}
+
+                        {/* PENDING NUMBER */}
+                        {formStatus === "sending" && (
+                          <span className="step-number">3</span>
+                        )}
+                      </div>
+
+                      <span>
+                        {formStatus === "success"
+                          ? "3. Success"
+                          : formStatus === "error"
+                            ? "3. Failed"
+                            : "3. Success"}
+                      </span>
+                    </div>
+                  </div>
+
+                  {/* ============================================= */}
+                  {/* SENDING CARD */}
+                  {/* ============================================= */}
+
+                  {formStatus === "sending" && (
+                    <div className="status-card sending-card">
+                      <div className="sending-loader">
+                        <div className="loader-ring"></div>
+
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m22 2-7 20-4-9-9-4Z" />
+                          <path d="M22 2 11 13" />
+                        </svg>
+                      </div>
+
+                      <h2>Sending Your Message...</h2>
+
+                      <p>
+                        Please wait while we securely deliver
+                        <br />
+                        your message.
+                      </p>
+                    </div>
+                  )}
+
+                  {/* ============================================= */}
+                  {/* SUCCESS CARD */}
+                  {/* ============================================= */}
+
+                  {formStatus === "success" && (
+                    <div className="success-card">
+                      {/* Celebration */}
+                      <div className="celebration">
+                        <span className="confetti c1"></span>
+                        <span className="confetti c2"></span>
+                        <span className="confetti c3"></span>
+                        <span className="confetti c4"></span>
+                        <span className="confetti c5"></span>
+                        <span className="confetti c6"></span>
+                        <span className="confetti c7"></span>
+                        <span className="confetti c8"></span>
+                        <span className="confetti c9"></span>
+                        <span className="confetti c10"></span>
+                        <span className="confetti c11"></span>
+                        <span className="confetti c12"></span>
+                        <span className="confetti c13"></span>
+                        <span className="confetti c14"></span>
+                        <span className="confetti c15"></span>
+                        <span className="confetti c16"></span>
+                        <span className="confetti c17"></span>
+                        <span className="confetti c18"></span>
+                      </div>
+
+                      {/* Big Success Icon */}
+                      <div className="success-icon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="m5 12 4 4L19 6" />
+                        </svg>
+                      </div>
+
+                      <h2>Thank You!</h2>
+
+                      <p>
+                        Your message was sent successfully.
+                        <br />
+                        We'll be in touch soon.
+                      </p>
+
+                      <button
+                        type="button"
+                        className="success-btn"
+                        onClick={() => {
+                          window.location.href = "/";
+                        }}
+                      >
+                        Go Back To Home
+                        <span>→</span>
+                      </button>
+                    </div>
+                  )}
+
+                  {/* ============================================= */}
+                  {/* ERROR CARD */}
+                  {/* ============================================= */}
+
+                  {formStatus === "error" && (
+                    <div className="status-card error-card">
+                      <div className="error-icon">
+                        <svg
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2.5"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M12 8v4" />
+                          <path d="M12 16h.01" />
+                          <circle cx="12" cy="12" r="9" />
+                        </svg>
+                      </div>
+
+                      <h2>Message Not Sent</h2>
+
+                      <p>
+                        {errorMessage ||
+                          "Something went wrong while sending your message. Please try again."}
+                      </p>
+
+                      <button
+                        type="button"
+                        className="retry-btn"
+                        onClick={() => {
+                          setFormStatus("idle");
+                          setErrorMessage("");
+                        }}
+                      >
+                        Try Again
+                        <span>↻</span>
+                      </button>
+                    </div>
+                  )}
                 </div>
-
-                {/* Subject */}
-                <FormField icon={<FileText size={17} strokeWidth={1.7} />}>
-                  <input
-                    type="text"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    placeholder="Subject"
-                    required
-                    className="contact-input"
-                  />
-                </FormField>
-
-                {/* Message */}
-                <FormField
-                  textarea
-                  icon={<Pencil size={17} strokeWidth={1.7} />}
-                >
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Your Message"
-                    required
-                    rows={4}
-                    className="
-                      contact-input
-                      resize-none
-                    "
-                  />
-                </FormField>
-
-                {/* Submit */}
-                <button
-                  type="submit"
-                  className="
-                    group
-                    flex
-                    w-full
-                    items-center
-                    justify-center
-                    gap-3
-                    rounded-xl
-                    bg-[#E5483F]
-                    px-5
-                    py-3.5
-                    text-sm
-                    font-bold
-                    text-white
-                    transition-all
-                    duration-300
-                    hover:-translate-y-0.5
-                    hover:bg-[#d83f37]
-                    hover:shadow-[0_10px_30px_rgba(229,72,63,0.20)]
-                  "
-                >
-                  Send Message
-                  <ArrowRight
-                    size={17}
-                    strokeWidth={2}
-                    className="
-                      transition-transform
-                      duration-300
-                      group-hover:translate-x-1
-                    "
-                  />
-                </button>
-              </form>
+              )}
             </div>
           </div>
         </div>
