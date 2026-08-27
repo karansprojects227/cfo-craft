@@ -174,6 +174,7 @@ function Navbar() {
               h-14
               w-auto
               object-contain
+              invert
             "
           />
         </a>
