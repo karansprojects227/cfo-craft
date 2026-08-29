@@ -180,6 +180,7 @@ function CaseStudies() {
         px-4
         py-6
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
+        border-t
         text-[#F4F1EA]
         sm:px-6
         lg:px-8

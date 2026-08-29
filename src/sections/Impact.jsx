@@ -35,6 +35,7 @@ function Impact() {
         overflow-hidden
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
+        border-t
         px-6
         py-20
         sm:px-8

@@ -42,6 +42,7 @@ function WhyChooseUs() {
         overflow-hidden
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
+        border-t
         px-6
         py-20
         sm:px-8
@@ -387,13 +388,13 @@ function WhyChooseUs() {
                     rounded-full
                     border
                     border-[#0095fd]/50
-                    bg-[radial-gradient(circle_at_35%_30%,#F05A50,#A52A2A_55%,#601716_100%)]
+                    bg-[radial-gradient(circle_at_35%_30%,#38BDF8,#0095FD_55%,#006BB8_100%)]
                     text-white
-                    shadow-[0_0_35px_rgba(229,72,63,0.18)]
+                    shadow-[0_0_35px_rgba(0,149,253,0.18)]
                     transition-all
                     duration-500
                     group-hover:scale-105
-                    group-hover:shadow-[0_0_45px_rgba(229,72,63,0.32)]
+                    group-hover:shadow-[0_0_45px_rgba(0,149,253,0.32)]
                   "
                 >
                   <Icon
