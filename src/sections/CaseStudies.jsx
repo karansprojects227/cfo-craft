@@ -177,9 +177,9 @@ function CaseStudies() {
         relative
         isolate
         overflow-hidden
-        bg-[#080909]
         px-4
         py-6
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
         sm:px-6
         lg:px-8
@@ -189,60 +189,175 @@ function CaseStudies() {
       onMouseLeave={() => setIsPaused(false)}
     >
 
-      {/* ======================================================
+      {/* =====================================================
           BACKGROUND
-      ======================================================= */}
+      ====================================================== */}
 
-      <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+      {/* Top-right LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
 
-        <div
-          className="
-            absolute
-            -right-40
-            -top-40
-            h-[500px]
-            w-[500px]
-            rounded-full
-            bg-[#E5483F]/10
-            blur-[130px]
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-0
+          -z-10
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
           "
-        />
-
-        <div
-          className="
-            absolute
-            -bottom-52
-            -left-40
-            h-[500px]
-            w-[500px]
-            rounded-full
-            bg-[#E5483F]/8
-            blur-[140px]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            left-1/2
-            top-1/2
-            h-[500px]
-            w-[700px]
-            -translate-x-1/2
-            -translate-y-1/2
-            rounded-full
-            bg-[#E5483F]/[0.025]
-            blur-[120px]
-          "
-        />
-
+          aria-hidden="true"
+          >
         <div
           className="
             absolute
             inset-0
-            opacity-[0.035]
-            [background-image:linear-gradient(rgba(255,255,255,.5)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.5)_1px,transparent_1px)]
-            [background-size:80px_80px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
+        "
+        aria-hidden="true"
+      >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
       </div>
@@ -261,7 +376,7 @@ function CaseStudies() {
 
           <div className="mb-4 flex items-center justify-center gap-4">
 
-            <span className="h-px w-10 bg-[#E5483F]" />
+            <span className="h-px w-10 bg-[#0095fd]" />
 
             <span
               className="
@@ -269,13 +384,13 @@ function CaseStudies() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Our Case Studies
             </span>
 
-            <span className="h-px w-10 bg-[#E5483F]" />
+            <span className="h-px w-10 bg-[#0095fd]" />
 
           </div>
 
@@ -290,7 +405,7 @@ function CaseStudies() {
             "
           >
             Real Challenges.{" "}
-            <span className="text-[#E5483F]">
+            <span className="text-[#0095fd]">
               Measurable Results.
             </span>
           </h2>
@@ -405,8 +520,8 @@ function CaseStudies() {
                 transition-all
                 duration-300
                 hover:scale-105
-                hover:border-[#E5483F]
-                hover:bg-[#E5483F]
+                hover:border-[#0095fd]
+                hover:bg-[#0095fd]
                 sm:left-6
               "
             >
@@ -444,8 +559,8 @@ function CaseStudies() {
                 transition-all
                 duration-300
                 hover:scale-105
-                hover:border-[#E5483F]
-                hover:bg-[#E5483F]
+                hover:border-[#0095fd]
+                hover:bg-[#0095fd]
                 sm:right-6
               "
             >
@@ -539,7 +654,7 @@ function CaseStudies() {
 
                   ${
                     isActive
-                      ? "border-[#E5483F] shadow-[0_0_25px_rgba(229,72,63,0.16)]"
+                      ? "border-[#0095fd] shadow-[0_0_25px_rgba(229,72,63,0.16)]"
                       : "border-white/[0.08] hover:border-white/20"
                   }
                 `}
@@ -599,8 +714,8 @@ function CaseStudies() {
 
                     ${
                       isActive
-                        ? "bg-[#E5483F]/[0.10]"
-                        : "bg-[#E5483F]/[0.02]"
+                        ? "bg-[#0095fd]/[0.10]"
+                        : "bg-[#0095fd]/[0.02]"
                     }
                   `}
                 />
@@ -629,7 +744,7 @@ function CaseStudies() {
 
                       ${
                         isActive
-                          ? "text-[#E5483F]"
+                          ? "text-[#0095fd]"
                           : "text-white/60"
                       }
                     `}
@@ -649,7 +764,7 @@ function CaseStudies() {
 
                       ${
                         isActive
-                          ? "border-[#E5483F]/60 bg-[#E5483F]/15 text-[#E5483F]"
+                          ? "border-[#0095fd]/60 bg-[#0095fd]/15 text-[#0095fd]"
                           : "border-white/15 bg-black/20 text-white/60"
                       }
                     `}
@@ -695,7 +810,7 @@ function CaseStudies() {
                     left-4
                     z-10
                     h-0.5
-                    bg-[#E5483F]
+                    bg-[#0095fd]
                     transition-all
                     duration-300
 
@@ -726,7 +841,6 @@ function CaseStudies() {
             rounded-2xl
             border
             border-white/[0.08]
-            bg-[#101110]/80
             px-6
             py-5
             backdrop-blur-xl
@@ -751,7 +865,7 @@ function CaseStudies() {
                 border
                 border-white/10
                 bg-[#181A19]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               <Rocket size={20} />
@@ -763,7 +877,7 @@ function CaseStudies() {
                 Every business has a story.
               </p>
 
-              <p className="text-sm font-bold text-[#E5483F] sm:text-base">
+              <p className="text-sm font-bold text-[#0095fd] sm:text-base">
                 Let&apos;s create your success story next.
               </p>
 
@@ -782,7 +896,7 @@ function CaseStudies() {
               gap-3
               rounded-full
               border
-              border-[#E5483F]
+              border-[#0095fd]
               px-6
               py-3
               text-sm
@@ -790,7 +904,7 @@ function CaseStudies() {
               text-[#F4F1EA]
               transition-all
               duration-300
-              hover:bg-[#E5483F]
+              hover:bg-[#0095fd]
               hover:shadow-[0_0_30px_rgba(229,72,63,0.2)]
             "
           >

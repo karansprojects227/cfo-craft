@@ -1,9 +1,5 @@
-import {
-  ArrowUpRight,
-  Mail,
-  MapPin,
-  Phone,
-} from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import logo from "../assets/cfo-craft-logo.png";
 
 const Footer = () => {
   return (
@@ -11,40 +7,184 @@ const Footer = () => {
       className="
         relative
         overflow-hidden
-        border-t
-        border-white/[0.08]
-        bg-[#070807]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
+        isolate
+        overflow-hidden
       "
     >
-      {/* Background Glow */}
+      {/* =====================================================
+          BACKGROUND
+      ====================================================== */}
+
+      {/* Top-right LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
           absolute
-          -right-40
-          -top-40
-          h-[420px]
-          w-[420px]
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
           rounded-full
-          bg-[#E5483F]/[0.06]
-          blur-[140px]
+          bg-[#0095fd]/40
+          blur-[150px]
         "
+        aria-hidden="true"
       />
+
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-0
+          -z-10
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
 
       <div
         className="
           pointer-events-none
           absolute
-          -bottom-40
-          -left-40
-          h-[380px]
-          w-[380px]
-          rounded-full
-          bg-[#E5483F]/[0.04]
-          blur-[130px]
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+        aria-hidden="true"
+      >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
         "
-      />
+        aria-hidden="true"
+      >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
 
       {/* Main Container */}
       <div
@@ -80,7 +220,7 @@ const Footer = () => {
           <div>
             {/* Logo */}
             <a
-              href="#"
+              href="/"
               className="
                 inline-flex
                 items-center
@@ -89,13 +229,15 @@ const Footer = () => {
                 tracking-[-0.04em]
               "
             >
-              <span className="text-[#F4F1EA]">
-                CFO
-              </span>
-
-              <span className="ml-1 text-[#E5483F]">
-                CRAFT
-              </span>
+              <img
+                src={logo}
+                alt="CFO Craft"
+                className="
+              h-14
+              w-auto
+              object-contain
+            "
+              />
             </a>
 
             {/* Description */}
@@ -108,11 +250,9 @@ const Footer = () => {
                 text-[#8E918B]
               "
             >
-              Strategic CFO support for startups, MSMEs,
-              and ambitious businesses ready to grow with
-              clarity, control, and confidence.
+              Strategic CFO support for startups, MSMEs, and ambitious
+              businesses ready to grow with clarity, control, and confidence.
             </p>
-
           </div>
 
           {/* =====================================
@@ -126,7 +266,7 @@ const Footer = () => {
                 font-bold
                 uppercase
                 tracking-[0.22em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Quick Links
@@ -149,7 +289,6 @@ const Footer = () => {
                   "
                 >
                   Home
-
                   <ArrowUpRight
                     size={13}
                     className="
@@ -180,7 +319,6 @@ const Footer = () => {
                   "
                 >
                   Services
-
                   <ArrowUpRight
                     size={13}
                     className="
@@ -211,7 +349,6 @@ const Footer = () => {
                   "
                 >
                   Case Studies
-
                   <ArrowUpRight
                     size={13}
                     className="
@@ -242,7 +379,6 @@ const Footer = () => {
                   "
                 >
                   FAQ
-
                   <ArrowUpRight
                     size={13}
                     className="
@@ -273,7 +409,6 @@ const Footer = () => {
                   "
                 >
                   Contact
-
                   <ArrowUpRight
                     size={13}
                     className="
@@ -301,20 +436,16 @@ const Footer = () => {
                 font-bold
                 uppercase
                 tracking-[0.22em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Services
             </h3>
 
             <ul className="mt-5 space-y-3">
-              <li className="text-sm text-[#92958F]">
-                CFO Services
-              </li>
+              <li className="text-sm text-[#92958F]">CFO Services</li>
 
-              <li className="text-sm text-[#92958F]">
-                Cash Flow Management
-              </li>
+              <li className="text-sm text-[#92958F]">Cash Flow Management</li>
 
               <li className="text-sm text-[#92958F]">
                 Profitability Diagnostics
@@ -324,13 +455,9 @@ const Footer = () => {
                 MIS & SOP Transformation
               </li>
 
-              <li className="text-sm text-[#92958F]">
-                Financial Projections
-              </li>
+              <li className="text-sm text-[#92958F]">Financial Projections</li>
 
-              <li className="text-sm text-[#92958F]">
-                Business Strategy
-              </li>
+              <li className="text-sm text-[#92958F]">Business Strategy</li>
             </ul>
           </div>
 
@@ -345,7 +472,7 @@ const Footer = () => {
                 font-bold
                 uppercase
                 tracking-[0.22em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Get In Touch
@@ -371,13 +498,11 @@ const Footer = () => {
                   className="
                     mt-0.5
                     shrink-0
-                    text-[#E5483F]
+                    text-[#0095fd]
                   "
                 />
 
-                <span>
-                  info@cfocraft.com
-                </span>
+                <span>info@cfocraft.com</span>
               </a>
 
               {/* Phone */}
@@ -399,13 +524,11 @@ const Footer = () => {
                   className="
                     mt-0.5
                     shrink-0
-                    text-[#E5483F]
+                    text-[#0095fd]
                   "
                 />
 
-                <span>
-                  +91 9892560660
-                </span>
+                <span>+91 9892560660</span>
               </a>
 
               {/* Location */}
@@ -424,13 +547,11 @@ const Footer = () => {
                   className="
                     mt-0.5
                     shrink-0
-                    text-[#E5483F]
+                    text-[#0095fd]
                   "
                 />
 
-                <span>
-                  India
-                </span>
+                <span>India</span>
               </div>
             </div>
 
@@ -445,7 +566,7 @@ const Footer = () => {
                 items-center
                 gap-2
                 rounded-lg
-                bg-[#E5483F]
+                bg-[#0095fd]
                 px-5
                 py-3
                 text-sm
@@ -454,13 +575,12 @@ const Footer = () => {
                 transition-all
                 duration-300
                 hover:-translate-y-0.5
-                hover:bg-[#FF6258]
+                hover:bg-[#0095fd]/10
                 hover:shadow-xl
-                hover:shadow-[#E5483F]/20
+                hover:shadow-[#0095fd]/20
               "
             >
               Talk To Our Expert
-
               <ArrowUpRight
                 size={16}
                 className="
@@ -503,10 +623,7 @@ const Footer = () => {
           "
         >
           {/* Copyright */}
-          <p>
-            © {new Date().getFullYear()} CFO CRAFT.
-            All rights reserved.
-          </p>
+          <p>© {new Date().getFullYear()} CFO CRAFT. All rights reserved.</p>
 
           {/* Developer */}
           <p>
@@ -514,7 +631,7 @@ const Footer = () => {
             <span
               className="
                 font-semibold
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Karan Kumar

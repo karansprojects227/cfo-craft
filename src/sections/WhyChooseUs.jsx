@@ -40,7 +40,8 @@ function WhyChooseUs() {
         relative
         isolate
         overflow-hidden
-        bg-[#0D0E0D]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
+        text-[#F4F1EA]
         px-6
         py-20
         sm:px-8
@@ -49,216 +50,174 @@ function WhyChooseUs() {
       "
     >
       {/* =====================================================
-          PREMIUM BACKGROUND
+          BACKGROUND
       ====================================================== */}
 
+      {/* Top-right LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-10
-          overflow-hidden
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+          aria-hidden="true"
+          >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
         "
         aria-hidden="true"
       >
-        {/* Base background */}
         <div
           className="
             absolute
             inset-0
-            bg-[linear-gradient(135deg,#0D0E0D_0%,#111211_48%,#090A09_100%)]
-          "
-        />
-
-        {/* Top-right red glow */}
-        <div
-          className="
-            absolute
-            -right-[14%]
-            -top-[18%]
-            h-[520px]
-            w-[620px]
-            rounded-full
-            bg-[#E5483F]/[0.10]
-            blur-[150px]
-          "
-        />
-
-        {/* Bottom-left red glow */}
-        <div
-          className="
-            absolute
-            -bottom-[20%]
-            -left-[15%]
-            h-[500px]
-            w-[650px]
-            rounded-full
-            bg-[#E5483F]/[0.09]
-            blur-[150px]
-          "
-        />
-
-        {/* Center subtle glow */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[320px]
-            w-[500px]
-            -translate-x-1/2
-            rounded-full
-            bg-[#E5483F]/[0.025]
-            blur-[140px]
-          "
-        />
-
-        {/* =================================================
-            TOP RIGHT FLOWING LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -right-[8%]
-            -top-[5%]
-            h-[280px]
-            w-[600px]
-            rotate-[18deg]
             rounded-[50%]
-            border
-            border-[#E5483F]/[0.12]
+            border-t
+            border-[#0095fd]
+            border-8
           "
         />
 
         <div
           className="
             absolute
-            -right-[10%]
-            top-[1%]
-            h-[260px]
-            w-[620px]
-            rotate-[18deg]
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
             rounded-[50%]
-            border
-            border-[#E5483F]/[0.08]
+            border-t
+            border-[#0095fd]
           "
         />
 
         <div
           className="
             absolute
-            -right-[12%]
-            top-[7%]
-            h-[240px]
-            w-[640px]
-            rotate-[18deg]
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
             rounded-[50%]
-            border
-            border-[#E5483F]/[0.055]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            -right-[14%]
-            top-[13%]
-            h-[220px]
-            w-[660px]
-            rotate-[18deg]
-            rounded-[50%]
-            border
-            border-[#E5483F]/[0.035]
-          "
-        />
-
-        {/* =================================================
-            BOTTOM LEFT FLOWING LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -bottom-[12%]
-            -left-[8%]
-            h-[260px]
-            w-[620px]
-            rotate-[8deg]
-            rounded-[50%]
-            border
-            border-[#E5483F]/[0.11]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            -bottom-[16%]
-            -left-[10%]
-            h-[250px]
-            w-[640px]
-            rotate-[8deg]
-            rounded-[50%]
-            border
-            border-[#E5483F]/[0.075]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            -bottom-[20%]
-            -left-[12%]
-            h-[240px]
-            w-[660px]
-            rotate-[8deg]
-            rounded-[50%]
-            border
-            border-[#E5483F]/[0.045]
-          "
-        />
-
-        {/* =================================================
-            SUBTLE DOT GRID
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            left-[2%]
-            top-[25%]
-            h-[120px]
-            w-[100px]
-            opacity-50
-            [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
-            [background-size:20px_20px]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            bottom-[16%]
-            right-[3%]
-            h-[100px]
-            w-[100px]
-            opacity-30
-            [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
-            [background-size:18px_18px]
-          "
-        />
-
-        {/* =================================================
-            VIGNETTE
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_center,transparent_35%,rgba(0,0,0,0.45)_100%)]
+            border-t
+            border-[#0095fd]
           "
         />
       </div>
@@ -277,7 +236,7 @@ function WhyChooseUs() {
 
           {/* Eyebrow */}
           <div className="mb-5 flex items-center justify-center gap-4">
-            <span className="h-px w-12 bg-[#E5483F]/70" />
+            <span className="h-px w-12 bg-[#0095fd]/70" />
 
             <p
               className="
@@ -285,14 +244,14 @@ function WhyChooseUs() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#E5483F]
+                text-[#0095fd]
                 sm:text-sm
               "
             >
               Why Businesses Choose
             </p>
 
-            <span className="h-px w-12 bg-[#E5483F]/70" />
+            <span className="h-px w-12 bg-[#0095fd]/70" />
           </div>
 
           {/* Heading */}
@@ -308,7 +267,7 @@ function WhyChooseUs() {
             "
           >
             CFO{" "}
-            <span className="text-[#E5483F]">
+            <span className="text-[#0095fd]">
               CRAFT
             </span>
           </h2>
@@ -332,11 +291,11 @@ function WhyChooseUs() {
 
           {/* Small divider */}
           <div className="mx-auto mt-8 flex items-center justify-center">
-            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#E5483F] to-transparent" />
+            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#0095fd] to-transparent" />
 
-            <span className="mx-2 h-1.5 w-1.5 rounded-full bg-[#E5483F] shadow-[0_0_12px_rgba(229,72,63,0.8)]" />
+            <span className="mx-2 h-1.5 w-1.5 rounded-full bg-[#0095fd] shadow-[0_0_12px_rgba(229,72,63,0.8)]" />
 
-            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#E5483F] to-transparent" />
+            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#0095fd] to-transparent" />
           </div>
         </div>
 
@@ -367,8 +326,7 @@ function WhyChooseUs() {
                   overflow-hidden
                   rounded-[28px]
                   border
-                  border-[#E5483F]/30
-                  bg-[#111211]/85
+                  border-[#0095fd]/30
                   px-6
                   py-7
                   text-center
@@ -376,8 +334,7 @@ function WhyChooseUs() {
                   transition-all
                   duration-500
                   hover:-translate-y-2
-                  hover:border-[#E5483F]/70
-                  hover:bg-[#151615]
+                  hover:border-[#0095fd]/70
                   hover:shadow-[0_25px_70px_rgba(229,72,63,0.12)]
                 "
               >
@@ -392,11 +349,11 @@ function WhyChooseUs() {
                     w-40
                     -translate-x-1/2
                     rounded-full
-                    bg-[#E5483F]/[0.07]
+                    bg-[#0095fd]/[0.07]
                     blur-[60px]
                     transition-all
                     duration-500
-                    group-hover:bg-[#E5483F]/[0.14]
+                    group-hover:bg-[#0095fd]/[0.14]
                   "
                 />
 
@@ -411,7 +368,7 @@ function WhyChooseUs() {
                     -translate-x-1/2
                     bg-gradient-to-r
                     from-transparent
-                    via-[#E5483F]
+                    via-[#0095fd]
                     to-transparent
                     opacity-70
                   "
@@ -429,7 +386,7 @@ function WhyChooseUs() {
                     justify-center
                     rounded-full
                     border
-                    border-[#E5483F]/50
+                    border-[#0095fd]/50
                     bg-[radial-gradient(circle_at_35%_30%,#F05A50,#A52A2A_55%,#601716_100%)]
                     text-white
                     shadow-[0_0_35px_rgba(229,72,63,0.18)]
@@ -462,7 +419,7 @@ function WhyChooseUs() {
                 </h3>
 
                 {/* Red divider */}
-                <div className="mx-auto mt-5 h-px w-12 bg-[#E5483F] transition-all duration-500 group-hover:w-20" />
+                <div className="mx-auto mt-5 h-px w-12 bg-[#0095fd] transition-all duration-500 group-hover:w-20" />
 
                 {/* Description */}
                 <p
@@ -482,11 +439,11 @@ function WhyChooseUs() {
 
                 {/* Bottom dots */}
                 <div className="relative mt-7 flex justify-center gap-2 opacity-70">
-                  <span className="h-1 w-1 rounded-full bg-[#E5483F]" />
-                  <span className="h-1 w-1 rounded-full bg-[#E5483F]" />
-                  <span className="h-1 w-1 rounded-full bg-[#E5483F]" />
-                  <span className="h-1 w-1 rounded-full bg-[#E5483F]" />
-                  <span className="h-1 w-1 rounded-full bg-[#E5483F]" />
+                  <span className="h-1 w-1 rounded-full bg-[#0095fd]" />
+                  <span className="h-1 w-1 rounded-full bg-[#0095fd]" />
+                  <span className="h-1 w-1 rounded-full bg-[#0095fd]" />
+                  <span className="h-1 w-1 rounded-full bg-[#0095fd]" />
+                  <span className="h-1 w-1 rounded-full bg-[#0095fd]" />
                 </div>
               </article>
             );

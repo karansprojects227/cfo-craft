@@ -33,7 +33,8 @@ function Impact() {
         relative
         isolate
         overflow-hidden
-        bg-[#080A0C]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
+        text-[#F4F1EA]
         px-6
         py-20
         sm:px-8
@@ -42,155 +43,174 @@ function Impact() {
       "
     >
       {/* =====================================================
-          PREMIUM BACKGROUND
+          BACKGROUND
       ====================================================== */}
 
+      {/* Top-right LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-10
-          overflow-hidden
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+          aria-hidden="true"
+          >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
         "
         aria-hidden="true"
       >
-        {/* Base background */}
         <div
           className="
             absolute
             inset-0
-            bg-[radial-gradient(circle_at_50%_35%,#17141A_0%,#0B0C0E_45%,#070809_100%)]
-          "
-        />
-
-        {/* Top-right red glow */}
-        <div
-          className="
-            absolute
-            -right-[12%]
-            -top-[12%]
-            h-[480px]
-            w-[700px]
-            rounded-full
-            bg-[#E5483F]/[0.10]
-            blur-[150px]
-          "
-        />
-
-        {/* Bottom-left red glow */}
-        <div
-          className="
-            absolute
-            -bottom-[18%]
-            -left-[12%]
-            h-[500px]
-            w-[700px]
-            rounded-full
-            bg-[#E5483F]/[0.08]
-            blur-[150px]
-          "
-        />
-
-        {/* Center subtle purple glow */}
-        <div
-          className="
-            absolute
-            left-1/2
-            top-[42%]
-            h-[400px]
-            w-[600px]
-            -translate-x-1/2
-            rounded-full
-            bg-[#743D91]/[0.035]
-            blur-[150px]
-          "
-        />
-
-        {/* =================================================
-            TOP FLOWING LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -right-[8%]
-            top-[2%]
-            h-[260px]
-            w-[760px]
-            rotate-[8deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.08]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
           "
         />
 
         <div
           className="
             absolute
-            -right-[5%]
-            top-[7%]
-            h-[220px]
-            w-[700px]
-            rotate-[8deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.045]
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
 
         <div
           className="
             absolute
-            right-[3%]
-            top-[13%]
-            h-[170px]
-            w-[580px]
-            rotate-[8deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-white/[0.025]
-          "
-        />
-
-        {/* =================================================
-            BOTTOM FLOWING LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -bottom-[7%]
-            -left-[8%]
-            h-[240px]
-            w-[760px]
-            rotate-[-8deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.08]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            -bottom-[2%]
-            -left-[5%]
-            h-[200px]
-            w-[680px]
-            rotate-[-8deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.045]
-          "
-        />
-
-        {/* Vignette */}
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_center,transparent_35%,rgba(0,0,0,0.42)_100%)]
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
       </div>
@@ -220,15 +240,15 @@ function Impact() {
               font-bold
               uppercase
               tracking-[0.28em]
-              text-[#E5483F]
+              text-[#0095fd]
               sm:text-sm
             "
           >
-            <span className="h-px w-10 bg-[#E5483F]/70" />
+            <span className="h-px w-10 bg-[#0095fd]/70" />
 
             <span>Our Impact</span>
 
-            <span className="h-px w-10 bg-[#E5483F]/70" />
+            <span className="h-px w-10 bg-[#0095fd]/70" />
           </div>
 
           {/* Heading */}
@@ -247,7 +267,7 @@ function Impact() {
             Numbers That Reflect
             <br />
 
-            <span className="text-[#E5483F]">
+            <span className="text-[#0095fd]">
               Our Commitment
             </span>
           </h2>
@@ -281,7 +301,7 @@ function Impact() {
               w-24
               bg-gradient-to-r
               from-transparent
-              via-[#E5483F]
+              via-[#0095fd]
               to-transparent
               shadow-[0_0_15px_rgba(229,72,63,0.6)]
             "
@@ -315,11 +335,7 @@ function Impact() {
                   overflow-hidden
                   rounded-[28px]
                   border
-                  border-[#E5483F]/30
-                  bg-gradient-to-br
-                  from-[#29151B]
-                  via-[#171426]
-                  to-[#0D1020]
+                  border-[#0095fd]/30
                   px-6
                   py-8
                   text-center
@@ -327,8 +343,8 @@ function Impact() {
                   transition-all
                   duration-500
                   hover:-translate-y-2
-                  hover:border-[#E5483F]/70
-                  hover:shadow-[0_25px_80px_rgba(229,72,63,0.14)]
+                  hover:border-[#0095fd]/70
+                  hover:shadow-[0_25px_80px_rgba(0,149,253,0.14)]
                   sm:px-8
                   sm:py-10
                 "
@@ -344,11 +360,11 @@ function Impact() {
                     h-40
                     w-40
                     rounded-full
-                    bg-[#E5483F]/[0.12]
+                    bg-[#0095fd]/[0.12]
                     blur-[70px]
                     transition-all
                     duration-500
-                    group-hover:bg-[#E5483F]/[0.20]
+                    group-hover:bg-[#0095fd]/[0.20]
                   "
                 />
 
@@ -364,7 +380,6 @@ function Impact() {
                     w-52
                     -translate-x-1/2
                     rounded-full
-                    bg-[#743D91]/[0.10]
                     blur-[70px]
                   "
                 />
@@ -384,15 +399,14 @@ function Impact() {
                     justify-center
                     rounded-full
                     border
-                    border-[#E5483F]/70
-                    bg-[#0D0E0D]/70
-                    text-[#E5483F]
+                    border-[#0095fd]/70
+                    text-[#0095fd]
                     shadow-[0_0_25px_rgba(229,72,63,0.12)]
                     transition-all
                     duration-500
-                    group-hover:border-[#FF6258]
-                    group-hover:bg-[#E5483F]/[0.08]
-                    group-hover:shadow-[0_0_35px_rgba(229,72,63,0.25)]
+                    group-hover:border-[#0095fd]
+                    group-hover:bg-[#0095fd]/[0.08]
+                    group-hover:shadow-[0_0_35px_rgba(0,149,253,0.25)]
                   "
                 >
                   <Icon
@@ -429,7 +443,7 @@ function Impact() {
                     w-16
                     bg-gradient-to-r
                     from-transparent
-                    via-[#E5483F]
+                    via-[#0095fd]
                     to-transparent
                     shadow-[0_0_12px_rgba(229,72,63,0.8)]
                   "
@@ -476,7 +490,7 @@ function Impact() {
                     h-[2px]
                     w-0
                     -translate-x-1/2
-                    bg-[#E5483F]
+                    bg-[#0095fd]
                     shadow-[0_0_12px_rgba(229,72,63,0.8)]
                     transition-all
                     duration-500

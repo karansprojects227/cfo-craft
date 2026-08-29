@@ -21,7 +21,7 @@ const services = [
     icon: CircleDollarSign,
     title: "Cashflow, Working Capital & Runway Management",
     description:
-      "Predict, control and optimize liquidity — so growth never runs out of cash.",
+      "PLIGHT BLUEict, control and optimize liquidity — so growth never runs out of cash.",
   },
   {
     icon: TrendingUp,
@@ -45,7 +45,7 @@ const services = [
     icon: ShieldCheck,
     title: "Compliance, Governance & Internal Controls",
     description:
-      "Stay audit-clean, structured, and risk-proof with controls that scale as you do.",
+      "Stay audit-clean, structuLIGHT BLUE, and risk-proof with controls that scale as you do.",
   },
 ];
 
@@ -57,7 +57,7 @@ function Services() {
         relative
         isolate
         overflow-hidden
-        bg-[#090A09]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
         scroll-mt-20
       "
@@ -66,7 +66,7 @@ function Services() {
           BACKGROUND
       ====================================================== */}
 
-      {/* Top-right red ambient glow */}
+      {/* Top-right LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
@@ -77,13 +77,13 @@ function Services() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#E5483F]/[0.10]
+          bg-[#0095fd]/40
           blur-[150px]
         "
         aria-hidden="true"
       />
 
-      {/* Bottom-left red ambient glow */}
+      {/* Bottom-left LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
@@ -94,7 +94,7 @@ function Services() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#E5483F]/[0.055]
+          bg-[#0095fd]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -113,7 +113,7 @@ function Services() {
       />
 
       {/* =====================================================
-          SUBTLE FLOWING RED LINES
+          SUBTLE FLOWING LIGHT BLUE LINES
       ====================================================== */}
 
       <div
@@ -127,16 +127,16 @@ function Services() {
           w-[850px]
           rotate-[-8deg]
           opacity-30
-        "
-        aria-hidden="true"
-      >
+          "
+          aria-hidden="true"
+          >
         <div
           className="
             absolute
             inset-0
             rounded-[50%]
             border-t
-            border-[#E5483F]/20
+            border-[#0095fd]
             blur-[0.2px]
           "
         />
@@ -150,7 +150,7 @@ function Services() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#E5483F]/10
+            border-[#0095fd]
           "
         />
 
@@ -163,7 +163,7 @@ function Services() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#E5483F]/10
+            border-[#0095fd]
           "
         />
 
@@ -176,7 +176,7 @@ function Services() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#E5483F]/[0.07]
+            border-[#0095fd]
           "
         />
       </div>
@@ -203,7 +203,8 @@ function Services() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#E5483F]/15
+            border-[#0095fd]
+            border-8
           "
         />
 
@@ -216,7 +217,7 @@ function Services() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#E5483F]/10
+            border-[#0095fd]
           "
         />
 
@@ -229,7 +230,7 @@ function Services() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#E5483F]/[0.07]
+            border-[#0095fd]
           "
         />
       </div>
@@ -269,7 +270,7 @@ function Services() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Our Services
@@ -279,7 +280,7 @@ function Services() {
               className="
                 h-px
                 w-10
-                bg-[#E5483F]/70
+                bg-[#0095fd]/70
               "
             />
           </div>
@@ -300,7 +301,7 @@ function Services() {
             "
           >
             Financial expertise{" "}
-            <span className="text-[#E5483F]">
+            <span className="text-[#0095fd]">
               built around your growth.
             </span>
           </h2>
@@ -384,7 +385,7 @@ function Services() {
                     top-[-1px]
                     h-[2px]
                     w-0
-                    bg-[#E5483F]
+                    bg-[#0095fd]
                     transition-all
                     duration-500
                     group-hover:w-16
@@ -411,11 +412,11 @@ function Services() {
                       border
                       border-white/[0.14]
                       bg-white/[0.01]
-                      text-[#E5483F]
+                      text-[#0095fd]
                       transition-all
                       duration-300
-                      group-hover:border-[#E5483F]/60
-                      group-hover:bg-[#E5483F]/[0.05]
+                      group-hover:border-[#0095fd]/60
+                      group-hover:bg-[#0095fd]/[0.05]
                     "
                   >
                     <Icon
@@ -451,12 +452,12 @@ function Services() {
                         className="
                           mt-0.5
                           shrink-0
-                          text-[#E5483F]/50
+                          text-[#0095fd]/50
                           transition-all
                           duration-300
                           group-hover:-translate-y-0.5
                           group-hover:translate-x-0.5
-                          group-hover:text-[#E5483F]
+                          group-hover:text-[#0095fd]
                         "
                       />
                     </div>
@@ -497,15 +498,14 @@ function Services() {
             gap-6
             rounded-[14px]
             border
-            border-[#E5483F]/55
-            bg-[#120E0E]/75
+            border-[#0095fd]/55
             px-5
             py-4
             backdrop-blur-sm
             transition-all
             duration-300
-            hover:border-[#E5483F]/80
-            hover:bg-[#160F0F]/90
+            hover:border-[#0095fd]/80
+            hover:bg-[#0095fd]/10
             sm:px-6
             lg:px-8
           "
@@ -523,8 +523,8 @@ function Services() {
                 justify-center
                 rounded-full
                 border
-                border-[#E5483F]/70
-                text-[#E5483F]
+                border-[#0095fd]/70
+                text-[#0095fd]
               "
             >
               <Headphones
@@ -570,10 +570,9 @@ function Services() {
               gap-3
               text-[13px]
               font-semibold
-              text-[#E5483F]
+              text-[#0095fd]
               transition-colors
               duration-300
-              hover:text-[#FF6258]
               sm:text-[15px]
             "
           >

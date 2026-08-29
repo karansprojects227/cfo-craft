@@ -35,13 +35,13 @@ function ContactInfo({ icon, title, children, last = false }) {
           justify-center
           rounded-full
           border
-          border-[#E5483F]/30
-          bg-[#E5483F]/[0.035]
-          text-[#E5483F]
+          border-[#0095fd]/30
+          bg-[#0095fd]/[0.035]
+          text-[#0095fd]
           transition-all
           duration-300
-          group-hover:border-[#E5483F]/70
-          group-hover:bg-[#E5483F]/[0.08]
+          group-hover:border-[#0095fd]/70
+          group-hover:bg-[#0095fd]/[0.08]
         "
       >
         {icon}
@@ -83,12 +83,10 @@ function FormField({ icon, children, textarea = false }) {
         rounded-xl
         border
         border-white/[0.10]
-        bg-[#0D0F10]/70
         px-4
         transition-all
         duration-300
-        focus-within:border-[#E5483F]/55
-        focus-within:bg-[#111314]
+        focus-within:border-[#0095fd]/55
         ${textarea ? "py-3" : "flex h-[52px] items-center"}
       `}
     >
@@ -101,7 +99,7 @@ function FormField({ icon, children, textarea = false }) {
           text-[#686B67]
           transition-colors
           duration-300
-          group-focus-within:text-[#E5483F]
+          group-focus-within:text-[#0095fd]
         "
       >
         <span className="shrink-0 pt-0.5">{icon}</span>
@@ -203,7 +201,7 @@ function Contact() {
         relative
         isolate
         overflow-hidden
-        bg-[#090A09]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
         scroll-mt-20
         lg:min-h-[calc(100vh-80px)]
@@ -213,7 +211,7 @@ function Contact() {
           BACKGROUND
       ====================================================== */}
 
-      {/* Top-right red glow */}
+      {/* Top-right LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
@@ -224,37 +222,163 @@ function Contact() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#E5483F]/[0.075]
+          bg-[#0095fd]/40
           blur-[150px]
         "
+        aria-hidden="true"
       />
 
-      {/* Bottom-left red glow */}
+      {/* Bottom-left LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
           absolute
-          -bottom-[260px]
+          -bottom-[250px]
           -left-[180px]
           -z-10
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#E5483F]/[0.045]
+          bg-[#0095fd]/40
           blur-[150px]
         "
+        aria-hidden="true"
       />
 
-      {/* Center subtle light */}
+      {/* Very subtle center darkness */}
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-10
-          bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,0.018),transparent_58%)]
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
         "
+        aria-hidden="true"
       />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+          aria-hidden="true"
+          >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
+        "
+        aria-hidden="true"
+      >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
 
       {/* Dot texture */}
       <div
@@ -267,7 +391,7 @@ function Contact() {
           h-56
           w-56
           opacity-20
-          [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
+          [background-image:radial-gradient(#0095fd_1px,transparent_1px)]
           [background-size:14px_14px]
           [mask-image:linear-gradient(to_right,black,transparent)]
         "
@@ -283,7 +407,7 @@ function Contact() {
           h-52
           w-52
           opacity-15
-          [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
+          [background-image:radial-gradient(#0095fd_1px,transparent_1px)]
           [background-size:14px_14px]
           [mask-image:linear-gradient(to_left,black,transparent)]
         "
@@ -328,7 +452,7 @@ function Contact() {
           <div className="w-full">
             {/* Label */}
             <div className="mb-4 flex items-center gap-4">
-              <span className="h-px w-10 bg-[#E5483F]/70" />
+              <span className="h-px w-10 bg-[#0095fd]/70" />
 
               <span
                 className="
@@ -336,7 +460,7 @@ function Contact() {
                   font-bold
                   uppercase
                   tracking-[0.3em]
-                  text-[#E5483F]
+                  text-[#0095fd]
                 "
               >
                 Get In Touch
@@ -355,11 +479,11 @@ function Contact() {
                 lg:text-[56px]
               "
             >
-              Contact <span className="text-[#E5483F]">Us</span>
+              Contact <span className="text-[#0095fd]">Us</span>
             </h1>
 
             {/* Accent */}
-            <div className="mt-5 h-px w-14 bg-[#E5483F]" />
+            <div className="mt-5 h-px w-14 bg-[#0095fd]" />
 
             {/* Description */}
             <p
@@ -402,7 +526,7 @@ function Contact() {
                   className="
                     transition-colors
                     duration-300
-                    hover:text-[#E5483F]
+                    hover:text-[#0095fd]
                   "
                 >
                   info@cfocraft.com
@@ -418,7 +542,7 @@ function Contact() {
                   className="
                     transition-colors
                     duration-300
-                    hover:text-[#E5483F]
+                    hover:text-[#0095fd]
                   "
                 >
                   +91 9892560660
@@ -450,9 +574,9 @@ function Contact() {
                   justify-center
                   rounded-full
                   border
-                  border-[#E5483F]/40
-                  bg-[#E5483F]/[0.05]
-                  text-[#E5483F]
+                  border-[#0095fd]/40
+                  bg-[#0095fd]/[0.05]
+                  text-[#0095fd]
                 "
               >
                 <MessageCircle size={18} />
@@ -480,15 +604,15 @@ function Contact() {
                   gap-2
                   rounded-lg
                   border
-                  border-[#E5483F]
+                  border-[#0095fd]
                   px-4
                   py-2.5
                   text-xs
                   font-semibold
-                  text-[#E5483F]
+                  text-[#0095fd]
                   transition-all
                   duration-300
-                  hover:bg-[#E5483F]
+                  hover:bg-[#0095fd]
                   hover:text-white
                 "
               >
@@ -516,7 +640,6 @@ function Contact() {
               rounded-2xl
               border
               border-white/[0.10]
-              bg-[#0D0F10]/80
               p-5
               shadow-[0_0_45px_rgba(229,72,63,0.035)]
               backdrop-blur-xl
@@ -537,7 +660,7 @@ function Contact() {
                 h-44
                 w-44
                 rounded-full
-                bg-[#E5483F]/[0.055]
+                bg-[#0095fd]/[0.055]
                 blur-[80px]
               "
             />
@@ -564,7 +687,7 @@ function Contact() {
                       Send Us a Message
                     </h2>
 
-                    <div className="mt-3 h-px w-14 bg-[#E5483F]" />
+                    <div className="mt-3 h-px w-14 bg-[#0095fd]" />
                   </div>
 
                   {/* Form */}
@@ -646,7 +769,7 @@ function Contact() {
                         justify-center
                         gap-3
                         rounded-xl
-                        bg-[#E5483F]
+                        bg-[#0095fd]
                         px-5
                         py-3.5
                         text-sm
@@ -655,8 +778,8 @@ function Contact() {
                         transition-all
                         duration-300
                         hover:-translate-y-0.5
-                        hover:bg-[#d83f37]
-                        hover:shadow-[0_10px_30px_rgba(229,72,63,0.20)]
+                        hover:bg-[#0095fd]/10
+                        hover:shadow-[0_10px_30px_rgba(0,149,253,0.20)]
                       "
                     >
                       Send Message

@@ -23,119 +23,9 @@ function Navbar() {
         z-50
         isolate
         overflow-hidden
-        border-white/[0.08]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
       "
     >
-      {/* =====================================================
-          NAVBAR BACKGROUND
-          Same visual language as Hero + Services
-      ====================================================== */}
-
-      <div
-        className="
-          pointer-events-none
-          absolute
-          inset-0
-          -z-10
-          overflow-hidden
-        "
-        aria-hidden="true"
-      >
-        {/* Base background */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[#090A09]
-          "
-        />
-
-        {/* =================================================
-            SUBTLE TOP-RIGHT RED GLOW
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -right-[140px]
-            -top-[180px]
-            h-[360px]
-            w-[500px]
-            rounded-full
-            bg-[#E5483F]/[0.065]
-            blur-[130px]
-          "
-        />
-
-        {/* =================================================
-            SUBTLE LEFT AMBIENT GLOW
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -left-[180px]
-            -top-[120px]
-            h-[300px]
-            w-[420px]
-            rounded-full
-            bg-[#E5483F]/[0.025]
-            blur-[130px]
-          "
-        />
-
-        {/* =================================================
-            VERY SUBTLE CENTER LIGHT
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.012),transparent_60%)]
-          "
-        />
-
-        {/* =================================================
-            SUBTLE RED FLOWING LINE
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -right-[80px]
-            top-[5px]
-            h-[100px]
-            w-[600px]
-            rotate-[-5deg]
-            opacity-20
-          "
-        >
-          <div
-            className="
-              absolute
-              inset-0
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/20
-            "
-          />
-
-          <div
-            className="
-              absolute
-              left-[80px]
-              right-[-30px]
-              top-[18px]
-              h-[70px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/10
-            "
-          />
-        </div>
-      </div>
 
       {/* =====================================================
           NAVBAR CONTENT
@@ -155,7 +45,7 @@ function Navbar() {
       >
         {/* =================================================
             LOGO
-        ================================================== */}
+        ================================================= */}
 
         <a
           href="/"
@@ -174,14 +64,13 @@ function Navbar() {
               h-14
               w-auto
               object-contain
-              invert
             "
           />
         </a>
 
         {/* =================================================
             DESKTOP NAVIGATION
-        ================================================== */}
+        ================================================= */}
 
         <nav
           className="
@@ -209,7 +98,7 @@ function Navbar() {
             >
               {item.label}
 
-              {/* Burgundy / Red underline */}
+              {/* Hover underline */}
 
               <span
                 className="
@@ -218,7 +107,7 @@ function Navbar() {
                   left-0
                   h-px
                   w-0
-                  bg-[#E5483F]
+                  bg-[#0095fd]
                   transition-all
                   duration-300
                   group-hover:w-full
@@ -229,7 +118,7 @@ function Navbar() {
 
           {/* =================================================
               CONTACT BUTTON
-          ================================================== */}
+          ================================================= */}
 
           <a
             href="/contact"
@@ -239,7 +128,7 @@ function Navbar() {
               items-center
               gap-2
               rounded-lg
-              bg-[#E5483F]
+              bg-[#0095fd]
               px-5
               py-2.5
               text-sm
@@ -248,9 +137,9 @@ function Navbar() {
               transition-all
               duration-300
               hover:-translate-y-0.5
-              hover:bg-[#FF6258]
+              hover:bg-[#0095fd]/10
               hover:shadow-lg
-              hover:shadow-[#E5483F]/20
+              hover:shadow-[#0095fd]/20
             "
           >
             Contact Us
@@ -268,7 +157,7 @@ function Navbar() {
 
         {/* =================================================
             MOBILE MENU BUTTON
-        ================================================== */}
+        ================================================= */}
 
         <button
           type="button"
@@ -285,19 +174,15 @@ function Navbar() {
             text-[#F4F1EA]
             transition-all
             duration-300
-            hover:border-[#E5483F]/60
+            hover:border-[#0095fd]/60
             hover:bg-[#E5483F]/[0.05]
-            hover:text-[#E5483F]
+            hover:text-[#0095fd]
             lg:hidden
           "
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           aria-expanded={isMenuOpen}
         >
-          {isMenuOpen ? (
-            <X size={22} />
-          ) : (
-            <Menu size={22} />
-          )}
+          {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
         </button>
       </div>
 
@@ -311,7 +196,7 @@ function Navbar() {
             relative
             border-t
             border-white/[0.08]
-            bg-[#090A09]/95
+            bg-[#172437]/95
             px-6
             py-6
             backdrop-blur-xl
@@ -341,7 +226,7 @@ function Navbar() {
                   text-[#E9E6DF]/80
                   transition-all
                   duration-300
-                  hover:bg-[#E5483F]/[0.04]
+                  hover:bg-white/[0.05]
                   hover:text-[#F4F1EA]
                 "
               >
@@ -351,7 +236,7 @@ function Navbar() {
 
             {/* =================================================
                 MOBILE CONTACT
-            ================================================== */}
+            ================================================= */}
 
             <a
               href="/contact"
@@ -363,7 +248,7 @@ function Navbar() {
                 justify-center
                 gap-2
                 rounded-lg
-                bg-[#E5483F]
+                bg-[#0095fd]
                 px-5
                 py-3.5
                 text-sm
@@ -371,7 +256,7 @@ function Navbar() {
                 text-white
                 transition-all
                 duration-300
-                hover:bg-[#FF6258]
+                hover:bg-[#0095fd]
                 hover:shadow-lg
                 hover:shadow-[#E5483F]/20
               "

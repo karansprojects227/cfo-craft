@@ -10,26 +10,22 @@ const services = [
   {
     icon: BarChart3,
     title: "Strategic Financial Planning",
-    description:
-      "Make data-driven decisions with clear financial roadmaps.",
+    description: "Make data-driven decisions with clear financial roadmaps.",
   },
   {
     icon: CircleDollarSign,
     title: "Cash Flow Optimization",
-    description:
-      "Improve liquidity and maintain healthy cash flow.",
+    description: "Improve liquidity and maintain healthy cash flow.",
   },
   {
     icon: ShieldCheck,
     title: "Compliance & Risk Management",
-    description:
-      "Stay compliant and reduce financial risks.",
+    description: "Stay compliant and reduce financial risks.",
   },
   {
     icon: Users,
     title: "Scalable CFO Support",
-    description:
-      "Flexible engagement models tailored to your growth.",
+    description: "Flexible engagement models tailored to your growth.",
   },
 ];
 
@@ -41,275 +37,180 @@ function Hero() {
         isolate
         min-h-[calc(100dvh-80px)]
         overflow-hidden
-        bg-[#080908]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
         mt-20
       "
     >
       {/* =====================================================
-          PREMIUM CFO CRAFT BACKGROUND
-          Black + Graphite + Corporate Red
+          BACKGROUND
       ====================================================== */}
 
+      {/* Top-right LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-10
-          overflow-hidden
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+          aria-hidden="true"
+          >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
         "
         aria-hidden="true"
       >
-        {/* =================================================
-            BASE BLACK / GRAPHITE BACKGROUND
-        ================================================== */}
-
         <div
           className="
             absolute
             inset-0
-            bg-[linear-gradient(135deg,#070807_0%,#0B0C0B_45%,#090909_100%)]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
           "
         />
 
-        {/* =================================================
-            TOP-RIGHT RED GLOW
-            Stronger like reference image
-        ================================================== */}
-
         <div
           className="
             absolute
-            -right-[260px]
-            -top-[260px]
-            h-[720px]
-            w-[720px]
-            rounded-full
-            bg-[#E5483F]/[0.13]
-            blur-[180px]
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
 
-        {/* Additional tighter red light */}
         <div
           className="
             absolute
-            -right-[120px]
-            -top-[120px]
-            h-[400px]
-            w-[400px]
-            rounded-full
-            bg-[#E5483F]/[0.08]
-            blur-[120px]
-          "
-        />
-
-        {/* =================================================
-            BOTTOM-LEFT RED GLOW
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -bottom-[280px]
-            -left-[260px]
-            h-[680px]
-            w-[680px]
-            rounded-full
-            bg-[#E5483F]/[0.09]
-            blur-[180px]
-          "
-        />
-
-        {/* Additional bottom-left warm light */}
-        <div
-          className="
-            absolute
-            -bottom-[120px]
-            -left-[80px]
-            h-[360px]
-            w-[360px]
-            rounded-full
-            bg-[#E5483F]/[0.05]
-            blur-[120px]
-          "
-        />
-
-        {/* =================================================
-            CENTER SOFT LIGHT
-            Keeps middle area readable
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.018),transparent_55%)]
-          "
-        />
-
-        {/* =================================================
-            TOP-RIGHT FLOWING RED LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -right-[220px]
-            -top-[20px]
-            h-[460px]
-            w-[1050px]
-            rotate-[-9deg]
-            opacity-70
-          "
-        >
-          {/* Line 1 */}
-          <div
-            className="
-              absolute
-              inset-0
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.16]
-            "
-          />
-
-          {/* Line 2 */}
-          <div
-            className="
-              absolute
-              left-[70px]
-              right-[-50px]
-              top-[55px]
-              h-[330px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.11]
-            "
-          />
-
-          {/* Line 3 */}
-          <div
-            className="
-              absolute
-              left-[150px]
-              right-[-100px]
-              top-[105px]
-              h-[270px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.09]
-            "
-          />
-
-          {/* Line 4 */}
-          <div
-            className="
-              absolute
-              left-[230px]
-              right-[-140px]
-              top-[155px]
-              h-[210px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.07]
-            "
-          />
-
-          {/* Line 5 */}
-          <div
-            className="
-              absolute
-              left-[310px]
-              right-[-180px]
-              top-[205px]
-              h-[160px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.05]
-            "
-          />
-        </div>
-
-        {/* =================================================
-            BOTTOM-LEFT FLOWING RED LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -bottom-[180px]
-            -left-[300px]
-            h-[420px]
-            w-[900px]
-            rotate-[8deg]
-            opacity-65
-          "
-        >
-          {/* Line 1 */}
-          <div
-            className="
-              absolute
-              inset-0
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.15]
-            "
-          />
-
-          {/* Line 2 */}
-          <div
-            className="
-              absolute
-              left-[80px]
-              right-[-50px]
-              top-[60px]
-              h-[300px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.11]
-            "
-          />
-
-          {/* Line 3 */}
-          <div
-            className="
-              absolute
-              left-[160px]
-              right-[-100px]
-              top-[110px]
-              h-[250px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.09]
-            "
-          />
-
-          {/* Line 4 */}
-          <div
-            className="
-              absolute
-              left-[240px]
-              right-[-140px]
-              top-[155px]
-              h-[200px]
-              rounded-[50%]
-              border-t
-              border-[#E5483F]/[0.06]
-            "
-          />
-        </div>
-
-        {/* =================================================
-            SUBTLE DARK VIGNETTE
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_center,transparent_25%,rgba(0,0,0,0.38)_100%)]
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
       </div>
@@ -350,7 +251,7 @@ function Hero() {
               font-bold
               uppercase
               tracking-[0.22em]
-              text-[#E5483F]
+              text-[#0095fd]
             "
           >
             Your Growth, Our Financial Expertise
@@ -372,9 +273,7 @@ function Hero() {
             "
           >
             Your Trusted CFO Partner For{" "}
-            <span className="text-[#E5483F]">
-              Startups, MSMEs & Beyond
-            </span>
+            <span className="text-[#0095fd]">Startups, MSMEs & Beyond</span>
           </h1>
 
           {/* Description */}
@@ -390,8 +289,8 @@ function Hero() {
               sm:leading-7
             "
           >
-            Expert CFO support that unifies cash flow, profitability,
-            compliance and more.
+            Expert CFO support that unifies cash flow, profitability, compliance
+            and more.
           </p>
 
           {/* =================================================
@@ -409,7 +308,7 @@ function Hero() {
                 items-center
                 gap-3
                 rounded-lg
-                bg-[#E5483F]
+                bg-[#0095fd]
                 px-6
                 py-3.5
                 text-sm
@@ -418,14 +317,13 @@ function Hero() {
                 transition-all
                 duration-300
                 hover:-translate-y-0.5
-                hover:bg-[#FF6258]
+                hover:bg-[#0095fd]/10
                 hover:shadow-lg
-                hover:shadow-[#E5483F]/25
+                hover:shadow-[#0095fd]/25
                 sm:text-base
               "
             >
               Book a Free Consultation
-
               <span
                 className="
                   flex
@@ -435,7 +333,7 @@ function Hero() {
                   justify-center
                   rounded-full
                   bg-white
-                  text-[#E5483F]
+                  text-[#0095fd]
                 "
               >
                 <ArrowRight
@@ -468,13 +366,12 @@ function Hero() {
                 text-[#F4F1EA]
                 transition-all
                 duration-300
-                hover:border-[#E5483F]/60
-                hover:bg-[#E5483F]/[0.05]
+                hover:border-[#0095fd]/60
+                hover:bg-[#0095fd]/[0.05]
                 sm:text-base
               "
             >
               Explore Services
-
               <ArrowRight
                 size={17}
                 className="
@@ -498,11 +395,14 @@ function Hero() {
             className="
               pointer-events-none
               absolute
-              inset-[-30px]
+              -right-10
+              -top-10
               -z-10
+              h-[280px]
+              w-[280px]
               rounded-full
-              bg-[#E5483F]/[0.035]
-              blur-[110px]
+              bg-[#0095fd]/[0.08]
+              blur-[100px]
             "
             aria-hidden="true"
           />
@@ -513,11 +413,11 @@ function Hero() {
             className="
               rounded-3xl
               border
-              border-white/[0.10]
-              bg-[#111211]/[0.84]
+              border-white/[0.12]
+              bg-[#2A3D53]/80
               p-5
               shadow-2xl
-              shadow-black/50
+              shadow-black/30
               backdrop-blur-xl
               sm:p-6
             "
@@ -552,20 +452,17 @@ function Hero() {
                       justify-center
                       rounded-full
                       border
-                      border-[#E5483F]/50
-                      bg-[#E5483F]/[0.04]
-                      text-[#E5483F]
+                      border-[#0095fd]/50
+                      bg-[#0095fd]/[0.04]
+                      text-[#0095fd]
                       transition-all
                       duration-300
-                      hover:border-[#E5483F]/80
-                      hover:bg-[#E5483F]/[0.08]
+                      hover:border-[#0095fd]/80
+                      hover:bg-[#0095fd]/[0.08]
                       hover:shadow-[0_0_20px_rgba(229,72,63,0.14)]
                     "
                   >
-                    <Icon
-                      size={22}
-                      strokeWidth={1.7}
-                    />
+                    <Icon size={22} strokeWidth={1.7} />
                   </div>
 
                   {/* Service Content */}

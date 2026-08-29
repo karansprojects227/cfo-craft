@@ -78,11 +78,6 @@ function FAQItem({ faq, isOpen, onToggle }) {
         border
         transition-all
         duration-300
-        ${
-          isOpen
-            ? "border-[#E5483F]/70 bg-[#101111]/95 shadow-[0_0_35px_rgba(229,72,63,0.08)]"
-            : "border-white/[0.10] bg-[#0D0F10]/75 hover:border-[#E5483F]/35 hover:bg-[#111314]"
-        }
       `}
     >
       {/* ================================
@@ -121,8 +116,8 @@ function FAQItem({ faq, isOpen, onToggle }) {
             duration-300
             ${
               isOpen
-                ? "border-[#E5483F] bg-[#E5483F]/10 text-[#E5483F]"
-                : "border-[#E5483F]/45 bg-[#E5483F]/[0.04] text-[#E5483F]"
+                ? "border-[#0095fd] bg-[#0095fd]/10 text-[#0095fd]"
+                : "border-[#0095fd]/45 bg-[#0095fd]/[0.04] text-[#0095fd]"
             }
           `}
         >
@@ -144,7 +139,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
             lg:text-base
             ${
               isOpen
-                ? "text-[#F4F1EA]"
+                ? "text-[#0095fd]"
                 : "text-[#E8E7E2] group-hover:text-white"
             }
           `}
@@ -168,8 +163,8 @@ function FAQItem({ faq, isOpen, onToggle }) {
             duration-300
             ${
               isOpen
-                ? "rotate-180 border-[#E5483F] bg-[#E5483F] text-white"
-                : "border-white/10 text-[#E5483F]"
+                ? "rotate-180 border-[#0095fd] bg-[#0095fd] text-white"
+                : "border-white/10 text-[#0095fd]"
             }
           `}
         >
@@ -188,9 +183,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
           duration-300
           ease-out
           ${
-            isOpen
-              ? "grid-rows-[1fr] opacity-100"
-              : "grid-rows-[0fr] opacity-0"
+            isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
           }
         `}
       >
@@ -222,7 +215,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
                         items-center
                         justify-center
                         rounded-full
-                        bg-[#E5483F]
+                        bg-[#0095fd]
                         text-white
                       "
                     >
@@ -291,7 +284,7 @@ function FAQ() {
         relative
         isolate
         overflow-hidden
-        bg-[#090A09]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
         scroll-mt-20
       "
@@ -300,8 +293,7 @@ function FAQ() {
           BACKGROUND
       ====================================================== */}
 
-      {/* Top-right red glow */}
-
+      {/* Top-right LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
@@ -312,42 +304,163 @@ function FAQ() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#E5483F]/[0.08]
+          bg-[#0095fd]/40
           blur-[150px]
         "
         aria-hidden="true"
       />
 
-      {/* Bottom-left red glow */}
-
+      {/* Bottom-left LIGHT BLUE ambient glow */}
       <div
         className="
           pointer-events-none
           absolute
-          -bottom-[260px]
+          -bottom-[250px]
           -left-[180px]
           -z-10
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#E5483F]/[0.05]
+          bg-[#0095fd]/40
           blur-[150px]
         "
         aria-hidden="true"
       />
 
-      {/* Center subtle light */}
-
+      {/* Very subtle center darkness */}
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-10
-          bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,0.018),transparent_58%)]
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
         "
         aria-hidden="true"
       />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+        aria-hidden="true"
+      >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
+        "
+        aria-hidden="true"
+      >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
 
       {/* =====================================================
           SUBTLE DOT TEXTURE
@@ -363,7 +476,7 @@ function FAQ() {
           h-56
           w-56
           opacity-20
-          [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
+          [background-image:radial-gradient(#0095fd_1px,transparent_1px)]
           [background-size:14px_14px]
           [mask-image:linear-gradient(to_right,black,transparent)]
         "
@@ -380,7 +493,7 @@ function FAQ() {
           h-52
           w-52
           opacity-15
-          [background-image:radial-gradient(#E5483F_1px,transparent_1px)]
+          [background-image:radial-gradient(#0095fd_1px,transparent_1px)]
           [background-size:14px_14px]
           [mask-image:linear-gradient(to_left,black,transparent)]
         "
@@ -412,7 +525,7 @@ function FAQ() {
           {/* Label */}
 
           <div className="mb-4 flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#E5483F]/70" />
+            <span className="h-px w-10 bg-[#0095fd]/70" />
 
             <span
               className="
@@ -420,13 +533,13 @@ function FAQ() {
                 font-bold
                 uppercase
                 tracking-[0.3em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               FAQ
             </span>
 
-            <span className="h-px w-10 bg-[#E5483F]/70" />
+            <span className="h-px w-10 bg-[#0095fd]/70" />
           </div>
 
           {/* Heading */}
@@ -442,15 +555,12 @@ function FAQ() {
               lg:text-[56px]
             "
           >
-            Frequently Asked{" "}
-            <span className="text-[#E5483F]">
-              Questions
-            </span>
+            Frequently Asked <span className="text-[#0095fd]">Questions</span>
           </h2>
 
           {/* Accent line */}
 
-          <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#E5483F] to-transparent" />
+          <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#0095fd] to-transparent" />
 
           {/* Description */}
 
@@ -466,8 +576,8 @@ function FAQ() {
               sm:leading-7
             "
           >
-            Clear answers to help you understand how our CFO
-            services create clarity, control, and long-term growth.
+            Clear answers to help you understand how our CFO services create
+            clarity, control, and long-term growth.
           </p>
         </div>
 
@@ -523,8 +633,7 @@ function FAQ() {
             gap-5
             rounded-2xl
             border
-            border-[#E5483F]/30
-            bg-[#0D1011]/80
+            border-[#0095fd]/30
             px-5
             py-5
             shadow-[0_0_45px_rgba(229,72,63,0.05)]
@@ -549,9 +658,9 @@ function FAQ() {
                 justify-center
                 rounded-full
                 border
-                border-[#E5483F]/60
-                bg-[#E5483F]/[0.06]
-                text-[#E5483F]
+                border-[#0095fd]/60
+                bg-[#0095fd]/[0.06]
+                text-[#0095fd]
               "
             >
               <Rocket size={20} strokeWidth={1.7} />
@@ -571,7 +680,7 @@ function FAQ() {
 
               <p className="mt-0.5 text-xs text-[#858780] sm:text-sm">
                 We're here to help you make{" "}
-                <span className="text-[#E5483F]">
+                <span className="text-[#0095fd]">
                   confident financial decisions.
                 </span>
               </p>
@@ -592,23 +701,22 @@ function FAQ() {
               gap-3
               rounded-xl
               border
-              border-[#E5483F]/70
+              border-[#0095fd]/70
               px-5
               py-3
               text-sm
               font-bold
-              text-[#E5483F]
+              text-[#0095fd]
               transition-all
               duration-300
               hover:-translate-y-0.5
-              hover:bg-[#E5483F]
+              hover:bg-[#0095fd]
               hover:text-white
               hover:shadow-lg
-              hover:shadow-[#E5483F]/20
+              hover:shadow-[#0095fd]/20
             "
           >
             TALK TO OUR EXPERT
-
             <ArrowRight
               size={17}
               className="

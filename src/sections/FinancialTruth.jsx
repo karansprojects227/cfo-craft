@@ -17,151 +17,182 @@ function FinancialTruth() {
         relative
         isolate
         overflow-hidden
-        border-t
-        border-white/[0.05]
-        bg-[#090A09]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
+        text-[#F4F1EA]
         py-20
         sm:py-24
         lg:py-14
       "
     >
       {/* =====================================================
-          PREMIUM BACKGROUND
+          BACKGROUND
+      ====================================================== */}
+
+      {/* Top-right LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          inset-0
+          -z-10
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
       ====================================================== */}
 
       <div
-        className="pointer-events-none absolute inset-0 -z-10 overflow-hidden"
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+          aria-hidden="true"
+          >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
+        "
         aria-hidden="true"
       >
-        {/* Main background */}
         <div
           className="
             absolute
             inset-0
-            bg-[linear-gradient(135deg,#090A09_0%,#0D0E0D_48%,#100B0B_100%)]
-          "
-        />
-
-        {/* Top-right red glow */}
-        <div
-          className="
-            absolute
-            -right-[12%]
-            -top-[20%]
-            h-[520px]
-            w-[620px]
-            rounded-full
-            bg-[#E5483F]/[0.08]
-            blur-[150px]
-          "
-        />
-
-        {/* Bottom-left red glow */}
-        <div
-          className="
-            absolute
-            -bottom-[20%]
-            -left-[15%]
-            h-[500px]
-            w-[650px]
-            rounded-full
-            bg-[#E5483F]/[0.055]
-            blur-[150px]
-          "
-        />
-
-        {/* Right ambient glow */}
-        <div
-          className="
-            absolute
-            right-[15%]
-            top-[35%]
-            h-[300px]
-            w-[300px]
-            rounded-full
-            bg-[#E5483F]/[0.025]
-            blur-[120px]
-          "
-        />
-
-        {/* Top-right flowing lines */}
-        <div
-          className="
-            absolute
-            -right-[8%]
-            top-[5%]
-            h-[260px]
-            w-[800px]
-            rotate-[-13deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.055]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
           "
         />
 
         <div
           className="
             absolute
-            -right-[4%]
-            top-[12%]
-            h-[200px]
-            w-[700px]
-            rotate-[-13deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.035]
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
 
         <div
           className="
             absolute
-            right-[4%]
-            top-[19%]
+            left-[150px]
+            right-[-80px]
+            top-[105px]
             h-[150px]
-            w-[580px]
-            rotate-[-13deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-white/[0.018]
-          "
-        />
-
-        {/* Bottom-left flowing lines */}
-        <div
-          className="
-            absolute
-            -left-[10%]
-            bottom-[3%]
-            h-[220px]
-            w-[700px]
-            rotate-[12deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.045]
-          "
-        />
-
-        <div
-          className="
-            absolute
-            -left-[6%]
-            bottom-[10%]
-            h-[170px]
-            w-[600px]
-            rotate-[12deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.025]
-          "
-        />
-
-        {/* Vignette */}
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_center,transparent_35%,rgba(0,0,0,0.45)_100%)]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
       </div>
@@ -192,7 +223,7 @@ function FinancialTruth() {
           {/* Eyebrow */}
 
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-9 bg-[#E5483F]" />
+            <span className="h-px w-9 bg-[#0095fd]" />
 
             <p
               className="
@@ -200,7 +231,7 @@ function FinancialTruth() {
                 font-bold
                 uppercase
                 tracking-[0.2em]
-                text-[#E5483F]
+                text-[#0095fd]
                 sm:text-sm
               "
             >
@@ -224,7 +255,7 @@ function FinancialTruth() {
             "
           >
             Get Your Financial Truth in Under{" "}
-            <span className="text-[#E5483F]">10 Minutes.</span>
+            <span className="text-[#0095fd]">10 Minutes.</span>
           </h2>
 
           {/* Description */}
@@ -259,8 +290,8 @@ function FinancialTruth() {
                     items-center
                     justify-center
                     rounded-full
-                    bg-[#E5483F]/15
-                    text-[#E5483F]
+                    bg-[#0095fd]/15
+                    text-[#0095fd]
                   "
                 >
                   <Check size={13} strokeWidth={3} />
@@ -293,7 +324,6 @@ function FinancialTruth() {
       rounded-2xl
       border
       border-white/[0.08]
-      bg-[#101110]/60
       p-5
       backdrop-blur-sm
       sm:flex-row
@@ -339,7 +369,7 @@ function FinancialTruth() {
           items-center
           justify-center
           rounded-xl
-          bg-[#E5483F]
+          bg-[#0095fd]
           px-6
           py-3
           text-sm
@@ -348,9 +378,9 @@ function FinancialTruth() {
           transition-all
           duration-300
           hover:-translate-y-0.5
-          hover:bg-[#FF6258]
+          hover:bg-[#0095fd]/10
           hover:shadow-xl
-          hover:shadow-[#E5483F]/20
+          hover:shadow-[#0095fd]/20
         "
       >
         Contact Us
@@ -384,7 +414,7 @@ function FinancialTruth() {
               absolute
               inset-8
               rounded-full
-              bg-[#E5483F]/[0.08]
+              bg-[#0095fd]/[0.08]
               blur-[100px]
             "
           />
@@ -399,8 +429,7 @@ function FinancialTruth() {
               overflow-hidden
               rounded-[28px]
               border
-              border-[#E5483F]/30
-              bg-[#0D0E0D]
+              border-[#0095fd]/30
               shadow-[0_25px_80px_rgba(0,0,0,0.55)]
               mr-24
             "
@@ -426,7 +455,7 @@ function FinancialTruth() {
                 bg-gradient-to-t
                 from-black/10
                 via-transparent
-                to-[#E5483F]/[0.025]
+                to-[#0095fd]/[0.025]
               "
             />
           </div>

@@ -13,129 +13,182 @@ function AboutUs() {
         relative
         isolate
         overflow-hidden
-        bg-[#0D0E0D]
+        bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
+        text-[#F4F1EA]
         py-20
         sm:py-24
         lg:py-20
       "
     >
       {/* =====================================================
-          PREMIUM CORPORATE BACKGROUND
+          BACKGROUND
       ====================================================== */}
 
+      {/* Top-right LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[180px]
+          -top-[220px]
+          -z-10
+          h-[520px]
+          w-[520px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Bottom-left LIGHT BLUE ambient glow */}
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[250px]
+          -left-[180px]
+          -z-10
+          h-[500px]
+          w-[500px]
+          rounded-full
+          bg-[#0095fd]/40
+          blur-[150px]
+        "
+        aria-hidden="true"
+      />
+
+      {/* Very subtle center darkness */}
       <div
         className="
           pointer-events-none
           absolute
           inset-0
           -z-10
-          overflow-hidden
+          bg-[radial-gradient(circle_at_50%_40%,rgba(255,255,255,0.015),transparent_55%)]
+        "
+        aria-hidden="true"
+      />
+
+      {/* =====================================================
+          SUBTLE FLOWING LIGHT BLUE LINES
+      ====================================================== */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -right-[120px]
+          top-[80px]
+          -z-10
+          h-[360px]
+          w-[850px]
+          rotate-[-8deg]
+          opacity-30
+          "
+          aria-hidden="true"
+          >
+        <div
+          className="
+            absolute
+            inset-0
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            blur-[0.2px]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[80px]
+            right-[-40px]
+            top-[45px]
+            h-[230px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[150px]
+            right-[-80px]
+            top-[95px]
+            h-[190px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+
+        <div
+          className="
+            absolute
+            left-[220px]
+            right-[-120px]
+            top-[140px]
+            h-[160px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+          "
+        />
+      </div>
+
+      {/* Bottom-left flowing lines */}
+
+      <div
+        className="
+          pointer-events-none
+          absolute
+          -bottom-[150px]
+          -left-[220px]
+          -z-10
+          h-[300px]
+          w-[700px]
+          rotate-[7deg]
+          opacity-25
         "
         aria-hidden="true"
       >
-        {/* Main background */}
         <div
           className="
             absolute
             inset-0
-            bg-[linear-gradient(135deg,#0D0E0D_0%,#121312_48%,#0B0C0B_100%)]
-          "
-        />
-
-        {/* Top-right red glow */}
-        <div
-          className="
-            absolute
-            -right-[12%]
-            -top-[12%]
-            h-[500px]
-            w-[600px]
-            rounded-full
-            bg-[#E5483F]/[0.055]
-            blur-[150px]
-          "
-        />
-
-        {/* Bottom-left red glow */}
-        <div
-          className="
-            absolute
-            -bottom-[18%]
-            -left-[12%]
-            h-[500px]
-            w-[650px]
-            rounded-full
-            bg-[#E5483F]/[0.045]
-            blur-[160px]
-          "
-        />
-
-        {/* Right soft light */}
-        <div
-          className="
-            absolute
-            right-[10%]
-            top-[25%]
-            h-[300px]
-            w-[300px]
-            rounded-full
-            bg-white/[0.012]
-            blur-[120px]
-          "
-        />
-
-        {/* =================================================
-            SUBTLE FLOWING CORPORATE LINES
-        ================================================== */}
-
-        <div
-          className="
-            absolute
-            -right-[8%]
-            top-[5%]
-            h-[260px]
-            w-[850px]
-            rotate-[-18deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.035]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
+            border-8
           "
         />
 
         <div
           className="
             absolute
-            -right-[5%]
-            top-[12%]
-            h-[210px]
-            w-[760px]
-            rotate-[-18deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.025]
+            left-[80px]
+            right-[-30px]
+            top-[55px]
+            h-[180px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
 
         <div
           className="
             absolute
-            -left-[15%]
-            bottom-[2%]
-            h-[230px]
-            w-[800px]
-            rotate-[12deg]
-            rounded-[100%_0_100%_0]
-            border
-            border-[#E5483F]/[0.03]
-          "
-        />
-
-        {/* Vignette */}
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[radial-gradient(circle_at_center,transparent_35%,rgba(0,0,0,0.38)_100%)]
+            left-[150px]
+            right-[-80px]
+            top-[105px]
+            h-[150px]
+            rounded-[50%]
+            border-t
+            border-[#0095fd]
           "
         />
       </div>
@@ -160,7 +213,7 @@ function AboutUs() {
           {/* Eyebrow */}
 
           <div className="mb-4 flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#E5483F]" />
+            <span className="h-px w-10 bg-[#0095fd]" />
 
             <p
               className="
@@ -168,14 +221,14 @@ function AboutUs() {
                 font-bold
                 uppercase
                 tracking-[0.25em]
-                text-[#E5483F]
+                text-[#0095fd]
                 sm:text-sm
               "
             >
               About Us
             </p>
 
-            <span className="h-px w-10 bg-[#E5483F]" />
+            <span className="h-px w-10 bg-[#0095fd]" />
           </div>
 
           {/* Heading */}
@@ -194,7 +247,7 @@ function AboutUs() {
             "
           >
             Financial clarity.
-            <span className="text-[#E5483F]">
+            <span className="text-[#0095fd]">
               {" "}Strategic growth.
             </span>
           </h2>
@@ -227,7 +280,7 @@ function AboutUs() {
                 font-bold
                 uppercase
                 tracking-[0.18em]
-                text-[#E5483F]
+                text-[#0095fd]
               "
             >
               Your Financial Growth Partner
@@ -284,11 +337,11 @@ function AboutUs() {
                       items-center
                       justify-center
                       rounded-full
-                      bg-[#E5483F]/10
-                      text-[#E5483F]
+                      bg-[#0095fd]/10
+                      text-[#0095fd]
                     "
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#E5483F]" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#0095fd]" />
                   </span>
 
                   <p
@@ -319,7 +372,7 @@ function AboutUs() {
                   items-center
                   gap-3
                   rounded-xl
-                  bg-[#E5483F]
+                  bg-[#0095fd]
                   px-6
                   py-3.5
                   text-sm
@@ -328,9 +381,9 @@ function AboutUs() {
                   transition-all
                   duration-300
                   hover:-translate-y-0.5
-                  hover:bg-[#FF6258]
+                  hover:bg-[#0095fd]/10
                   hover:shadow-xl
-                  hover:shadow-[#E5483F]/20
+                  hover:shadow-[#0095fd]/20
                   sm:px-7
                   sm:py-4
                   sm:text-base
@@ -347,7 +400,7 @@ function AboutUs() {
                     justify-center
                     rounded-full
                     bg-white
-                    text-[#E5483F]
+                    text-[#0095fd]
                   "
                 >
                   <ArrowRight
@@ -377,7 +430,7 @@ function AboutUs() {
                 -inset-8
                 -z-10
                 rounded-[40px]
-                bg-[#E5483F]/[0.055]
+                bg-[#0095fd]/[0.055]
                 blur-[70px]
               "
               aria-hidden="true"
@@ -399,14 +452,14 @@ function AboutUs() {
                 overflow-hidden
                 rounded-[28px]
                 border
-                border-[#E5483F]/30
+                border-[#0095fd]/30
                 bg-[#0D0E0D]
                 shadow-[0_25px_80px_rgba(0,0,0,0.55)]
                 transition-all
                 duration-500
                 hover:-translate-y-1
-                hover:border-[#E5483F]/70
-                hover:shadow-[0_30px_90px_rgba(229,72,63,0.15)]
+                hover:border-[#0095fd]/70
+                hover:shadow-[0_30px_90px_rgba(0,149,253,0.15)]
               "
             >
               {/* Thumbnail */}
@@ -472,13 +525,13 @@ function AboutUs() {
                   items-center
                   justify-center
                   rounded-[18px]
-                  bg-[#FF0000]
+                  bg-[#0095fd]
                   text-white
                   shadow-[0_12px_40px_rgba(255,0,0,0.35)]
                   transition-all
                   duration-500
                   group-hover:scale-110
-                  group-hover:bg-[#E60000]
+                  group-hover:bg-[#0095fd]
                   group-hover:shadow-[0_15px_50px_rgba(255,0,0,0.45)]
                   sm:h-[72px]
                   sm:w-[72px]
@@ -606,7 +659,7 @@ function AboutUs() {
                   sm:text-xs
                 "
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-[#E5483F]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#0095fd]" />
                 YouTube
               </span>
             </div>
@@ -661,7 +714,7 @@ function AboutUs() {
                 text-[#C9C8C1]
                 transition-colors
                 duration-300
-                hover:text-[#E5483F]
+                hover:text-[#0095fd]
               "
             >
               Explore Our Expertise

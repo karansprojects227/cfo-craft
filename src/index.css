@@ -8,23 +8,22 @@
   ========================================== */
 
   --color-cfo-bg: #171817;
-  --color-cfo-bg-soft: #1C1D1B;
+  --color-cfo-bg-soft: #1c1d1b;
 
-  --color-cfo-card: #20211F;
+  --color-cfo-card: #20211f;
   --color-cfo-card-hover: #272824;
 
   /* Corporate Burgundy */
-  --color-cfo-green: #A63D36;
-  --color-cfo-green-dark: #8F302B;
+  --color-cfo-green: #0095fd;
+  --color-cfo-green-dark: #8f302b;
 
   /* Typography */
-  --color-cfo-text: #F4F1EA;
-  --color-cfo-muted: #AAA9A3;
+  --color-cfo-text: #f4f1ea;
+  --color-cfo-muted: #aaa9a3;
 
   /* Borders */
   --color-cfo-border: rgba(255, 255, 255, 0.09);
 }
-
 
 /* =========================================
    ROOT
@@ -36,7 +35,7 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color: #F4F1EA;
+  color: #f4f1ea;
 
   /*
     IMPORTANT:
@@ -54,7 +53,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* =========================================
    GLOBAL BOX SIZING
 ========================================= */
@@ -62,7 +60,6 @@
 * {
   box-sizing: border-box;
 }
-
 
 /* =========================================
    HTML
@@ -73,7 +70,6 @@ html {
 
   background: #171817;
 }
-
 
 /* =========================================
    BODY
@@ -87,9 +83,8 @@ body {
 
   background: #171817;
 
-  color: #F4F1EA;
+  color: #f4f1ea;
 }
-
 
 /* =========================================
    ROOT APP
@@ -101,7 +96,6 @@ body {
   background: #171817;
 }
 
-
 /* =========================================
    LINKS & BUTTONS
 ========================================= */
@@ -111,11 +105,9 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 
-
 button {
   font-family: inherit;
 }
-
 
 a {
   color: inherit;
@@ -123,17 +115,15 @@ a {
   text-decoration: none;
 }
 
-
 /* =========================================
    TEXT SELECTION
 ========================================= */
 
 ::selection {
-  background: #A63D36;
+  background: #0095fd;
 
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
 
 /* =========================================
    SCROLLBAR
@@ -143,21 +133,18 @@ a {
   width: 8px;
 }
 
-
 ::-webkit-scrollbar-track {
   background: #171817;
 }
 
-
 ::-webkit-scrollbar-thumb {
-  background: #3A3B38;
+  background: #3a3b38;
 
   border-radius: 999px;
 }
 
-
 ::-webkit-scrollbar-thumb:hover {
-  background: #A63D36;
+  background: #0095fd;
 }
 
 /* Fix browser autofill white background in dark inputs */
@@ -168,8 +155,9 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus {
   -webkit-text-fill-color: #ffffff;
-  -webkit-box-shadow: 0 0 0px 1000px #15191d inset;
-  box-shadow: 0 0 0px 1000px #15191d inset;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  box-shadow: 0 0 0 1000px transparent inset;
+  background-color: transparent !important;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -185,7 +173,6 @@ textarea:-webkit-autofill:focus {
 
   animation: statusFadeIn 0.45s ease forwards;
 }
-
 
 /* ========================================= */
 /* TOP PROGRESS TRACKER */
@@ -221,7 +208,6 @@ textarea:-webkit-autofill:focus {
     opacity 0.35s ease;
 }
 
-
 /* ========================================= */
 /* DEFAULT - GREY */
 /* ========================================= */
@@ -240,8 +226,7 @@ textarea:-webkit-autofill:focus {
   color: #89938f;
   background: #0b100f;
 
-  box-shadow:
-    0 0 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 
   transition:
     color 0.35s ease,
@@ -261,7 +246,6 @@ textarea:-webkit-autofill:focus {
   font-weight: 700;
 }
 
-
 /* ========================================= */
 /* STEP TEXT */
 /* ========================================= */
@@ -278,7 +262,6 @@ textarea:-webkit-autofill:focus {
 
   transition: color 0.35s ease;
 }
-
 
 /* ========================================= */
 /* COMPLETED - GREEN */
@@ -302,7 +285,6 @@ textarea:-webkit-autofill:focus {
 .progress-step.completed span {
   color: #b7c1bd;
 }
-
 
 /* ========================================= */
 /* SENDING - GREY / PENDING */
@@ -329,7 +311,6 @@ textarea:-webkit-autofill:focus {
   color: #c1c8c5;
 }
 
-
 /* ========================================= */
 /* SUCCESS - GREEN */
 /* ========================================= */
@@ -353,7 +334,6 @@ textarea:-webkit-autofill:focus {
   color: #43dc86;
 }
 
-
 /* ========================================= */
 /* ERROR - RED */
 /* ========================================= */
@@ -368,14 +348,12 @@ textarea:-webkit-autofill:focus {
   border-color: rgba(255, 79, 87, 0.75);
   background: rgba(255, 79, 87, 0.05);
 
-  box-shadow:
-    0 0 12px rgba(255, 79, 87, 0.18);
+  box-shadow: 0 0 12px rgba(255, 79, 87, 0.18);
 }
 
 .progress-step.error span {
   color: #ff777d;
 }
-
 
 /* ========================================= */
 /* CONNECTING LINES */
@@ -401,7 +379,6 @@ textarea:-webkit-autofill:focus {
     box-shadow 0.5s ease;
 }
 
-
 /* Active Green */
 
 .progress-line.active {
@@ -412,12 +389,10 @@ textarea:-webkit-autofill:focus {
     rgba(31, 188, 100, 0.7)
   );
 
-  box-shadow:
-    0 0 7px rgba(42, 211, 117, 0.25);
+  box-shadow: 0 0 7px rgba(42, 211, 117, 0.25);
 
   animation: lineGlow 1.5s ease-in-out infinite;
 }
-
 
 /* Error Red */
 
@@ -429,10 +404,8 @@ textarea:-webkit-autofill:focus {
     rgba(255, 79, 87, 0.4)
   );
 
-  box-shadow:
-    0 0 7px rgba(255, 79, 87, 0.18);
+  box-shadow: 0 0 7px rgba(255, 79, 87, 0.18);
 }
-
 
 /* ========================================= */
 /* COMMON STATUS CARD */
@@ -476,7 +449,6 @@ textarea:-webkit-autofill:focus {
   line-height: 1.7;
 }
 
-
 /* ========================================= */
 /* SENDING CARD - GREY */
 /* ========================================= */
@@ -504,7 +476,6 @@ textarea:-webkit-autofill:focus {
 .sending-card p {
   color: #89938f;
 }
-
 
 /* ========================================= */
 /* SENDING LOADER - GREY */
@@ -546,7 +517,6 @@ textarea:-webkit-autofill:focus {
   animation: loaderSpin 1s linear infinite;
 }
 
-
 /* ========================================= */
 /* SUCCESS CARD - GREEN */
 /* ========================================= */
@@ -564,11 +534,7 @@ textarea:-webkit-autofill:focus {
   text-align: center;
 
   background:
-    radial-gradient(
-      circle at 50% 35%,
-      rgba(15, 90, 52, 0.09),
-      transparent 42%
-    ),
+    radial-gradient(circle at 50% 35%, rgba(15, 90, 52, 0.09), transparent 42%),
     #07100d;
 
   border: 1px solid rgba(31, 201, 111, 0.28);
@@ -580,7 +546,6 @@ textarea:-webkit-autofill:focus {
 
   animation: cardAppear 0.45s ease forwards;
 }
-
 
 /* ========================================= */
 /* CELEBRATION */
@@ -604,7 +569,6 @@ textarea:-webkit-autofill:focus {
 
   animation: confettiFloat 2.8s ease-in-out infinite;
 }
-
 
 /* Green */
 
@@ -677,7 +641,6 @@ textarea:-webkit-autofill:focus {
   animation-delay: 0.8s;
 }
 
-
 /* Red */
 
 .c3 {
@@ -685,7 +648,7 @@ textarea:-webkit-autofill:focus {
   left: 25%;
   width: 5px;
   height: 7px;
-  background: #ff4f57;
+  background: #0095fd;
   transform: rotate(40deg);
   animation-delay: 0.8s;
 }
@@ -695,7 +658,7 @@ textarea:-webkit-autofill:focus {
   left: 67%;
   width: 7px;
   height: 4px;
-  background: #f3434e;
+  background: #0095fd;
   border-radius: 1px;
   animation-delay: 0.7s;
 }
@@ -705,7 +668,7 @@ textarea:-webkit-autofill:focus {
   left: 77%;
   width: 5px;
   height: 7px;
-  background: #ff8080;
+  background: #0095fd;
   transform: rotate(-25deg);
   animation-delay: 1.3s;
 }
@@ -715,7 +678,7 @@ textarea:-webkit-autofill:focus {
   left: 23%;
   width: 4px;
   height: 4px;
-  background: #ff4f57;
+  background: #0095fd;
   border-radius: 50%;
   animation-delay: 0.9s;
 }
@@ -729,7 +692,6 @@ textarea:-webkit-autofill:focus {
   transform: rotate(-25deg);
   animation-delay: 0.5s;
 }
-
 
 /* Yellow */
 
@@ -763,7 +725,6 @@ textarea:-webkit-autofill:focus {
   animation-delay: 1.2s;
 }
 
-
 /* Blue / Purple */
 
 .c6 {
@@ -795,7 +756,6 @@ textarea:-webkit-autofill:focus {
   transform: rotate(45deg);
   animation-delay: 1s;
 }
-
 
 /* ========================================= */
 /* BIG SUCCESS ICON */
@@ -833,7 +793,6 @@ textarea:-webkit-autofill:focus {
   height: 38px;
 }
 
-
 /* ========================================= */
 /* SUCCESS TEXT */
 /* ========================================= */
@@ -863,7 +822,6 @@ textarea:-webkit-autofill:focus {
   line-height: 1.7;
 }
 
-
 /* ========================================= */
 /* SUCCESS BUTTON */
 /* ========================================= */
@@ -881,11 +839,7 @@ textarea:-webkit-autofill:focus {
   border: none;
   border-radius: 7px;
 
-  background: linear-gradient(
-    90deg,
-    #e83b3b,
-    #dc2428
-  );
+  background: linear-gradient(90deg, #0095fd, #006fbd);
 
   color: #ffffff;
 
@@ -913,8 +867,7 @@ textarea:-webkit-autofill:focus {
 .success-btn:hover {
   transform: translateY(-2px);
 
-  box-shadow:
-    0 8px 22px rgba(220, 36, 40, 0.28);
+  box-shadow: 0 8px 22px rgba(0, 149, 253, 0.28);
 }
 
 .success-btn:hover span {
@@ -924,7 +877,6 @@ textarea:-webkit-autofill:focus {
 .success-btn:active {
   transform: translateY(0);
 }
-
 
 /* ========================================= */
 /* ERROR CARD */
@@ -961,8 +913,7 @@ textarea:-webkit-autofill:focus {
   border: 2px solid rgba(255, 79, 87, 0.85);
   border-radius: 50%;
 
-  box-shadow:
-    0 0 16px rgba(255, 79, 87, 0.2);
+  box-shadow: 0 0 16px rgba(255, 79, 87, 0.2);
 
   animation: errorPulse 2s ease-in-out infinite;
 }
@@ -982,7 +933,6 @@ textarea:-webkit-autofill:focus {
   color: #b9a8aa;
 }
 
-
 /* ========================================= */
 /* RETRY BUTTON */
 /* ========================================= */
@@ -997,11 +947,7 @@ textarea:-webkit-autofill:focus {
   border: none;
   border-radius: 7px;
 
-  background: linear-gradient(
-    90deg,
-    #e83b3b,
-    #dc2428
-  );
+  background: linear-gradient(90deg, #e83b3b, #dc2428);
 
   color: #ffffff;
 
@@ -1028,14 +974,12 @@ textarea:-webkit-autofill:focus {
 .retry-btn:hover {
   transform: translateY(-2px);
 
-  box-shadow:
-    0 8px 22px rgba(220, 36, 40, 0.28);
+  box-shadow: 0 8px 22px rgba(220, 36, 40, 0.28);
 }
 
 .retry-btn:hover span {
   transform: rotate(180deg);
 }
-
 
 /* ========================================= */
 /* ANIMATIONS */
@@ -1127,15 +1071,13 @@ textarea:-webkit-autofill:focus {
   100% {
     transform: scale(1);
 
-    box-shadow:
-      0 0 12px rgba(255, 79, 87, 0.2);
+    box-shadow: 0 0 12px rgba(255, 79, 87, 0.2);
   }
 
   50% {
     transform: scale(1.05);
 
-    box-shadow:
-      0 0 22px rgba(255, 79, 87, 0.4);
+    box-shadow: 0 0 22px rgba(255, 79, 87, 0.4);
   }
 }
 
@@ -1151,7 +1093,6 @@ textarea:-webkit-autofill:focus {
     transform: translateY(-4px);
   }
 }
-
 
 /* ========================================= */
 /* MOBILE */
