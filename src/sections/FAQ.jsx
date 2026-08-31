@@ -116,8 +116,8 @@ function FAQItem({ faq, isOpen, onToggle }) {
             duration-300
             ${
               isOpen
-                ? "border-[#0095fd] bg-[#0095fd]/10 text-[#0095fd]"
-                : "border-[#0095fd]/45 bg-[#0095fd]/[0.04] text-[#0095fd]"
+                ? "border-[#eeba7d] bg-[#eeba7d]/10 text-[#eeba7d]"
+                : "border-[#eeba7d]/45 bg-[#eeba7d]/[0.04] text-[#eeba7d]"
             }
           `}
         >
@@ -139,7 +139,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
             lg:text-base
             ${
               isOpen
-                ? "text-[#0095fd]"
+                ? "text-[#eeba7d]"
                 : "text-[#E8E7E2] group-hover:text-white"
             }
           `}
@@ -163,8 +163,8 @@ function FAQItem({ faq, isOpen, onToggle }) {
             duration-300
             ${
               isOpen
-                ? "rotate-180 border-[#0095fd] bg-[#0095fd] text-white"
-                : "border-white/10 text-[#0095fd]"
+                ? "rotate-180 border-[#eeba7d] bg-[#eeba7d] text-white"
+                : "border-white/10 text-[#eeba7d]"
             }
           `}
         >
@@ -215,7 +215,7 @@ function FAQItem({ faq, isOpen, onToggle }) {
                         items-center
                         justify-center
                         rounded-full
-                        bg-[#0095fd]
+                        bg-[#eeba7d]
                         text-white
                       "
                     >
@@ -306,7 +306,7 @@ function FAQ() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -323,7 +323,7 @@ function FAQ() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -365,7 +365,7 @@ function FAQ() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -379,7 +379,7 @@ function FAQ() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -392,7 +392,7 @@ function FAQ() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -405,7 +405,7 @@ function FAQ() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -432,7 +432,7 @@ function FAQ() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -446,7 +446,7 @@ function FAQ() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -459,7 +459,7 @@ function FAQ() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -478,7 +478,7 @@ function FAQ() {
           h-56
           w-56
           opacity-20
-          [background-image:radial-gradient(#0095fd_1px,transparent_1px)]
+          [background-image:radial-gradient(#eeba7d_1px,transparent_1px)]
           [background-size:14px_14px]
           [mask-image:linear-gradient(to_right,black,transparent)]
         "
@@ -495,7 +495,7 @@ function FAQ() {
           h-52
           w-52
           opacity-15
-          [background-image:radial-gradient(#0095fd_1px,transparent_1px)]
+          [background-image:radial-gradient(#eeba7d_1px,transparent_1px)]
           [background-size:14px_14px]
           [mask-image:linear-gradient(to_left,black,transparent)]
         "
@@ -527,7 +527,7 @@ function FAQ() {
           {/* Label */}
 
           <div className="mb-4 flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#0095fd]/70" />
+            <span className="h-px w-10 bg-[#eeba7d]/70" />
 
             <span
               className="
@@ -535,13 +535,13 @@ function FAQ() {
                 font-bold
                 uppercase
                 tracking-[0.3em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               FAQ
             </span>
 
-            <span className="h-px w-10 bg-[#0095fd]/70" />
+            <span className="h-px w-10 bg-[#eeba7d]/70" />
           </div>
 
           {/* Heading */}
@@ -557,12 +557,12 @@ function FAQ() {
               lg:text-[56px]
             "
           >
-            Frequently Asked <span className="text-[#0095fd]">Questions</span>
+            Frequently Asked <span className="text-[#eeba7d]">Questions</span>
           </h2>
 
           {/* Accent line */}
 
-          <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#0095fd] to-transparent" />
+          <div className="mx-auto mt-5 h-px w-28 bg-gradient-to-r from-transparent via-[#eeba7d] to-transparent" />
 
           {/* Description */}
 
@@ -635,7 +635,7 @@ function FAQ() {
             gap-5
             rounded-2xl
             border
-            border-[#0095fd]/30
+            border-[#eeba7d]/30
             px-5
             py-5
             shadow-[0_0_45px_rgba(229,72,63,0.05)]
@@ -660,9 +660,9 @@ function FAQ() {
                 justify-center
                 rounded-full
                 border
-                border-[#0095fd]/60
-                bg-[#0095fd]/[0.06]
-                text-[#0095fd]
+                border-[#eeba7d]/60
+                bg-[#eeba7d]/[0.06]
+                text-[#eeba7d]
               "
             >
               <Rocket size={20} strokeWidth={1.7} />
@@ -682,7 +682,7 @@ function FAQ() {
 
               <p className="mt-0.5 text-xs text-[#858780] sm:text-sm">
                 We're here to help you make{" "}
-                <span className="text-[#0095fd]">
+                <span className="text-[#eeba7d]">
                   confident financial decisions.
                 </span>
               </p>
@@ -703,19 +703,19 @@ function FAQ() {
               gap-3
               rounded-xl
               border
-              border-[#0095fd]/70
+              border-[#eeba7d]/70
               px-5
               py-3
               text-sm
               font-bold
-              text-[#0095fd]
+              text-white
               transition-all
               duration-300
               hover:-translate-y-0.5
-              hover:bg-[#0095fd]
-              hover:text-white
+              hover:bg-[#eeba7d]
+              hover:text-black
               hover:shadow-lg
-              hover:shadow-[#0095fd]/20
+              hover:shadow-[#eeba7d]/20
             "
           >
             TALK TO OUR EXPERT

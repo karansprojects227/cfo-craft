@@ -57,7 +57,7 @@ function Hero() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -74,7 +74,7 @@ function Hero() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -116,7 +116,7 @@ function Hero() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -130,7 +130,7 @@ function Hero() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -143,7 +143,7 @@ function Hero() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -156,7 +156,7 @@ function Hero() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -183,7 +183,7 @@ function Hero() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -197,7 +197,7 @@ function Hero() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -210,7 +210,7 @@ function Hero() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -251,7 +251,7 @@ function Hero() {
               font-bold
               uppercase
               tracking-[0.22em]
-              text-[#0095fd]
+              text-[#eeba7d]
             "
           >
             Your Growth, Our Financial Expertise
@@ -273,7 +273,7 @@ function Hero() {
             "
           >
             Your Trusted CFO Partner For{" "}
-            <span className="text-[#0095fd]">Startups, MSMEs & Beyond</span>
+            <span className="text-[#eeba7d]">Startups, MSMEs & Beyond</span>
           </h1>
 
           {/* Description */}
@@ -308,18 +308,19 @@ function Hero() {
                 items-center
                 gap-3
                 rounded-lg
-                bg-[#0095fd]
+                bg-[#eeba7d]
                 px-6
                 py-3.5
                 text-sm
                 font-bold
-                text-white
+                text-black
+                hover:text-white
                 transition-all
                 duration-300
                 hover:-translate-y-0.5
-                hover:bg-[#0095fd]/10
+                hover:bg-[#eeba7d]/10
                 hover:shadow-lg
-                hover:shadow-[#0095fd]/25
+                hover:shadow-[#eeba7d]/25
                 sm:text-base
               "
             >
@@ -333,7 +334,7 @@ function Hero() {
                   justify-center
                   rounded-full
                   bg-white
-                  text-[#0095fd]
+                  text-[#eeba7d]
                 "
               >
                 <ArrowRight
@@ -366,8 +367,8 @@ function Hero() {
                 text-[#F4F1EA]
                 transition-all
                 duration-300
-                hover:border-[#0095fd]/60
-                hover:bg-[#0095fd]/[0.05]
+                hover:border-[#eeba7d]/60
+                hover:bg-[#eeba7d]/[0.05]
                 sm:text-base
               "
             >
@@ -401,7 +402,7 @@ function Hero() {
               h-[280px]
               w-[280px]
               rounded-full
-              bg-[#0095fd]/[0.08]
+              bg-[#eeba7d]/[0.08]
               blur-[100px]
             "
             aria-hidden="true"
@@ -452,13 +453,13 @@ function Hero() {
                       justify-center
                       rounded-full
                       border
-                      border-[#0095fd]/50
-                      bg-[#0095fd]/[0.04]
-                      text-[#0095fd]
+                      border-[#eeba7d]/50
+                      bg-[#eeba7d]/[0.04]
+                      text-[#eeba7d]
                       transition-all
                       duration-300
-                      hover:border-[#0095fd]/80
-                      hover:bg-[#0095fd]/[0.08]
+                      hover:border-[#eeba7d]/80
+                      hover:bg-[#eeba7d]/[0.08]
                       hover:shadow-[0_0_20px_rgba(0,149,253,0.20)]
                     "
                   >

@@ -128,18 +128,19 @@ function Navbar() {
               items-center
               gap-2
               rounded-lg
-              bg-[#0095fd]
+              bg-[#eeba7d]
               px-5
               py-2.5
               text-sm
               font-bold
-              text-white
+              text-black
+              hover:text-white
               transition-all
               duration-300
               hover:-translate-y-0.5
-              hover:bg-[#0095fd]/10
+              hover:bg-[#eeba7d]/10
               hover:shadow-lg
-              hover:shadow-[#0095fd]/20
+              hover:shadow-[#eeba7d]/25
             "
           >
             Contact Us

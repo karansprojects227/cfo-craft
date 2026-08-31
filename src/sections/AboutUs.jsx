@@ -37,7 +37,7 @@ function AboutUs() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -54,7 +54,7 @@ function AboutUs() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -96,7 +96,7 @@ function AboutUs() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -110,7 +110,7 @@ function AboutUs() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -123,7 +123,7 @@ function AboutUs() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -136,7 +136,7 @@ function AboutUs() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -163,7 +163,7 @@ function AboutUs() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -177,7 +177,7 @@ function AboutUs() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -190,7 +190,7 @@ function AboutUs() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -215,7 +215,7 @@ function AboutUs() {
           {/* Eyebrow */}
 
           <div className="mb-4 flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#0095fd]" />
+            <span className="h-px w-10 bg-[#eeba7d]" />
 
             <p
               className="
@@ -223,14 +223,14 @@ function AboutUs() {
                 font-bold
                 uppercase
                 tracking-[0.25em]
-                text-[#0095fd]
+                text-[#eeba7d]
                 sm:text-sm
               "
             >
               About Us
             </p>
 
-            <span className="h-px w-10 bg-[#0095fd]" />
+            <span className="h-px w-10 bg-[#eeba7d]" />
           </div>
 
           {/* Heading */}
@@ -249,7 +249,7 @@ function AboutUs() {
             "
           >
             Financial clarity.
-            <span className="text-[#0095fd]">
+            <span className="text-[#eeba7d]">
               {" "}Strategic growth.
             </span>
           </h2>
@@ -282,7 +282,7 @@ function AboutUs() {
                 font-bold
                 uppercase
                 tracking-[0.18em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Your Financial Growth Partner
@@ -339,11 +339,11 @@ function AboutUs() {
                       items-center
                       justify-center
                       rounded-full
-                      bg-[#0095fd]/10
-                      text-[#0095fd]
+                      bg-[#eeba7d]/10
+                      text-[#eeba7d]
                     "
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#0095fd]" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#eeba7d]" />
                   </span>
 
                   <p
@@ -374,18 +374,19 @@ function AboutUs() {
                   items-center
                   gap-3
                   rounded-xl
-                  bg-[#0095fd]
+                  bg-[#eeba7d]
                   px-6
                   py-3.5
                   text-sm
                   font-bold
-                  text-white
+                  text-black
+                  hover:text-white
                   transition-all
                   duration-300
                   hover:-translate-y-0.5
-                  hover:bg-[#0095fd]/10
+                  hover:bg-[#eeba7d]/10
                   hover:shadow-xl
-                  hover:shadow-[#0095fd]/20
+                  hover:shadow-[#eeba7d]/20
                   sm:px-7
                   sm:py-4
                   sm:text-base
@@ -402,7 +403,7 @@ function AboutUs() {
                     justify-center
                     rounded-full
                     bg-white
-                    text-[#0095fd]
+                    text-[#eeba7d]
                   "
                 >
                   <ArrowRight
@@ -432,7 +433,7 @@ function AboutUs() {
                 -inset-8
                 -z-10
                 rounded-[40px]
-                bg-[#0095fd]/[0.055]
+                bg-[#eeba7d]/[0.055]
                 blur-[70px]
               "
               aria-hidden="true"
@@ -454,13 +455,13 @@ function AboutUs() {
                 overflow-hidden
                 rounded-[28px]
                 border
-                border-[#0095fd]/30
+                border-[#eeba7d]/30
                 bg-[#0D0E0D]
                 shadow-[0_25px_80px_rgba(0,0,0,0.55)]
                 transition-all
                 duration-500
                 hover:-translate-y-1
-                hover:border-[#0095fd]/70
+                hover:border-[#eeba7d]/70
                 hover:shadow-[0_30px_90px_rgba(0,149,253,0.15)]
               "
             >
@@ -527,13 +528,13 @@ function AboutUs() {
                   items-center
                   justify-center
                   rounded-[18px]
-                  bg-[#0095fd]
+                  bg-[#eeba7d]
                   text-white
                   shadow-[0_12px_40px_rgba(255,0,0,0.35)]
                   transition-all
                   duration-500
                   group-hover:scale-110
-                  group-hover:bg-[#0095fd]
+                  group-hover:bg-[#eeba7d]
                   group-hover:shadow-[0_15px_50px_rgba(255,0,0,0.45)]
                   sm:h-[72px]
                   sm:w-[72px]
@@ -661,7 +662,7 @@ function AboutUs() {
                   sm:text-xs
                 "
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-[#0095fd]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#eeba7d]" />
                 YouTube
               </span>
             </div>
@@ -716,7 +717,7 @@ function AboutUs() {
                 text-[#C9C8C1]
                 transition-colors
                 duration-300
-                hover:text-[#0095fd]
+                hover:text-[#eeba7d]
               "
             >
               Explore Our Expertise

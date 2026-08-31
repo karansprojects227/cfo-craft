@@ -206,7 +206,7 @@ function CaseStudies() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -223,7 +223,7 @@ function CaseStudies() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -265,7 +265,7 @@ function CaseStudies() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -279,7 +279,7 @@ function CaseStudies() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -292,7 +292,7 @@ function CaseStudies() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -305,7 +305,7 @@ function CaseStudies() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -332,7 +332,7 @@ function CaseStudies() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -346,7 +346,7 @@ function CaseStudies() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -359,7 +359,7 @@ function CaseStudies() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -378,7 +378,7 @@ function CaseStudies() {
 
           <div className="mb-4 flex items-center justify-center gap-4">
 
-            <span className="h-px w-10 bg-[#0095fd]" />
+            <span className="h-px w-10 bg-[#eeba7d]" />
 
             <span
               className="
@@ -386,13 +386,13 @@ function CaseStudies() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Our Case Studies
             </span>
 
-            <span className="h-px w-10 bg-[#0095fd]" />
+            <span className="h-px w-10 bg-[#eeba7d]" />
 
           </div>
 
@@ -407,7 +407,7 @@ function CaseStudies() {
             "
           >
             Real Challenges.{" "}
-            <span className="text-[#0095fd]">
+            <span className="text-[#eeba7d]">
               Measurable Results.
             </span>
           </h2>
@@ -522,8 +522,8 @@ function CaseStudies() {
                 transition-all
                 duration-300
                 hover:scale-105
-                hover:border-[#0095fd]
-                hover:bg-[#0095fd]
+                hover:border-[#eeba7d]
+                hover:bg-[#eeba7d]
                 sm:left-6
               "
             >
@@ -561,8 +561,8 @@ function CaseStudies() {
                 transition-all
                 duration-300
                 hover:scale-105
-                hover:border-[#0095fd]
-                hover:bg-[#0095fd]
+                hover:border-[#eeba7d]
+                hover:bg-[#eeba7d]
                 sm:right-6
               "
             >
@@ -656,7 +656,7 @@ function CaseStudies() {
 
                   ${
                     isActive
-                      ? "border-[#0095fd] shadow-[0_0_25px_rgba(229,72,63,0.16)]"
+                      ? "border-[#eeba7d] shadow-[0_0_25px_rgba(229,72,63,0.16)]"
                       : "border-white/[0.08] hover:border-white/20"
                   }
                 `}
@@ -716,8 +716,8 @@ function CaseStudies() {
 
                     ${
                       isActive
-                        ? "bg-[#0095fd]/[0.10]"
-                        : "bg-[#0095fd]/[0.02]"
+                        ? "bg-[#eeba7d]/[0.10]"
+                        : "bg-[#eeba7d]/[0.02]"
                     }
                   `}
                 />
@@ -746,7 +746,7 @@ function CaseStudies() {
 
                       ${
                         isActive
-                          ? "text-[#0095fd]"
+                          ? "text-[#eeba7d]"
                           : "text-white/60"
                       }
                     `}
@@ -766,7 +766,7 @@ function CaseStudies() {
 
                       ${
                         isActive
-                          ? "border-[#0095fd]/60 bg-[#0095fd]/15 text-[#0095fd]"
+                          ? "border-[#eeba7d]/60 bg-[#eeba7d]/15 text-[#eeba7d]"
                           : "border-white/15 bg-black/20 text-white/60"
                       }
                     `}
@@ -812,7 +812,7 @@ function CaseStudies() {
                     left-4
                     z-10
                     h-0.5
-                    bg-[#0095fd]
+                    bg-[#eeba7d]
                     transition-all
                     duration-300
 
@@ -867,7 +867,7 @@ function CaseStudies() {
                 border
                 border-white/10
                 bg-[#181A19]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               <Rocket size={20} />
@@ -879,7 +879,7 @@ function CaseStudies() {
                 Every business has a story.
               </p>
 
-              <p className="text-sm font-bold text-[#0095fd] sm:text-base">
+              <p className="text-sm font-bold text-[#eeba7d] sm:text-base">
                 Let&apos;s create your success story next.
               </p>
 
@@ -898,15 +898,16 @@ function CaseStudies() {
               gap-3
               rounded-full
               border
-              border-[#0095fd]
+              border-[#eeba7d]
               px-6
               py-3
               text-sm
               font-bold
-              text-[#F4F1EA]
+              text-white
+              hover:text-black
               transition-all
               duration-300
-              hover:bg-[#0095fd]
+              hover:bg-[#eeba7d]
               hover:shadow-[0_0_30px_rgba(229,72,63,0.2)]
             "
           >

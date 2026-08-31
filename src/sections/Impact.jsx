@@ -59,7 +59,7 @@ function Impact() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -76,7 +76,7 @@ function Impact() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -118,7 +118,7 @@ function Impact() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -132,7 +132,7 @@ function Impact() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -145,7 +145,7 @@ function Impact() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -158,7 +158,7 @@ function Impact() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -185,7 +185,7 @@ function Impact() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -199,7 +199,7 @@ function Impact() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -212,7 +212,7 @@ function Impact() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -242,15 +242,15 @@ function Impact() {
               font-bold
               uppercase
               tracking-[0.28em]
-              text-[#0095fd]
+              text-[#eeba7d]
               sm:text-sm
             "
           >
-            <span className="h-px w-10 bg-[#0095fd]/70" />
+            <span className="h-px w-10 bg-[#eeba7d]/70" />
 
             <span>Our Impact</span>
 
-            <span className="h-px w-10 bg-[#0095fd]/70" />
+            <span className="h-px w-10 bg-[#eeba7d]/70" />
           </div>
 
           {/* Heading */}
@@ -269,7 +269,7 @@ function Impact() {
             Numbers That Reflect
             <br />
 
-            <span className="text-[#0095fd]">
+            <span className="text-[#eeba7d]">
               Our Commitment
             </span>
           </h2>
@@ -303,7 +303,7 @@ function Impact() {
               w-24
               bg-gradient-to-r
               from-transparent
-              via-[#0095fd]
+              via-[#eeba7d]
               to-transparent
               shadow-[0_0_15px_rgba(229,72,63,0.6)]
             "
@@ -337,7 +337,7 @@ function Impact() {
                   overflow-hidden
                   rounded-[28px]
                   border
-                  border-[#0095fd]/30
+                  border-[#eeba7d]/30
                   px-6
                   py-8
                   text-center
@@ -345,8 +345,8 @@ function Impact() {
                   transition-all
                   duration-500
                   hover:-translate-y-2
-                  hover:border-[#0095fd]/70
-                  hover:shadow-[0_25px_80px_rgba(0,149,253,0.14)]
+                  hover:border-[#eeba7d]/70
+                  hover:shadow-[0_25px_80px_rgba(238,186,125,0.14)]
                   sm:px-8
                   sm:py-10
                 "
@@ -362,11 +362,11 @@ function Impact() {
                     h-40
                     w-40
                     rounded-full
-                    bg-[#0095fd]/[0.12]
+                    bg-[#eeba7d]/[0.12]
                     blur-[70px]
                     transition-all
                     duration-500
-                    group-hover:bg-[#0095fd]/[0.20]
+                    group-hover:bg-[#eeba7d]/[0.20]
                   "
                 />
 
@@ -401,13 +401,13 @@ function Impact() {
                     justify-center
                     rounded-full
                     border
-                    border-[#0095fd]/70
-                    text-[#0095fd]
+                    border-[#eeba7d]/70
+                    text-[#eeba7d]
                     shadow-[0_0_25px_rgba(229,72,63,0.12)]
                     transition-all
                     duration-500
-                    group-hover:border-[#0095fd]
-                    group-hover:bg-[#0095fd]/[0.08]
+                    group-hover:border-[#eeba7d]
+                    group-hover:bg-[#eeba7d]/[0.08]
                     group-hover:shadow-[0_0_35px_rgba(0,149,253,0.25)]
                   "
                 >
@@ -445,7 +445,7 @@ function Impact() {
                     w-16
                     bg-gradient-to-r
                     from-transparent
-                    via-[#0095fd]
+                    via-[#eeba7d]
                     to-transparent
                     shadow-[0_0_12px_rgba(229,72,63,0.8)]
                   "
@@ -492,7 +492,7 @@ function Impact() {
                     h-[2px]
                     w-0
                     -translate-x-1/2
-                    bg-[#0095fd]
+                    bg-[#eeba7d]
                     shadow-[0_0_12px_rgba(229,72,63,0.8)]
                     transition-all
                     duration-500

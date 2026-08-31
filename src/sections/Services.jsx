@@ -79,7 +79,7 @@ function Services() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -96,7 +96,7 @@ function Services() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -138,7 +138,7 @@ function Services() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -152,7 +152,7 @@ function Services() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -165,7 +165,7 @@ function Services() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -178,7 +178,7 @@ function Services() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -205,7 +205,7 @@ function Services() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -219,7 +219,7 @@ function Services() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -232,7 +232,7 @@ function Services() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -272,7 +272,7 @@ function Services() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Our Services
@@ -282,7 +282,7 @@ function Services() {
               className="
                 h-px
                 w-10
-                bg-[#0095fd]/70
+                bg-[#eeba7d]/70
               "
             />
           </div>
@@ -303,7 +303,7 @@ function Services() {
             "
           >
             Financial expertise{" "}
-            <span className="text-[#0095fd]">
+            <span className="text-[#eeba7d]">
               built around your growth.
             </span>
           </h2>
@@ -387,7 +387,7 @@ function Services() {
                     top-[-1px]
                     h-[2px]
                     w-0
-                    bg-[#0095fd]
+                    bg-[#eeba7d]
                     transition-all
                     duration-500
                     group-hover:w-16
@@ -414,11 +414,11 @@ function Services() {
                       border
                       border-white/[0.14]
                       bg-white/[0.01]
-                      text-[#0095fd]
+                      text-[#eeba7d]
                       transition-all
                       duration-300
-                      group-hover:border-[#0095fd]/60
-                      group-hover:bg-[#0095fd]/[0.05]
+                      group-hover:border-[#eeba7d]/60
+                      group-hover:bg-[#eeba7d]/[0.05]
                     "
                   >
                     <Icon
@@ -454,12 +454,12 @@ function Services() {
                         className="
                           mt-0.5
                           shrink-0
-                          text-[#0095fd]/50
+                          text-[#eeba7d]/50
                           transition-all
                           duration-300
                           group-hover:-translate-y-0.5
                           group-hover:translate-x-0.5
-                          group-hover:text-[#0095fd]
+                          group-hover:text-[#eeba7d]
                         "
                       />
                     </div>
@@ -500,14 +500,14 @@ function Services() {
             gap-6
             rounded-[14px]
             border
-            border-[#0095fd]/55
+            border-[#eeba7d]/55
             px-5
             py-4
             backdrop-blur-sm
             transition-all
             duration-300
-            hover:border-[#0095fd]/80
-            hover:bg-[#0095fd]/10
+            hover:border-[#eeba7d]/80
+            hover:bg-[#eeba7d]/10
             sm:px-6
             lg:px-8
           "
@@ -525,8 +525,8 @@ function Services() {
                 justify-center
                 rounded-full
                 border
-                border-[#0095fd]/70
-                text-[#0095fd]
+                border-[#eeba7d]/70
+                text-[#eeba7d]
               "
             >
               <Headphones
@@ -572,7 +572,7 @@ function Services() {
               gap-3
               text-[13px]
               font-semibold
-              text-[#0095fd]
+              text-[#eeba7d]
               transition-colors
               duration-300
               sm:text-[15px]

@@ -30,7 +30,7 @@ const Footer = () => {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -47,7 +47,7 @@ const Footer = () => {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#0095fd]/40
+          bg-[#eeba7d]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -89,7 +89,7 @@ const Footer = () => {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             blur-[0.2px]
           "
         />
@@ -103,7 +103,7 @@ const Footer = () => {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -116,7 +116,7 @@ const Footer = () => {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -129,7 +129,7 @@ const Footer = () => {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -156,7 +156,7 @@ const Footer = () => {
             inset-0
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
             border-8
           "
         />
@@ -170,7 +170,7 @@ const Footer = () => {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
 
@@ -183,7 +183,7 @@ const Footer = () => {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#0095fd]
+            border-[#eeba7d]
           "
         />
       </div>
@@ -268,7 +268,7 @@ const Footer = () => {
                 font-bold
                 uppercase
                 tracking-[0.22em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Quick Links
@@ -438,7 +438,7 @@ const Footer = () => {
                 font-bold
                 uppercase
                 tracking-[0.22em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Services
@@ -474,7 +474,7 @@ const Footer = () => {
                 font-bold
                 uppercase
                 tracking-[0.22em]
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Get In Touch
@@ -500,7 +500,7 @@ const Footer = () => {
                   className="
                     mt-0.5
                     shrink-0
-                    text-[#0095fd]
+                    text-[#eeba7d]
                   "
                 />
 
@@ -526,7 +526,7 @@ const Footer = () => {
                   className="
                     mt-0.5
                     shrink-0
-                    text-[#0095fd]
+                    text-[#eeba7d]
                   "
                 />
 
@@ -549,7 +549,7 @@ const Footer = () => {
                   className="
                     mt-0.5
                     shrink-0
-                    text-[#0095fd]
+                    text-[#eeba7d]
                   "
                 />
 
@@ -568,18 +568,19 @@ const Footer = () => {
                 items-center
                 gap-2
                 rounded-lg
-                bg-[#0095fd]
+                bg-[#eeba7d]
                 px-5
                 py-3
                 text-sm
                 font-bold
-                text-white
+                text-black
+                hover:text-white
                 transition-all
                 duration-300
                 hover:-translate-y-0.5
-                hover:bg-[#0095fd]/10
+                hover:bg-[#eeba7d]/10
                 hover:shadow-xl
-                hover:shadow-[#0095fd]/20
+                hover:shadow-[#eeba7d]/20
               "
             >
               Talk To Our Expert
@@ -633,7 +634,7 @@ const Footer = () => {
             <span
               className="
                 font-semibold
-                text-[#0095fd]
+                text-[#eeba7d]
               "
             >
               Karan Kumar
