@@ -459,7 +459,7 @@ function Hero() {
                       duration-300
                       hover:border-[#0095fd]/80
                       hover:bg-[#0095fd]/[0.08]
-                      hover:shadow-[0_0_20px_rgba(229,72,63,0.14)]
+                      hover:shadow-[0_0_20px_rgba(0,149,253,0.20)]
                     "
                   >
                     <Icon size={22} strokeWidth={1.7} />
