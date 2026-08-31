@@ -609,11 +609,11 @@ function Contact() {
                   py-2.5
                   text-xs
                   font-semibold
-                  text-[#eeba7d]
+                  text-white
                   transition-all
                   duration-300
                   hover:bg-[#eeba7d]
-                  hover:text-white
+                  hover:text-black
                 "
               >
                 Schedule a Call
@@ -774,12 +774,13 @@ function Contact() {
                         py-3.5
                         text-sm
                         font-bold
-                        text-white
+                        text-black
+                        hover:text-white
                         transition-all
                         duration-300
                         hover:-translate-y-0.5
                         hover:bg-[#eeba7d]/10
-                        hover:shadow-[0_10px_30px_rgba(0,149,253,0.20)]
+                        hover:shadow-[0_10px_30px_rgba(238,186,125,0.20)]
                       "
                     >
                       Send Message
