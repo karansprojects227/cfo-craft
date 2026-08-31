@@ -572,7 +572,8 @@ function Services() {
               gap-3
               text-[13px]
               font-semibold
-              text-[#eeba7d]
+              text-white
+              hover:text-[#eeba7d]
               transition-colors
               duration-300
               sm:text-[15px]

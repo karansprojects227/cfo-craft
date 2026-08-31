@@ -714,7 +714,7 @@ function AboutUs() {
                 gap-2
                 text-sm
                 font-semibold
-                text-[#C9C8C1]
+                text-white
                 transition-colors
                 duration-300
                 hover:text-[#eeba7d]
