@@ -229,23 +229,24 @@ const Footer = () => {
                 text-2xl
                 font-black
                 tracking-[-0.04em]
+                relative
+                -left-13
               "
             >
               <img
                 src={logo}
                 alt="CFO Craft"
                 className="
-              h-14
-              w-auto
-              object-contain
-            "
+                  h-32
+                  w-auto
+                  object-contain
+                "
               />
             </a>
 
             {/* Description */}
             <p
               className="
-                mt-5
                 max-w-sm
                 text-sm
                 leading-7

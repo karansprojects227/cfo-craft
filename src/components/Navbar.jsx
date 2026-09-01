@@ -55,13 +55,15 @@ function Navbar() {
             transition-opacity
             duration-300
             hover:opacity-90
+            relative
+            -left-8
           "
         >
           <img
             src={logo}
             alt="CFO Craft"
             className="
-              h-14
+              h-32
               w-auto
               object-contain
             "
