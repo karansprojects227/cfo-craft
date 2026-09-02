@@ -408,7 +408,7 @@ function Impact() {
                     duration-500
                     group-hover:border-[#eeba7d]
                     group-hover:bg-[#eeba7d]/[0.08]
-                    group-hover:shadow-[0_0_35px_rgba(0,149,253,0.25)]
+                    group-hover:shadow-[0_25px_70px_rgba(229,72,63,0.12)]
                   "
                 >
                   <Icon

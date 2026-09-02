@@ -391,11 +391,11 @@ function WhyChooseUs() {
                     border-[#eeba7d]/50
                     bg-[radial-gradient(circle_at_35%_30%,#ffe4b8,#eeba7d_55%,#b97835_100%)]
                     text-white
-                    shadow-[0_0_35px_rgba(0,149,253,0.18)]
+                    shadow-[0_0_35px_rgba(238,186,125,0.25)]
                     transition-all
                     duration-500
                     group-hover:scale-105
-                    group-hover:shadow-[0_0_45px_rgba(0,149,253,0.32)]
+                    group-hover:shadow-[0_0_45px_rgba(238,186,125,0.45)]
                   "
                 >
                   <Icon

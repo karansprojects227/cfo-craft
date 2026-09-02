@@ -109,7 +109,7 @@ function Navbar() {
                   left-0
                   h-px
                   w-0
-                  bg-[#0095fd]
+                  bg-[#eeba7d]
                   transition-all
                   duration-300
                   group-hover:w-full
@@ -177,9 +177,9 @@ function Navbar() {
             text-[#F4F1EA]
             transition-all
             duration-300
-            hover:border-[#0095fd]/60
-            hover:bg-[#E5483F]/[0.05]
-            hover:text-[#0095fd]
+            hover:border-[#eeba7d]/60
+            hover:bg-[#eeba7d]/[0.05]
+            hover:text-[#eeba7d]
             lg:hidden
           "
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -251,7 +251,7 @@ function Navbar() {
                 justify-center
                 gap-2
                 rounded-lg
-                bg-[#0095fd]
+                bg-[#eeba7d]
                 px-5
                 py-3.5
                 text-sm
@@ -259,9 +259,9 @@ function Navbar() {
                 text-white
                 transition-all
                 duration-300
-                hover:bg-[#0095fd]
+                hover:bg-[#eeba7d]/10
                 hover:shadow-lg
-                hover:shadow-[#E5483F]/20
+                hover:shadow-[#eeba7d]/20
               "
             >
               Contact Us

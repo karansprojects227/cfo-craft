@@ -92,8 +92,8 @@ function FinancialTruth() {
           rotate-[-8deg]
           opacity-30
           "
-          aria-hidden="true"
-          >
+        aria-hidden="true"
+      >
         <div
           className="
             absolute
@@ -317,9 +317,9 @@ function FinancialTruth() {
     CONTACT CTA
 ================================================== */}
 
-<div className="mt-9">
-  <div
-    className="
+          <div className="mt-9">
+            <div
+              className="
       flex
       flex-col
       gap-4
@@ -332,39 +332,40 @@ function FinancialTruth() {
       sm:items-center
       sm:justify-between
     "
-  >
-    {/* CTA TEXT */}
+            >
+              {/* CTA TEXT */}
 
-    <div>
-      <p
-        className="
+              <div>
+                <p
+                  className="
           text-sm
           font-semibold
           text-[#F4F1EA]
           sm:text-base
         "
-      >
-        Let’s talk about your financial goals.
-      </p>
+                >
+                  Let’s talk about your financial goals.
+                </p>
 
-      <p
-        className="
+                <p
+                  className="
           mt-1
           text-xs
           leading-5
           text-[#858780]
           sm:text-sm
         "
-      >
-        Get clear financial insights and practical guidance for your business.
-      </p>
-    </div>
+                >
+                  Get clear financial insights and practical guidance for your
+                  business.
+                </p>
+              </div>
 
-    {/* CONTACT BUTTON */}
-            
-      <a
-        href="/contact"
-        className="
+              {/* CONTACT BUTTON */}
+
+              <a
+                href="/contact"
+                className="
           group
           inline-flex
           shrink-0
@@ -385,30 +386,29 @@ function FinancialTruth() {
           hover:shadow-xl
           hover:shadow-[#eeba7d]/20
         "
-      >
-        Contact Us
-            
-        <span
-          className="
+              >
+                Contact Us
+                <span
+                  className="
             ml-2
             text-base
             transition-transform
             duration-300
             group-hover:translate-x-1
           "
-        >
-          →
-        </span>
-      </a>
-    </div>
-  </div>
+                >
+                  →
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
 
         {/* =================================================
             RIGHT IMAGE
         ================================================== */}
 
-        <div className="relative flex items-center justify-center lg:justify-end">
+        <div className="relative flex items-center justify-center lg:justify-end sm:justify-center">
           {/* Image glow */}
 
           <div
@@ -434,7 +434,6 @@ function FinancialTruth() {
               border
               border-[#eeba7d]/30
               shadow-[0_25px_80px_rgba(0,0,0,0.55)]
-              mr-24
             "
           >
             <img
