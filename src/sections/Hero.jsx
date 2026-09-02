@@ -359,7 +359,7 @@ function Hero() {
                 gap-2
                 rounded-lg
                 border
-                border-white/15
+                border-[#eeba7d]/40
                 px-6
                 py-3.5
                 text-sm
@@ -368,7 +368,7 @@ function Hero() {
                 transition-all
                 duration-300
                 hover:border-[#eeba7d]/60
-                hover:bg-[#eeba7d]/[0.05]
+                hover:bg-[#eeba7d]/10
                 sm:text-base
               "
             >
