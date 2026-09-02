@@ -19,8 +19,7 @@ import {
    IMAGE PATH HELPERS
 ============================================================ */
 
-const getCaseImage = (id) =>
-  `${import.meta.env.BASE_URL}case${id}.png`;
+const getCaseImage = (id) => `${import.meta.env.BASE_URL}case${id}.png`;
 
 const getCaseThumbnail = (id) =>
   `${import.meta.env.BASE_URL}case${id}-thumb.png`;
@@ -109,10 +108,7 @@ function CaseStudies() {
 
   const prevSlide = () => {
     setActiveIndex((current) => {
-      return (
-        (current - 1 + caseStudies.length) %
-        caseStudies.length
-      );
+      return (current - 1 + caseStudies.length) % caseStudies.length;
     });
   };
 
@@ -190,7 +186,6 @@ function CaseStudies() {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-
       {/* =====================================================
           BACKGROUND
       ====================================================== */}
@@ -257,8 +252,8 @@ function CaseStudies() {
           rotate-[-8deg]
           opacity-30
           "
-          aria-hidden="true"
-          >
+        aria-hidden="true"
+      >
         <div
           className="
             absolute
@@ -369,15 +364,12 @@ function CaseStudies() {
       ======================================================= */}
 
       <div className="mx-auto max-w-7xl">
-
         {/* ====================================================
             HEADER
         ===================================================== */}
 
         <div className="mx-auto mb-5 max-w-4xl text-center lg:mb-6">
-
           <div className="mb-4 flex items-center justify-center gap-4">
-
             <span className="h-px w-10 bg-[#eeba7d]" />
 
             <span
@@ -393,7 +385,6 @@ function CaseStudies() {
             </span>
 
             <span className="h-px w-10 bg-[#eeba7d]" />
-
           </div>
 
           <h2
@@ -407,9 +398,7 @@ function CaseStudies() {
             "
           >
             Real Challenges.{" "}
-            <span className="text-[#eeba7d]">
-              Measurable Results.
-            </span>
+            <span className="text-[#eeba7d]">Measurable Results.</span>
           </h2>
 
           <p
@@ -423,78 +412,153 @@ function CaseStudies() {
               sm:text-lg
             "
           >
-            Explore how we help businesses transform financial
-            complexity into clarity, control, and sustainable growth.
+            Explore how we help businesses transform financial complexity into
+            clarity, control, and sustainable growth.
           </p>
-
         </div>
 
         {/* ====================================================
             MAIN CASE STUDY IMAGE
         ===================================================== */}
 
-        <div
-          className="
-            relative
-            h-[400px]
-            w-full
-            overflow-hidden
-            rounded-[24px]
-            bg-[#050606]
-            shadow-[0_30px_100px_rgba(0,0,0,0.55)]
-          "
-        >
-
+        <div className="relative w-full">
           {/* ==================================================
-              IMAGE WRAPPER
-
-              IMPORTANT:
-              This wrapper itself is exactly 400px high.
-          =================================================== */}
+      MAIN IMAGE BOX
+  =================================================== */}
 
           <div
             className="
-              relative
-              flex
-              h-full
-              w-full
-              items-center
-              justify-center
-              overflow-hidden
-              bg-[#050606]
-            "
+      relative
+      h-[400px]
+      w-full
+      overflow-hidden
+      rounded-[24px]
+      bg-[#050606]
+      shadow-[0_30px_100px_rgba(0,0,0,0.55)]
+    "
           >
+            {/* IMAGE WRAPPER */}
 
-            {/* =================================================
-                MAIN IMAGE
-
-                FIX:
-                h-full + w-full + object-contain
-
-                This prevents the image from being cropped.
-            ================================================== */}
-
-            <img
-              key={`main-case-${activeCase.id}`}
-              src={activeImage}
-              alt={activeCase.shortTitle}
+            <div
               className="
-                block
-                h-full
-                w-full
-                max-h-full
-                max-w-full
-                object-contain
-                object-center
-                select-none
-              "
-              draggable="false"
-            />
+        relative
+        flex
+        h-full
+        w-full
+        items-center
+        justify-center
+        overflow-hidden
+        bg-[#050606]
+      "
+            >
+              <img
+                key={`main-case-${activeCase.id}`}
+                src={activeImage}
+                alt={activeCase.shortTitle}
+                className="
+          block
+          h-full
+          w-full
+          max-h-full
+          max-w-full
+          object-contain
+          object-center
+          select-none
+        "
+                draggable="false"
+              />
 
-            {/* =================================================
-                LEFT ARROW
-            ================================================== */}
+              {/* DESKTOP LEFT ARROW */}
 
+              <button
+                type="button"
+                aria-label="Previous case study"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  prevSlide();
+                }}
+                className="
+                  absolute
+                  left-6
+                  top-1/2
+                  z-30
+                  hidden
+                  h-11
+                  w-11
+                  -translate-y-1/2
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-black/50
+                  text-white
+                  backdrop-blur-md
+                  transition-all
+                  duration-300
+                  hover:scale-105
+                  hover:border-[#eeba7d]
+                  hover:bg-[#eeba7d]
+                  lg:flex
+        "
+              >
+                <ArrowLeft size={19} />
+              </button>
+
+              {/* DESKTOP RIGHT ARROW */}
+
+              <button
+                type="button"
+                aria-label="Next case study"
+                onClick={(event) => {
+                  event.stopPropagation();
+                  nextSlide();
+                }}
+                className="
+                  absolute
+                  right-6
+                  top-1/2
+                  z-30
+                  hidden
+                  h-11
+                  w-11
+                  -translate-y-1/2
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-black/50
+                  text-white
+                  backdrop-blur-md
+                  transition-all
+                  duration-300
+                  hover:scale-105
+                  hover:border-[#eeba7d]
+                  hover:bg-[#eeba7d]
+                  lg:flex
+        "
+              >
+                <ArrowRight size={19} />
+              </button>
+            </div>
+          </div>
+
+          {/* ==================================================
+      MOBILE NAVIGATION
+      IMAGE KE NICHE
+  =================================================== */}
+
+          <div
+            className="
+      mt-4
+      flex
+      items-center
+      justify-between
+      px-2
+      lg:hidden
+    "
+          >
             <button
               type="button"
               aria-label="Previous case study"
@@ -503,36 +567,23 @@ function CaseStudies() {
                 prevSlide();
               }}
               className="
-                absolute
-                left-4
-                top-1/2
-                z-30
-                flex
-                h-11
-                w-11
-                -translate-y-1/2
-                items-center
-                justify-center
-                rounded-full
-                border
-                border-white/10
-                bg-black/50
-                text-white
-                backdrop-blur-md
-                transition-all
-                duration-300
-                hover:scale-105
-                hover:border-[#eeba7d]
-                hover:bg-[#eeba7d]
-                sm:left-6
-              "
+        flex
+        h-11
+        w-11
+        items-center
+        justify-center
+        rounded-full
+        border
+        border-[#eeba7d]/40
+        bg-[#eeba7d]/10
+        text-[#eeba7d]
+        transition-all
+        duration-300
+        active:scale-95
+      "
             >
               <ArrowLeft size={19} />
             </button>
-
-            {/* =================================================
-                RIGHT ARROW
-            ================================================== */}
 
             <button
               type="button"
@@ -542,74 +593,105 @@ function CaseStudies() {
                 nextSlide();
               }}
               className="
-                absolute
-                right-4
-                top-1/2
-                z-30
-                flex
-                h-11
-                w-11
-                -translate-y-1/2
-                items-center
-                justify-center
-                rounded-full
-                border
-                border-white/10
-                bg-black/50
-                text-white
-                backdrop-blur-md
-                transition-all
-                duration-300
-                hover:scale-105
-                hover:border-[#eeba7d]
-                hover:bg-[#eeba7d]
-                sm:right-6
-              "
+        flex
+        h-11
+        w-11
+        items-center
+        justify-center
+        rounded-full
+        border
+        border-[#eeba7d]/40
+        bg-[#eeba7d]/10
+        text-[#eeba7d]
+        transition-all
+        duration-300
+        active:scale-95
+      "
             >
               <ArrowRight size={19} />
             </button>
+          </div>
 
-            {/* =================================================
-                DOTS
-            ================================================== */}
+          {/* ==================================================
+      MOBILE DOTS
+      ARROWS KE NICHE
+  =================================================== */}
 
-            <div
-              className="
-                absolute
-                bottom-4
-                left-1/2
-                z-30
-                flex
-                -translate-x-1/2
-                items-center
-                gap-2
-              "
-            >
-              {caseStudies.map((item, index) => (
-                <button
-                  key={`dot-${item.id}`}
-                  type="button"
-                  aria-label={`Go to case study ${item.id}`}
-                  onClick={(event) => {
-                    event.stopPropagation();
-                    selectCase(index);
-                  }}
-                  className={`
-                    h-2
-                    rounded-full
-                    transition-all
-                    duration-300
+          <div
+            className="
+      mt-4
+      flex
+      items-center
+      justify-center
+      gap-2
+      lg:hidden
+    "
+          >
+            {caseStudies.map((item, index) => (
+              <button
+                key={`mobile-dot-${item.id}`}
+                type="button"
+                aria-label={`Go to case study ${item.id}`}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  selectCase(index);
+                }}
+                className={`
+          h-2
+          rounded-full
+          transition-all
+          duration-300
 
-                    ${
-                      index === activeIndex
-                        ? "w-7 bg-white shadow-[0_0_12px_rgba(255,255,255,0.7)]"
-                        : "w-2 bg-white/45 hover:bg-white/80"
-                    }
-                  `}
-                />
-              ))}
-            </div>
+          ${
+            index === activeIndex
+              ? "w-7 bg-[#eeba7d] shadow-[0_0_12px_rgba(238,186,125,0.6)]"
+              : "w-2 bg-white/45"
+          }
+        `}
+              />
+            ))}
+          </div>
 
+          {/* ==================================================
+      DESKTOP DOTS
+  =================================================== */}
+
+          <div
+            className="
+      absolute
+      bottom-4
+      left-1/2
+      z-30
+      hidden
+      -translate-x-1/2
+      items-center
+      gap-2
+      lg:flex
+    "
+          >
+            {caseStudies.map((item, index) => (
+              <button
+                key={`dot-${item.id}`}
+                type="button"
+                aria-label={`Go to case study ${item.id}`}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  selectCase(index);
+                }}
+                className={`
+          h-2
+          rounded-full
+          transition-all
+          duration-300
+
+          ${
+            index === activeIndex
+              ? "w-7 bg-white shadow-[0_0_12px_rgba(255,255,255,0.7)]"
+              : "w-2 bg-white/45 hover:bg-white/80"
+          }
+        `}
+              />
+            ))}
           </div>
         </div>
 
@@ -625,15 +707,13 @@ function CaseStudies() {
             sm:grid-cols-3
             lg:grid-cols-9
             hidden
-            sm:grid
+            lg:grid
           "
         >
-
           {caseStudies.map((item, index) => {
             const Icon = item.icon;
 
-            const isActive =
-              index === activeIndex;
+            const isActive = index === activeIndex;
 
             return (
               <button
@@ -662,7 +742,6 @@ function CaseStudies() {
                   }
                 `}
               >
-
                 {/* =================================================
                     THUMBNAIL IMAGE
                 ================================================== */}
@@ -715,11 +794,7 @@ function CaseStudies() {
                     transition-all
                     duration-300
 
-                    ${
-                      isActive
-                        ? "bg-[#eeba7d]/[0.10]"
-                        : "bg-[#eeba7d]/[0.02]"
-                    }
+                    ${isActive ? "bg-[#eeba7d]/[0.10]" : "bg-[#eeba7d]/[0.02]"}
                   `}
                 />
 
@@ -739,17 +814,12 @@ function CaseStudies() {
                     justify-between
                   "
                 >
-
                   <span
                     className={`
                       text-sm
                       font-black
 
-                      ${
-                        isActive
-                          ? "text-[#eeba7d]"
-                          : "text-white/60"
-                      }
+                      ${isActive ? "text-[#eeba7d]" : "text-white/60"}
                     `}
                   >
                     {String(item.id).padStart(2, "0")}
@@ -774,7 +844,6 @@ function CaseStudies() {
                   >
                     <Icon size={15} />
                   </span>
-
                 </div>
 
                 {/* =================================================
@@ -792,11 +861,7 @@ function CaseStudies() {
                     font-semibold
                     leading-5
 
-                    ${
-                      isActive
-                        ? "text-white"
-                        : "text-white/80"
-                    }
+                    ${isActive ? "text-white" : "text-white/80"}
                   `}
                 >
                   {item.shortTitle}
@@ -817,18 +882,12 @@ function CaseStudies() {
                     transition-all
                     duration-300
 
-                    ${
-                      isActive
-                        ? "w-8"
-                        : "w-0 group-hover:w-5"
-                    }
+                    ${isActive ? "w-8" : "w-0 group-hover:w-5"}
                   `}
                 />
-
               </button>
             );
           })}
-
         </div>
 
         {/* ====================================================
@@ -853,9 +912,7 @@ function CaseStudies() {
             sm:px-8
           "
         >
-
           <div className="flex items-center gap-4">
-
             <div
               className="
                 flex
@@ -875,7 +932,6 @@ function CaseStudies() {
             </div>
 
             <div>
-
               <p className="text-sm text-[#D0D2CD]">
                 Every business has a story.
               </p>
@@ -883,9 +939,7 @@ function CaseStudies() {
               <p className="text-sm font-bold text-[#eeba7d] sm:text-base">
                 Let&apos;s create your success story next.
               </p>
-
             </div>
-
           </div>
 
           <a
@@ -913,7 +967,6 @@ function CaseStudies() {
             "
           >
             Talk To Our Expert
-
             <ArrowRight
               size={17}
               className="
@@ -923,9 +976,7 @@ function CaseStudies() {
               "
             />
           </a>
-
         </div>
-
       </div>
     </section>
   );

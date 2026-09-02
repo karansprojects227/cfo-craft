@@ -408,7 +408,7 @@ function FinancialTruth() {
             RIGHT IMAGE
         ================================================== */}
 
-        <div className="relative flex items-center justify-center lg:justify-end sm:justify-center">
+        <div className="relative flex w-full h-full items-start justify-center lg:justify-end sm:justify-center">
           {/* Image glow */}
 
           <div
@@ -427,13 +427,15 @@ function FinancialTruth() {
           <div
             className="
               relative
-              w-2/3
-              max-w-[560px]
+              h-[100vw]
+              md:h-[60vw]
+              lg:h-[40vw]
               overflow-hidden
-              rounded-[28px]
+              rounded-[14px]
               border
               border-[#eeba7d]/30
               shadow-[0_25px_80px_rgba(0,0,0,0.55)]
+              lg:mr-24
             "
           >
             <img
@@ -441,9 +443,9 @@ function FinancialTruth() {
               alt="Complete Financial Visibility Dashboard"
               className="
                 block
-                h-auto
-                w-full
+                h-full
                 object-cover
+                object-center
               "
             />
 
