@@ -109,7 +109,7 @@ function Navbar() {
                   left-0
                   h-px
                   w-0
-                  bg-[#eeba7d]
+                  bg-[#A6CBF7]
                   transition-all
                   duration-300
                   group-hover:w-full
@@ -130,7 +130,7 @@ function Navbar() {
               items-center
               gap-2
               rounded-lg
-              bg-[#eeba7d]
+              bg-[#A6CBF7]
               px-5
               py-2.5
               text-sm
@@ -140,9 +140,9 @@ function Navbar() {
               transition-all
               duration-300
               hover:-translate-y-0.5
-              hover:bg-[#eeba7d]/10
+              hover:bg-[#A6CBF7]/10
               hover:shadow-lg
-              hover:shadow-[#eeba7d]/25
+              hover:shadow-[#A6CBF7]/25
             "
           >
             Contact Us
@@ -177,9 +177,9 @@ function Navbar() {
             text-[#F4F1EA]
             transition-all
             duration-300
-            hover:border-[#eeba7d]/60
-            hover:bg-[#eeba7d]/[0.05]
-            hover:text-[#eeba7d]
+            hover:border-[#A6CBF7]/60
+            hover:bg-[#A6CBF7]/[0.05]
+            hover:text-[#A6CBF7]
             lg:hidden
           "
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -251,7 +251,7 @@ function Navbar() {
                 justify-center
                 gap-2
                 rounded-lg
-                bg-[#eeba7d]
+                bg-[#A6CBF7]
                 px-5
                 py-3.5
                 text-sm
@@ -259,9 +259,9 @@ function Navbar() {
                 text-white
                 transition-all
                 duration-300
-                hover:bg-[#eeba7d]/10
+                hover:bg-[#A6CBF7]/10
                 hover:shadow-lg
-                hover:shadow-[#eeba7d]/20
+                hover:shadow-[#A6CBF7]/20
               "
             >
               Contact Us

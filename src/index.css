@@ -118,7 +118,7 @@ a {
 ========================================= */
 
 ::selection {
-  background: #eeba7d;
+  background: #A6CBF7;
 
   color: #ffffff;
 }
@@ -142,7 +142,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #eeba7d;
+  background: #A6CBF7;
 }
 
 /* Fix browser autofill white background in dark inputs */

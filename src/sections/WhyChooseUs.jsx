@@ -66,7 +66,7 @@ function WhyChooseUs() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -83,7 +83,7 @@ function WhyChooseUs() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -125,7 +125,7 @@ function WhyChooseUs() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             blur-[0.2px]
           "
         />
@@ -139,7 +139,7 @@ function WhyChooseUs() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -152,7 +152,7 @@ function WhyChooseUs() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -165,7 +165,7 @@ function WhyChooseUs() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -192,7 +192,7 @@ function WhyChooseUs() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             border-8
           "
         />
@@ -206,7 +206,7 @@ function WhyChooseUs() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -219,7 +219,7 @@ function WhyChooseUs() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -238,7 +238,7 @@ function WhyChooseUs() {
 
           {/* Eyebrow */}
           <div className="mb-5 flex items-center justify-center gap-4">
-            <span className="h-px w-12 bg-[#eeba7d]/70" />
+            <span className="h-px w-12 bg-[#A6CBF7]/70" />
 
             <p
               className="
@@ -246,14 +246,14 @@ function WhyChooseUs() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#eeba7d]
+                text-[#A6CBF7]
                 sm:text-sm
               "
             >
               Why Businesses Choose
             </p>
 
-            <span className="h-px w-12 bg-[#eeba7d]/70" />
+            <span className="h-px w-12 bg-[#A6CBF7]/70" />
           </div>
 
           {/* Heading */}
@@ -269,7 +269,7 @@ function WhyChooseUs() {
             "
           >
             CFO{" "}
-            <span className="text-[#eeba7d]">
+            <span className="text-[#A6CBF7]">
               CRAFT
             </span>
           </h2>
@@ -293,11 +293,11 @@ function WhyChooseUs() {
 
           {/* Small divider */}
           <div className="mx-auto mt-8 flex items-center justify-center">
-            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#eeba7d] to-transparent" />
+            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#A6CBF7] to-transparent" />
 
-            <span className="mx-2 h-1.5 w-1.5 rounded-full bg-[#eeba7d] shadow-[0_0_12px_rgba(229,72,63,0.8)]" />
+            <span className="mx-2 h-1.5 w-1.5 rounded-full bg-[#A6CBF7] shadow-[0_0_12px_rgba(229,72,63,0.8)]" />
 
-            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#eeba7d] to-transparent" />
+            <span className="h-px w-20 bg-gradient-to-r from-transparent via-[#A6CBF7] to-transparent" />
           </div>
         </div>
 
@@ -328,7 +328,7 @@ function WhyChooseUs() {
                   overflow-hidden
                   rounded-[28px]
                   border
-                  border-[#eeba7d]/30
+                  border-[#A6CBF7]/30
                   px-6
                   py-7
                   text-center
@@ -336,7 +336,7 @@ function WhyChooseUs() {
                   transition-all
                   duration-500
                   hover:-translate-y-2
-                  hover:border-[#eeba7d]/70
+                  hover:border-[#A6CBF7]/70
                   hover:shadow-[0_25px_70px_rgba(229,72,63,0.12)]
                 "
               >
@@ -351,11 +351,11 @@ function WhyChooseUs() {
                     w-40
                     -translate-x-1/2
                     rounded-full
-                    bg-[#eeba7d]/[0.07]
+                    bg-[#A6CBF7]/[0.07]
                     blur-[60px]
                     transition-all
                     duration-500
-                    group-hover:bg-[#eeba7d]/[0.14]
+                    group-hover:bg-[#A6CBF7]/[0.14]
                   "
                 />
 
@@ -370,7 +370,7 @@ function WhyChooseUs() {
                     -translate-x-1/2
                     bg-gradient-to-r
                     from-transparent
-                    via-[#eeba7d]
+                    via-[#A6CBF7]
                     to-transparent
                     opacity-70
                   "
@@ -388,14 +388,13 @@ function WhyChooseUs() {
                     justify-center
                     rounded-full
                     border
-                    border-[#eeba7d]/50
-                    bg-[radial-gradient(circle_at_35%_30%,#ffe4b8,#eeba7d_55%,#b97835_100%)]
-                    text-white
-                    shadow-[0_0_35px_rgba(238,186,125,0.25)]
+                    border-[#A6CBF7]/50
+                    bg-[radial-gradient(circle_at_35%_30%,#EAF4FF,#A6CBF7_55%,#6F9FE0_100%)]
+                    text-[#0C1B31]
                     transition-all
                     duration-500
                     group-hover:scale-105
-                    group-hover:shadow-[0_0_45px_rgba(238,186,125,0.45)]
+                    group-hover:shadow-[0_0_45px_#A6CBF7]
                   "
                 >
                   <Icon
@@ -421,7 +420,7 @@ function WhyChooseUs() {
                 </h3>
 
                 {/* Red divider */}
-                <div className="mx-auto mt-5 h-px w-12 bg-[#eeba7d] transition-all duration-500 group-hover:w-20" />
+                <div className="mx-auto mt-5 h-px w-12 bg-[#A6CBF7] transition-all duration-500 group-hover:w-20" />
 
                 {/* Description */}
                 <p
@@ -441,11 +440,11 @@ function WhyChooseUs() {
 
                 {/* Bottom dots */}
                 <div className="relative mt-7 flex justify-center gap-2 opacity-70">
-                  <span className="h-1 w-1 rounded-full bg-[#eeba7d]" />
-                  <span className="h-1 w-1 rounded-full bg-[#eeba7d]" />
-                  <span className="h-1 w-1 rounded-full bg-[#eeba7d]" />
-                  <span className="h-1 w-1 rounded-full bg-[#eeba7d]" />
-                  <span className="h-1 w-1 rounded-full bg-[#eeba7d]" />
+                  <span className="h-1 w-1 rounded-full bg-[#A6CBF7]" />
+                  <span className="h-1 w-1 rounded-full bg-[#A6CBF7]" />
+                  <span className="h-1 w-1 rounded-full bg-[#A6CBF7]" />
+                  <span className="h-1 w-1 rounded-full bg-[#A6CBF7]" />
+                  <span className="h-1 w-1 rounded-full bg-[#A6CBF7]" />
                 </div>
               </article>
             );

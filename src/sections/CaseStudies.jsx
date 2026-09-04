@@ -201,7 +201,7 @@ function CaseStudies() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -218,7 +218,7 @@ function CaseStudies() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -260,7 +260,7 @@ function CaseStudies() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             blur-[0.2px]
           "
         />
@@ -274,7 +274,7 @@ function CaseStudies() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -287,7 +287,7 @@ function CaseStudies() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -300,7 +300,7 @@ function CaseStudies() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -327,7 +327,7 @@ function CaseStudies() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             border-8
           "
         />
@@ -341,7 +341,7 @@ function CaseStudies() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -354,7 +354,7 @@ function CaseStudies() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -370,7 +370,7 @@ function CaseStudies() {
 
         <div className="mx-auto mb-5 max-w-4xl text-center lg:mb-6">
           <div className="mb-4 flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#eeba7d]" />
+            <span className="h-px w-10 bg-[#A6CBF7]" />
 
             <span
               className="
@@ -378,13 +378,13 @@ function CaseStudies() {
                 font-bold
                 uppercase
                 tracking-[0.28em]
-                text-[#eeba7d]
+                text-[#A6CBF7]
               "
             >
               Our Case Studies
             </span>
 
-            <span className="h-px w-10 bg-[#eeba7d]" />
+            <span className="h-px w-10 bg-[#A6CBF7]" />
           </div>
 
           <h2
@@ -398,7 +398,7 @@ function CaseStudies() {
             "
           >
             Real Challenges.{" "}
-            <span className="text-[#eeba7d]">Measurable Results.</span>
+            <span className="text-[#A6CBF7]">Measurable Results.</span>
           </h2>
 
           <p
@@ -497,8 +497,8 @@ function CaseStudies() {
                   transition-all
                   duration-300
                   hover:scale-105
-                  hover:border-[#eeba7d]
-                  hover:bg-[#eeba7d]
+                  hover:border-[#A6CBF7]
+                  hover:bg-[#A6CBF7]
                   lg:flex
         "
               >
@@ -534,8 +534,8 @@ function CaseStudies() {
                   transition-all
                   duration-300
                   hover:scale-105
-                  hover:border-[#eeba7d]
-                  hover:bg-[#eeba7d]
+                  hover:border-[#A6CBF7]
+                  hover:bg-[#A6CBF7]
                   lg:flex
         "
               >
@@ -574,9 +574,9 @@ function CaseStudies() {
         justify-center
         rounded-full
         border
-        border-[#eeba7d]/40
-        bg-[#eeba7d]/10
-        text-[#eeba7d]
+        border-[#A6CBF7]/40
+        bg-[#A6CBF7]/10
+        text-[#A6CBF7]
         transition-all
         duration-300
         active:scale-95
@@ -600,9 +600,9 @@ function CaseStudies() {
         justify-center
         rounded-full
         border
-        border-[#eeba7d]/40
-        bg-[#eeba7d]/10
-        text-[#eeba7d]
+        border-[#A6CBF7]/40
+        bg-[#A6CBF7]/10
+        text-[#A6CBF7]
         transition-all
         duration-300
         active:scale-95
@@ -644,7 +644,7 @@ function CaseStudies() {
 
           ${
             index === activeIndex
-              ? "w-7 bg-[#eeba7d] shadow-[0_0_12px_rgba(238,186,125,0.6)]"
+              ? "w-7 bg-[#A6CBF7] shadow-[0_0_12px_rgba(238,186,125,0.6)]"
               : "w-2 bg-white/45"
           }
         `}
@@ -737,7 +737,7 @@ function CaseStudies() {
 
                   ${
                     isActive
-                      ? "border-[#eeba7d] shadow-[0_0_25px_rgba(229,72,63,0.16)]"
+                      ? "border-[#A6CBF7] shadow-[0_0_25px_rgba(229,72,63,0.16)]"
                       : "border-white/[0.08] hover:border-white/20"
                   }
                 `}
@@ -794,7 +794,7 @@ function CaseStudies() {
                     transition-all
                     duration-300
 
-                    ${isActive ? "bg-[#eeba7d]/[0.10]" : "bg-[#eeba7d]/[0.02]"}
+                    ${isActive ? "bg-[#A6CBF7]/[0.10]" : "bg-[#A6CBF7]/[0.02]"}
                   `}
                 />
 
@@ -819,7 +819,7 @@ function CaseStudies() {
                       text-sm
                       font-black
 
-                      ${isActive ? "text-[#eeba7d]" : "text-white/60"}
+                      ${isActive ? "text-[#A6CBF7]" : "text-white/60"}
                     `}
                   >
                     {String(item.id).padStart(2, "0")}
@@ -837,7 +837,7 @@ function CaseStudies() {
 
                       ${
                         isActive
-                          ? "border-[#eeba7d]/60 bg-[#eeba7d]/15 text-[#eeba7d]"
+                          ? "border-[#A6CBF7]/60 bg-[#A6CBF7]/15 text-[#A6CBF7]"
                           : "border-white/15 bg-black/20 text-white/60"
                       }
                     `}
@@ -878,7 +878,7 @@ function CaseStudies() {
                     left-4
                     z-10
                     h-0.5
-                    bg-[#eeba7d]
+                    bg-[#A6CBF7]
                     transition-all
                     duration-300
 
@@ -925,7 +925,7 @@ function CaseStudies() {
                 border
                 border-white/10
                 bg-[#181A19]
-                text-[#eeba7d]
+                text-[#A6CBF7]
               "
             >
               <Rocket size={20} />
@@ -936,7 +936,7 @@ function CaseStudies() {
                 Every business has a story.
               </p>
 
-              <p className="text-sm font-bold text-[#eeba7d] sm:text-base">
+              <p className="text-sm font-bold text-[#A6CBF7] sm:text-base">
                 Let&apos;s create your success story next.
               </p>
             </div>
@@ -953,7 +953,7 @@ function CaseStudies() {
               gap-3
               rounded-full
               border
-              border-[#eeba7d]
+              border-[#A6CBF7]
               px-6
               py-3
               text-sm
@@ -962,7 +962,7 @@ function CaseStudies() {
               hover:text-black
               transition-all
               duration-300
-              hover:bg-[#eeba7d]
+              hover:bg-[#A6CBF7]
               hover:shadow-[0_0_30px_rgba(229,72,63,0.2)]
             "
           >

@@ -37,7 +37,7 @@ function AboutUs() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -54,7 +54,7 @@ function AboutUs() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -96,7 +96,7 @@ function AboutUs() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             blur-[0.2px]
           "
         />
@@ -110,7 +110,7 @@ function AboutUs() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -123,7 +123,7 @@ function AboutUs() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -136,7 +136,7 @@ function AboutUs() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -163,7 +163,7 @@ function AboutUs() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             border-8
           "
         />
@@ -177,7 +177,7 @@ function AboutUs() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -190,7 +190,7 @@ function AboutUs() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -215,7 +215,7 @@ function AboutUs() {
           {/* Eyebrow */}
 
           <div className="mb-4 flex items-center justify-center gap-4">
-            <span className="h-px w-10 bg-[#eeba7d]" />
+            <span className="h-px w-10 bg-[#A6CBF7]" />
 
             <p
               className="
@@ -223,14 +223,14 @@ function AboutUs() {
                 font-bold
                 uppercase
                 tracking-[0.25em]
-                text-[#eeba7d]
+                text-[#A6CBF7]
                 sm:text-sm
               "
             >
               About Us
             </p>
 
-            <span className="h-px w-10 bg-[#eeba7d]" />
+            <span className="h-px w-10 bg-[#A6CBF7]" />
           </div>
 
           {/* Heading */}
@@ -249,7 +249,7 @@ function AboutUs() {
             "
           >
             Financial clarity.
-            <span className="text-[#eeba7d]">
+            <span className="text-[#A6CBF7]">
               {" "}Strategic growth.
             </span>
           </h2>
@@ -282,7 +282,7 @@ function AboutUs() {
                 font-bold
                 uppercase
                 tracking-[0.18em]
-                text-[#eeba7d]
+                text-[#A6CBF7]
               "
             >
               Your Financial Growth Partner
@@ -339,11 +339,11 @@ function AboutUs() {
                       items-center
                       justify-center
                       rounded-full
-                      bg-[#eeba7d]/10
-                      text-[#eeba7d]
+                      bg-[#A6CBF7]/10
+                      text-[#A6CBF7]
                     "
                   >
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#eeba7d]" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#A6CBF7]" />
                   </span>
 
                   <p
@@ -374,7 +374,7 @@ function AboutUs() {
                   items-center
                   gap-3
                   rounded-xl
-                  bg-[#eeba7d]
+                  bg-[#A6CBF7]
                   px-6
                   py-3.5
                   text-sm
@@ -384,9 +384,9 @@ function AboutUs() {
                   transition-all
                   duration-300
                   hover:-translate-y-0.5
-                  hover:bg-[#eeba7d]/10
+                  hover:bg-[#A6CBF7]/10
                   hover:shadow-xl
-                  hover:shadow-[#eeba7d]/20
+                  hover:shadow-[#A6CBF7]/20
                   sm:px-7
                   sm:py-4
                   sm:text-base
@@ -403,7 +403,7 @@ function AboutUs() {
                     justify-center
                     rounded-full
                     bg-white
-                    text-[#eeba7d]
+                    text-[#A6CBF7]
                   "
                 >
                   <ArrowRight
@@ -433,7 +433,7 @@ function AboutUs() {
                 -inset-8
                 -z-10
                 rounded-[40px]
-                bg-[#eeba7d]/[0.055]
+                bg-[#A6CBF7]/[0.055]
                 blur-[70px]
               "
               aria-hidden="true"
@@ -455,13 +455,13 @@ function AboutUs() {
                 overflow-hidden
                 rounded-[28px]
                 border
-                border-[#eeba7d]/30
+                border-[#A6CBF7]/30
                 bg-[#0D0E0D]
                 shadow-[0_25px_80px_rgba(0,0,0,0.55)]
                 transition-all
                 duration-500
                 hover:-translate-y-1
-                hover:border-[#eeba7d]/70
+                hover:border-[#A6CBF7]/70
                 hover:shadow-[0_30px_90px_rgba(0,149,253,0.15)]
               "
             >
@@ -528,13 +528,13 @@ function AboutUs() {
                   items-center
                   justify-center
                   rounded-[18px]
-                  bg-[#eeba7d]
+                  bg-[#A6CBF7]
                   text-white
                   shadow-[0_12px_40px_rgba(255,0,0,0.35)]
                   transition-all
                   duration-500
                   group-hover:scale-110
-                  group-hover:bg-[#eeba7d]
+                  group-hover:bg-[#A6CBF7]
                   group-hover:shadow-[0_15px_50px_rgba(255,0,0,0.45)]
                   sm:h-[72px]
                   sm:w-[72px]
@@ -662,7 +662,7 @@ function AboutUs() {
                   sm:text-xs
                 "
               >
-                <span className="h-1.5 w-1.5 rounded-full bg-[#eeba7d]" />
+                <span className="h-1.5 w-1.5 rounded-full bg-[#A6CBF7]" />
                 YouTube
               </span>
             </div>
@@ -717,7 +717,7 @@ function AboutUs() {
                 text-white
                 transition-colors
                 duration-300
-                hover:text-[#eeba7d]
+                hover:text-[#A6CBF7]
               "
             >
               Explore Our Expertise

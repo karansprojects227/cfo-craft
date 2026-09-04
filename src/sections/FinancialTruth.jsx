@@ -41,7 +41,7 @@ function FinancialTruth() {
           h-[520px]
           w-[520px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -58,7 +58,7 @@ function FinancialTruth() {
           h-[500px]
           w-[500px]
           rounded-full
-          bg-[#eeba7d]/40
+          bg-[#A6CBF7]/40
           blur-[150px]
         "
         aria-hidden="true"
@@ -100,7 +100,7 @@ function FinancialTruth() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             blur-[0.2px]
           "
         />
@@ -114,7 +114,7 @@ function FinancialTruth() {
             h-[230px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -127,7 +127,7 @@ function FinancialTruth() {
             h-[190px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -140,7 +140,7 @@ function FinancialTruth() {
             h-[160px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -167,7 +167,7 @@ function FinancialTruth() {
             inset-0
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
             border-8
           "
         />
@@ -181,7 +181,7 @@ function FinancialTruth() {
             h-[180px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
 
@@ -194,7 +194,7 @@ function FinancialTruth() {
             h-[150px]
             rounded-[50%]
             border-t
-            border-[#eeba7d]
+            border-[#A6CBF7]
           "
         />
       </div>
@@ -225,7 +225,7 @@ function FinancialTruth() {
           {/* Eyebrow */}
 
           <div className="mb-6 flex items-center gap-3">
-            <span className="h-px w-9 bg-[#eeba7d]" />
+            <span className="h-px w-9 bg-[#A6CBF7]" />
 
             <p
               className="
@@ -233,7 +233,7 @@ function FinancialTruth() {
                 font-bold
                 uppercase
                 tracking-[0.2em]
-                text-[#eeba7d]
+                text-[#A6CBF7]
                 sm:text-sm
               "
             >
@@ -257,7 +257,7 @@ function FinancialTruth() {
             "
           >
             Get Your Financial Truth in Under{" "}
-            <span className="text-[#eeba7d]">10 Minutes.</span>
+            <span className="text-[#A6CBF7]">10 Minutes.</span>
           </h2>
 
           {/* Description */}
@@ -292,8 +292,8 @@ function FinancialTruth() {
                     items-center
                     justify-center
                     rounded-full
-                    bg-[#eeba7d]/15
-                    text-[#eeba7d]
+                    bg-[#A6CBF7]/15
+                    text-[#A6CBF7]
                   "
                 >
                   <Check size={13} strokeWidth={3} />
@@ -372,7 +372,7 @@ function FinancialTruth() {
           items-center
           justify-center
           rounded-xl
-          bg-[#eeba7d]
+          bg-[#A6CBF7]
           px-6
           py-3
           text-sm
@@ -382,9 +382,9 @@ function FinancialTruth() {
           transition-all
           duration-300
           hover:-translate-y-0.5
-          hover:bg-[#eeba7d]/10
+          hover:bg-[#A6CBF7]/10
           hover:shadow-xl
-          hover:shadow-[#eeba7d]/20
+          hover:shadow-[#A6CBF7]/20
         "
               >
                 Contact Us
@@ -417,7 +417,7 @@ function FinancialTruth() {
               absolute
               inset-8
               rounded-full
-              bg-[#eeba7d]/[0.08]
+              bg-[#A6CBF7]/[0.08]
               blur-[100px]
             "
           />
@@ -433,7 +433,7 @@ function FinancialTruth() {
               overflow-hidden
               rounded-[14px]
               border
-              border-[#eeba7d]/30
+              border-[#A6CBF7]/30
               shadow-[0_25px_80px_rgba(0,0,0,0.55)]
               lg:mr-24
             "
@@ -459,7 +459,7 @@ function FinancialTruth() {
                 bg-gradient-to-t
                 from-black/10
                 via-transparent
-                to-[#eeba7d]/[0.025]
+                to-[#A6CBF7]/[0.025]
               "
             />
           </div>
