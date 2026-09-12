@@ -2,29 +2,6 @@
 
 @import "tailwindcss";
 
-@theme {
-  /* =========================================
-     CFO CRAFT CORPORATE COLOR SYSTEM
-  ========================================== */
-
-  --color-cfo-bg: #171817;
-  --color-cfo-bg-soft: #1c1d1b;
-
-  --color-cfo-card: #20211f;
-  --color-cfo-card-hover: #272824;
-
-  /* Corporate Burgundy */
-  --color-cfo-green: #0095fd;
-  --color-cfo-green-dark: #8f302b;
-
-  /* Typography */
-  --color-cfo-text: #f4f1ea;
-  --color-cfo-muted: #aaa9a3;
-
-  /* Borders */
-  --color-cfo-border: rgba(255, 255, 255, 0.09);
-}
-
 /* =========================================
    ROOT
 ========================================= */
@@ -837,9 +814,8 @@ textarea:-webkit-autofill:focus {
   border: none;
   border-radius: 7px;
 
-  background: linear-gradient(90deg, #0095fd, #006fbd);
-
-  color: #ffffff;
+  background: #A6CBF7;
+  color: #000000;
 
   font-size: 15px;
   font-weight: 600;
@@ -848,6 +824,8 @@ textarea:-webkit-autofill:focus {
 
   transition:
     transform 0.25s ease,
+    background 0.25s ease,
+    color 0.25s ease,
     box-shadow 0.25s ease;
 }
 
@@ -864,8 +842,12 @@ textarea:-webkit-autofill:focus {
 
 .success-btn:hover {
   transform: translateY(-2px);
+  background: rgba(166, 203, 247, 0.10);
+  color: #ffffff;
 
-  box-shadow: 0 8px 22px rgba(0, 149, 253, 0.28);
+  box-shadow:
+    0 10px 15px -3px rgba(166, 203, 247, 0.25),
+    0 4px 6px -4px rgba(166, 203, 247, 0.25);
 }
 
 .success-btn:hover span {
