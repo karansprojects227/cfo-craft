@@ -56,14 +56,16 @@ function Navbar() {
             duration-300
             hover:opacity-90
             relative
-            -left-8
+            -left-3
+            lg:-left-2
           "
         >
           <img
             src={logo}
             alt="CFO Craft"
             className="
-              h-32
+              h-13
+              lg:h-16
               w-auto
               object-contain
             "

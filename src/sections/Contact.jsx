@@ -636,7 +636,7 @@ function Contact() {
           <div
             className="
               relative
-              w-3/4
+              w-full
               rounded-2xl
               border
               border-white/[0.10]
@@ -644,6 +644,7 @@ function Contact() {
               shadow-[0_0_45px_rgba(229,72,63,0.035)]
               backdrop-blur-xl
               sm:p-6
+              lg:w-3/4
               lg:p-7
               lg:mr-8
               lg:ml-auto

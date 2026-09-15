@@ -230,14 +230,14 @@ const Footer = () => {
                 font-black
                 tracking-[-0.04em]
                 relative
-                -left-13
+                lg:-left-[6px]
               "
             >
               <img
                 src={logo}
                 alt="CFO Craft"
                 className="
-                  h-32
+                  h-16
                   w-auto
                   object-contain
                 "
@@ -288,7 +288,7 @@ const Footer = () => {
                     text-[#92958F]
                     transition-colors
                     duration-300
-                    hover:text-[#F4F1EA]
+                    hover:text-[#A6CBF7]
                   "
                 >
                   Home
@@ -318,7 +318,7 @@ const Footer = () => {
                     text-[#92958F]
                     transition-colors
                     duration-300
-                    hover:text-[#F4F1EA]
+                    hover:text-[#A6CBF7]
                   "
                 >
                   Services
@@ -348,7 +348,7 @@ const Footer = () => {
                     text-[#92958F]
                     transition-colors
                     duration-300
-                    hover:text-[#F4F1EA]
+                    hover:text-[#A6CBF7]
                   "
                 >
                   Case Studies
@@ -378,7 +378,7 @@ const Footer = () => {
                     text-[#92958F]
                     transition-colors
                     duration-300
-                    hover:text-[#F4F1EA]
+                    hover:text-[#A6CBF7]
                   "
                 >
                   FAQ
@@ -408,7 +408,7 @@ const Footer = () => {
                     text-[#92958F]
                     transition-colors
                     duration-300
-                    hover:text-[#F4F1EA]
+                    hover:text-[#A6CBF7]
                   "
                 >
                   Contact
@@ -493,7 +493,7 @@ const Footer = () => {
                   text-[#92958F]
                   transition-colors
                   duration-300
-                  hover:text-[#F4F1EA]
+                  hover:text-[#A6CBF7]
                 "
               >
                 <Mail
@@ -519,7 +519,7 @@ const Footer = () => {
                   text-[#92958F]
                   transition-colors
                   duration-300
-                  hover:text-[#F4F1EA]
+                  hover:text-[#A6CBF7]
                 "
               >
                 <Phone
