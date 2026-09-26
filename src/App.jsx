@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 
 import Navbar from "./components/Navbar";
 
@@ -14,6 +15,28 @@ import Services from "./sections/Services";
 import WhyChooseUs from "./sections/WhyChooseUs";
 
 function Home() {
+  useEffect(() => {
+    const hash = window.location.hash;
+
+    if (!hash) return;
+
+    const scrollToSection = () => {
+      const element = document.querySelector(hash);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    };
+
+    // Home render hone ke baad scroll
+    requestAnimationFrame(() => {
+      requestAnimationFrame(scrollToSection);
+    });
+  }, []);
+
   return (
     <>
       <Hero />
@@ -24,7 +47,6 @@ function Home() {
       <Impact />
       <CaseStudies />
       <FAQ />
-      <Footer />
     </>
   );
 }
@@ -43,6 +65,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>
+
+      <Footer />
     </div>
   );
 }

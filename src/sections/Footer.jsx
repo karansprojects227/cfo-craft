@@ -1,4 +1,10 @@
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaYoutube,
+  FaInstagram,
+} from "react-icons/fa";
 import logo from "../assets/cfo-craft-logo.png";
 
 const Footer = () => {
@@ -191,67 +197,67 @@ const Footer = () => {
       {/* Main Container */}
       <div
         className="
-          relative
-          mx-auto
-          max-w-7xl
-          px-5
-          py-14
-          sm:px-6
-          lg:px-8
-          lg:py-16
-        "
+    relative
+    mx-auto
+    max-w-7xl
+    px-5
+    py-14
+    sm:px-6
+    lg:px-8
+    lg:py-16
+  "
       >
         {/* =========================================
-            FOOTER GRID
-        ========================================== */}
+      FOOTER GRID - 3 COLUMNS
+  ========================================== */}
 
         <div
           className="
-            grid
-            grid-cols-1
-            gap-10
-            md:grid-cols-2
-            lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]
-            lg:gap-12
-          "
+      grid
+      grid-cols-1
+      gap-10
+      md:grid-cols-2
+      lg:grid-cols-[1.5fr_1fr_1.2fr]
+      lg:gap-12
+    "
         >
           {/* =====================================
-              BRAND
-          ====================================== */}
+        BRAND
+    ====================================== */}
 
           <div>
             {/* Logo */}
             <a
               href="/"
               className="
-                inline-flex
-                items-center
-                text-2xl
-                font-black
-                tracking-[-0.04em]
-                relative
-                lg:-left-[6px]
-              "
+          inline-flex
+          items-center
+          text-2xl
+          font-black
+          tracking-[-0.04em]
+          relative
+          lg:-left-[6px]
+        "
             >
               <img
                 src={logo}
                 alt="CFO Craft"
                 className="
-                  h-16
-                  w-auto
-                  object-contain
-                "
+            h-16
+            w-auto
+            object-contain
+          "
               />
             </a>
 
             {/* Description */}
             <p
               className="
-                max-w-sm
-                text-sm
-                leading-7
-                text-[#8E918B]
-              "
+          max-w-sm
+          text-sm
+          leading-7
+          text-[#8E918B]
+        "
             >
               Strategic CFO support for startups, MSMEs, and ambitious
               businesses ready to grow with clarity, control, and confidence.
@@ -259,188 +265,18 @@ const Footer = () => {
           </div>
 
           {/* =====================================
-              QUICK LINKS
-          ====================================== */}
+        SERVICES
+    ====================================== */}
 
           <div>
             <h3
               className="
-                text-xs
-                font-bold
-                uppercase
-                tracking-[0.22em]
-                text-[#A6CBF7]
-              "
-            >
-              Quick Links
-            </h3>
-
-            <ul className="mt-5 space-y-3">
-              <li>
-                <a
-                  href="/"
-                  className="
-                    group
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-sm
-                    text-[#92958F]
-                    transition-colors
-                    duration-300
-                    hover:text-[#A6CBF7]
-                  "
-                >
-                  Home
-                  <ArrowUpRight
-                    size={13}
-                    className="
-                      opacity-0
-                      transition-all
-                      duration-300
-                      group-hover:translate-x-0.5
-                      group-hover:-translate-y-0.5
-                      group-hover:opacity-100
-                    "
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#services"
-                  className="
-                    group
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-sm
-                    text-[#92958F]
-                    transition-colors
-                    duration-300
-                    hover:text-[#A6CBF7]
-                  "
-                >
-                  Services
-                  <ArrowUpRight
-                    size={13}
-                    className="
-                      opacity-0
-                      transition-all
-                      duration-300
-                      group-hover:translate-x-0.5
-                      group-hover:-translate-y-0.5
-                      group-hover:opacity-100
-                    "
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#case-studies"
-                  className="
-                    group
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-sm
-                    text-[#92958F]
-                    transition-colors
-                    duration-300
-                    hover:text-[#A6CBF7]
-                  "
-                >
-                  Case Studies
-                  <ArrowUpRight
-                    size={13}
-                    className="
-                      opacity-0
-                      transition-all
-                      duration-300
-                      group-hover:translate-x-0.5
-                      group-hover:-translate-y-0.5
-                      group-hover:opacity-100
-                    "
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="#faq"
-                  className="
-                    group
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-sm
-                    text-[#92958F]
-                    transition-colors
-                    duration-300
-                    hover:text-[#A6CBF7]
-                  "
-                >
-                  FAQ
-                  <ArrowUpRight
-                    size={13}
-                    className="
-                      opacity-0
-                      transition-all
-                      duration-300
-                      group-hover:translate-x-0.5
-                      group-hover:-translate-y-0.5
-                      group-hover:opacity-100
-                    "
-                  />
-                </a>
-              </li>
-
-              <li>
-                <a
-                  href="/contact"
-                  className="
-                    group
-                    inline-flex
-                    items-center
-                    gap-1.5
-                    text-sm
-                    text-[#92958F]
-                    transition-colors
-                    duration-300
-                    hover:text-[#A6CBF7]
-                  "
-                >
-                  Contact
-                  <ArrowUpRight
-                    size={13}
-                    className="
-                      opacity-0
-                      transition-all
-                      duration-300
-                      group-hover:translate-x-0.5
-                      group-hover:-translate-y-0.5
-                      group-hover:opacity-100
-                    "
-                  />
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* =====================================
-              SERVICES
-          ====================================== */}
-
-          <div>
-            <h3
-              className="
-                text-xs
-                font-bold
-                uppercase
-                tracking-[0.22em]
-                text-[#A6CBF7]
-              "
+          text-xs
+          font-bold
+          uppercase
+          tracking-[0.22em]
+          text-[#A6CBF7]
+        "
             >
               Services
             </h3>
@@ -465,160 +301,161 @@ const Footer = () => {
           </div>
 
           {/* =====================================
-              CONTACT
-          ====================================== */}
+                  GET IN TOUCH
+              ====================================== */}
 
           <div>
             <h3
               className="
-                text-xs
-                font-bold
-                uppercase
-                tracking-[0.22em]
-                text-[#A6CBF7]
-              "
+          text-xs
+          font-bold
+          uppercase
+          tracking-[0.22em]
+          text-[#A6CBF7]
+        "
             >
               Get In Touch
             </h3>
 
             <div className="mt-5 space-y-4">
-              {/* Email */}
-              <a
-                href="mailto:info@cfocraft.com"
+              {/* Address */}
+              <div
                 className="
-                  flex
-                  items-start
-                  gap-3
-                  text-sm
-                  text-[#92958F]
-                  transition-colors
-                  duration-300
-                  hover:text-[#A6CBF7]
-                "
+            flex
+            items-start
+            gap-3
+            text-sm
+            leading-6
+            text-[#92958F]
+          "
               >
-                <Mail
+                <MapPin
                   size={17}
                   className="
-                    mt-0.5
-                    shrink-0
-                    text-[#A6CBF7]
-                  "
+              mt-0.5
+              shrink-0
+              text-[#A6CBF7]
+            "
                 />
 
-                <span>info@cfocraft.com</span>
-              </a>
+                <span>
+                  CFO CRAFT Advisory Services Pvt Ltd
+                  <br />
+                  Aditya Heritage, 502,
+                  <br />
+                  Near Rustomjee Elanza Avenue, Mindspace,
+                  <br />
+                  Malad West,
+                  <br />
+                  Mumbai 400064
+                </span>
+              </div>
 
               {/* Phone */}
               <a
-                href="tel:+91%209892560660"
+                href="tel:+919892560660"
                 className="
-                  flex
-                  items-start
-                  gap-3
-                  text-sm
-                  text-[#92958F]
-                  transition-colors
-                  duration-300
-                  hover:text-[#A6CBF7]
-                "
+            flex
+            items-start
+            gap-3
+            text-sm
+            text-[#92958F]
+            transition-colors
+            duration-300
+            hover:text-[#A6CBF7]
+          "
               >
                 <Phone
                   size={17}
                   className="
-                    mt-0.5
-                    shrink-0
-                    text-[#A6CBF7]
-                  "
+              mt-0.5
+              shrink-0
+              text-[#A6CBF7]
+            "
                 />
 
                 <span>+91 9892560660</span>
               </a>
 
-              {/* Location */}
-              <div
+              {/* Email */}
+              <a
+                href="mailto:info@cfocraft.com"
                 className="
-                  flex
-                  items-start
-                  gap-3
-                  text-sm
-                  leading-6
-                  text-[#92958F]
-                "
+            flex
+            items-start
+            gap-3
+            text-sm
+            text-[#92958F]
+            transition-colors
+            duration-300
+            hover:text-[#A6CBF7]
+          "
               >
-                <MapPin
+                <Mail
                   size={17}
                   className="
-                    mt-0.5
-                    shrink-0
-                    text-[#A6CBF7]
-                  "
+              mt-0.5
+              shrink-0
+              text-[#A6CBF7]
+            "
                 />
 
-                <span>India</span>
-              </div>
+                <span>info@cfocraft.com</span>
+              </a>
             </div>
 
             {/* CTA */}
             <a
               href="https://web.whatsapp.com/send?phone=919892560660&text="
               target="_blank"
+              rel="noopener noreferrer"
               className="
-                group
-                mt-6
-                inline-flex
-                items-center
-                gap-2
-                rounded-lg
-                bg-[#A6CBF7]
-                px-5
-                py-3
-                text-sm
-                font-bold
-                text-black
-                hover:text-white
-                transition-all
-                duration-300
-                hover:-translate-y-0.5
-                hover:bg-[#A6CBF7]/10
-                hover:shadow-xl
-                hover:shadow-[#A6CBF7]/20
-              "
+          group
+          mt-6
+          inline-flex
+          items-center
+          gap-2
+          rounded-lg
+          bg-[#A6CBF7]
+          px-5
+          py-3
+          text-sm
+          font-bold
+          text-black
+          transition-all
+          duration-300
+          hover:-translate-y-0.5
+          hover:bg-[#A6CBF7]/10
+          hover:text-white
+          hover:shadow-xl
+          hover:shadow-[#A6CBF7]/20
+        "
             >
               Talk To Our Expert
               <ArrowUpRight
                 size={16}
                 className="
-                  transition-transform
-                  duration-300
-                  group-hover:translate-x-0.5
-                  group-hover:-translate-y-0.5
-                "
+            transition-transform
+            duration-300
+            group-hover:translate-x-0.5
+            group-hover:-translate-y-0.5
+          "
               />
             </a>
           </div>
         </div>
 
         {/* =========================================
-            DIVIDER
-        ========================================== */}
+      COPYRIGHT / DEVELOPED BY / SOCIAL
+  ========================================== */}
 
         <div
           className="
-            my-10
-            h-px
-            bg-white/[0.08]
-          "
-        />
-
-        {/* =========================================
-            BOTTOM FOOTER
-        ========================================== */}
-
-        <div
-          className="
+            mt-12
             flex
             flex-col
-            gap-4
+            items-center
+            gap-5
             text-xs
             text-[#6F726D]
             sm:flex-row
@@ -627,10 +464,12 @@ const Footer = () => {
           "
         >
           {/* Copyright */}
-          <p>© {new Date().getFullYear()} CFO CRAFT. All rights reserved.</p>
-
-          {/* Developer */}
-          <p>
+          <p className="order-1">
+            © CFO CRAFT Advisory Services Pvt. Ltd.
+          </p>
+                
+          {/* Developed By */}
+          <p className="order-3 sm:order-2">
             Developed by{" "}
             <span
               className="
@@ -641,31 +480,116 @@ const Footer = () => {
               Karan Kumar
             </span>
           </p>
-
-          {/* Legal */}
-          <div className="flex items-center gap-4">
+                
+          {/* Social Links */}
+          <div
+            className="
+              order-2
+              flex
+              items-center
+              gap-5
+              sm:order-3
+            "
+          >
+            {/* LinkedIn */}
             <a
-              href="#"
+              href="https://www.linkedin.com/company/cfo-craft-advisory-services-private-limited/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
               className="
+                text-[#6F726D]
                 transition-colors
                 duration-300
-                hover:text-[#F4F1EA]
+                hover:text-[#A6CBF7]
               "
             >
-              Privacy Policy
+              <FaLinkedinIn size={18} />
             </a>
-
+                
+            {/* Facebook */}
             <a
-              href="#"
+              href="https://www.facebook.com/people/CFO-CRAFT/100093439479258/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
               className="
+                text-[#6F726D]
                 transition-colors
                 duration-300
-                hover:text-[#F4F1EA]
+                hover:text-[#A6CBF7]
               "
             >
-              Terms
+              <FaFacebookF size={18} />
+            </a>
+                
+            {/* YouTube */}
+            <a
+              href="https://www.youtube.com/@CFOCRAFT"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="
+                text-[#6F726D]
+                transition-colors
+                duration-300
+                hover:text-[#A6CBF7]
+              "
+            >
+              <FaYoutube size={18} />
+            </a>
+                
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/cfo.craft"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="
+                text-[#6F726D]
+                transition-colors
+                duration-300
+                hover:text-[#A6CBF7]
+              "
+            >
+              <FaInstagram size={18} />
             </a>
           </div>
+        </div>
+
+        {/* =========================================
+      DIVIDER
+  ========================================== */}
+
+        <div
+          className="
+      my-8
+      h-px
+      bg-white/[0.08]
+    "
+        />
+
+        {/* =========================================
+      DISCLAIMER
+  ========================================== */}
+
+        <div
+          className="
+      text-xs
+      leading-6
+      text-[#8E918B]
+    "
+        >
+          <p>
+            Disclaimer: Site content, descriptions, and claims are provided by
+            CFO CRAFT Advisory Services Private Limited are for informational
+            purposes only and do not constitute tax, legal, or accounting
+            advice. You should consult your own tax, legal, and accounting
+            advisors before engaging in any transaction. References to "CFO
+            CRAFT" on this website mean CFO CRAFT Advisory Services Private
+            Limited unless expressly stated otherwise. Engagement-specific
+            advice requires a formally signed agreement.
+          </p>
         </div>
       </div>
     </footer>

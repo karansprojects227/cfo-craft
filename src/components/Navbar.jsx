@@ -3,11 +3,11 @@ import { useState } from "react";
 import logo from "../assets/cfo-craft-logo.png";
 
 const navItems = [
-  { label: "Services", href: "#services" },
-  { label: "Why Choose Us", href: "#why-choose-us" },
-  { label: "About Us", href: "#about" },
-  { label: "Case Studies", href: "#case-studies" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Services", href: "/#services" },
+  { label: "Why Choose Us", href: "/#why-choose-us" },
+  { label: "About Us", href: "/#about" },
+  { label: "Case Studies", href: "/#case-studies" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 function Navbar() {
