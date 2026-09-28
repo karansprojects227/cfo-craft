@@ -4,6 +4,7 @@ import logo from "../assets/cfo-craft-logo.png";
 
 const navItems = [
   { label: "Services", href: "/#services" },
+  { label: "Industries", href: "/#industries" },
   { label: "Why Choose Us", href: "/#why-choose-us" },
   { label: "About Us", href: "/#about" },
   { label: "Case Studies", href: "/#case-studies" },

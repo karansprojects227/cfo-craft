@@ -173,17 +173,16 @@ function CaseStudies() {
         relative
         isolate
         overflow-hidden
-        px-4
         py-6
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         border-t-2 
         border-t-[#122742]
         text-[#F4F1EA]
-        sm:px-6
-        lg:px-8
         py-12
         lg:py-14
         scroll-mt-[30px]
+        px-6
+        lg:px-10
       "
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}

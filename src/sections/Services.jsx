@@ -130,8 +130,8 @@ function Services() {
           rotate-[-8deg]
           opacity-30
           "
-          aria-hidden="true"
-          >
+        aria-hidden="true"
+      >
         <div
           className="
             absolute
@@ -250,12 +250,10 @@ function Services() {
           max-w-[1400px]
           flex-col
           justify-center
-          px-6
           py-8
-          sm:px-8
-          lg:px-10
           lg:py-9
-          xl:px-12
+          px-6
+          lg:px-10
         "
       >
         {/* =================================================
@@ -268,11 +266,12 @@ function Services() {
           <div className="mb-3 flex items-center gap-3">
             <span
               className="
-                text-[11px]
+                text-xs
                 font-bold
                 uppercase
-                tracking-[0.28em]
+                tracking-[0.2em]
                 text-[#A6CBF7]
+                sm:text-sm
               "
             >
               Our Services
@@ -303,9 +302,7 @@ function Services() {
             "
           >
             Financial expertise{" "}
-            <span className="text-[#A6CBF7]">
-              built around your growth.
-            </span>
+            <span className="text-[#A6CBF7]">built around your growth.</span>
           </h2>
 
           {/* Description */}
@@ -321,9 +318,9 @@ function Services() {
               sm:leading-7
             "
           >
-            From strategic finance to compliance and fundraising,
-            we build the financial systems that help ambitious
-            businesses make better decisions.
+            From strategic finance to compliance and fundraising, we build the
+            financial systems that help ambitious businesses make better
+            decisions.
           </p>
         </div>
 
@@ -332,20 +329,20 @@ function Services() {
         ================================================== */}
 
         <div
-  className="
+          className="
     grid
     grid-cols-1
     border-t
     border-white/[0.10]
   "
->
-  {services.map((service, index) => {
-    const Icon = service.icon;
+        >
+          {services.map((service, index) => {
+            const Icon = service.icon;
 
-    return (
-      <article
-        key={service.title}
-        className="
+            return (
+              <article
+                key={service.title}
+                className="
           group
           relative
           min-w-0
@@ -358,10 +355,10 @@ function Services() {
           sm:py-4.5
           lg:py-5
         "
-      >
-        {/* Top hover accent */}
-        <span
-          className="
+              >
+                {/* Top hover accent */}
+                <span
+                  className="
             absolute
             left-0
             top-[-1px]
@@ -372,14 +369,13 @@ function Services() {
             duration-500
             group-hover:w-16
           "
-        />
+                />
 
-        {/* Service Content */}
-        <div className="flex items-start gap-3.5 lg:gap-4">
-          
-          {/* Icon */}
-          <div
-            className="
+                {/* Service Content */}
+                <div className="flex items-start gap-3.5 lg:gap-4">
+                  {/* Icon */}
+                  <div
+                    className="
               mt-0.5
               flex
               h-10
@@ -398,19 +394,15 @@ function Services() {
               group-hover:border-[#A6CBF7]/60
               group-hover:bg-[#A6CBF7]/[0.05]
             "
-          >
-            <Icon
-              size={17}
-              strokeWidth={1.5}
-            />
-          </div>
+                  >
+                    <Icon size={17} strokeWidth={1.5} />
+                  </div>
 
-          {/* Text */}
-          <div className="min-w-0 flex-1">
-            
-            {/* Title */}
-            <h3
-              className="
+                  {/* Text */}
+                  <div className="min-w-0 flex-1">
+                    {/* Title */}
+                    <h3
+                      className="
                 text-[14px]
                 font-bold
                 leading-[1.3]
@@ -420,13 +412,13 @@ function Services() {
                 sm:text-[15px]
                 lg:text-[16px]
               "
-            >
-              {service.title}
-            </h3>
+                    >
+                      {service.title}
+                    </h3>
 
-            {/* Description */}
-            <p
-              className="
+                    {/* Description */}
+                    <p
+                      className="
                 mt-1.5
                 max-w-[850px]
                 text-[11px]
@@ -436,16 +428,15 @@ function Services() {
                 sm:text-[12px]
                 lg:text-[13px]
               "
-            >
-              {service.description}
-            </p>
-
-          </div>
+                    >
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
-      </article>
-    );
-  })}
-</div>
 
         {/* =================================================
             BOTTOM CTA
@@ -490,10 +481,7 @@ function Services() {
                 text-[#A6CBF7]
               "
             >
-              <Headphones
-                size={19}
-                strokeWidth={1.55}
-              />
+              <Headphones size={19} strokeWidth={1.55} />
             </div>
 
             <p
@@ -540,13 +528,9 @@ function Services() {
               sm:text-[15px]
             "
           >
-            <span className="hidden sm:inline">
-              Talk to our CFO team
-            </span>
+            <span className="hidden sm:inline">Talk to our CFO team</span>
 
-            <span className="sm:hidden">
-              Talk to us
-            </span>
+            <span className="sm:hidden">Talk to us</span>
 
             <ArrowRight
               size={19}

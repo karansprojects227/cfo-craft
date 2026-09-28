@@ -13,6 +13,7 @@ import Hero from "./sections/Hero";
 import Impact from "./sections/Impact";
 import Services from "./sections/Services";
 import WhyChooseUs from "./sections/WhyChooseUs";
+import Industries from "./sections/Industries";
 
 function Home() {
   useEffect(() => {
@@ -42,6 +43,7 @@ function Home() {
       <Hero />
       <Services />
       <FinancialTruth />
+      <Industries />
       <WhyChooseUs />
       <AboutUs />
       <Impact />

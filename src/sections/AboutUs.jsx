@@ -20,6 +20,8 @@ function AboutUs() {
         py-12
         lg:py-14
         scroll-mt-[25px]
+        px-6
+        lg:px-10
       "
     >
       {/* =====================================================
@@ -203,8 +205,6 @@ function AboutUs() {
         className="
           mx-auto
           max-w-7xl
-          px-6
-          lg:px-8
         "
       >
         {/* =================================================

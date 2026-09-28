@@ -42,6 +42,8 @@ function Hero() {
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
         mt-20
+        px-6
+        lg:px-10
       "
     >
       {/* =====================================================
@@ -110,8 +112,8 @@ function Hero() {
           rotate-[-8deg]
           opacity-30
           "
-          aria-hidden="true"
-          >
+        aria-hidden="true"
+      >
         <div
           className="
             absolute
@@ -230,12 +232,9 @@ function Hero() {
           grid-cols-1
           items-center
           gap-10
-          px-6
           py-10
-          sm:px-8
           lg:grid-cols-[1.05fr_0.95fr]
           lg:gap-12
-          lg:px-8
           lg:py-8
         "
       >
@@ -348,41 +347,6 @@ function Hero() {
                   "
                 />
               </span>
-            </a>
-
-            {/* Secondary CTA */}
-
-            <a
-              href="#services"
-              className="
-                group
-                flex
-                items-center
-                gap-2
-                rounded-lg
-                border
-                border-[#A6CBF7]/40
-                px-6
-                py-3.5
-                text-sm
-                font-bold
-                text-[#F4F1EA]
-                transition-all
-                duration-300
-                hover:border-[#A6CBF7]/60
-                hover:bg-[#A6CBF7]/10
-                sm:text-base
-              "
-            >
-              Explore Services
-              <ArrowRight
-                size={17}
-                className="
-                  transition-transform
-                  duration-300
-                  group-hover:translate-x-1
-                "
-              />
             </a>
           </div>
         </div>

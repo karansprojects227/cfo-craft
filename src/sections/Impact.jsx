@@ -37,11 +37,10 @@ function Impact() {
         text-[#F4F1EA]
         border-t-2 
         border-t-[#122742]
-        px-6
         py-12
-        sm:px-8
-        lg:px-12
         lg:py-14
+        px-6
+        lg:px-10
       "
     >
       {/* =====================================================

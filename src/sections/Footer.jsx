@@ -19,6 +19,8 @@ const Footer = () => {
         border-t-[#122742]
         isolate
         overflow-hidden
+        px-6
+        lg:px-10
       "
     >
       {/* =====================================================
@@ -200,10 +202,7 @@ const Footer = () => {
     relative
     mx-auto
     max-w-7xl
-    px-5
     py-14
-    sm:px-6
-    lg:px-8
     lg:py-16
   "
       >

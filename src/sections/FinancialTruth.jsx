@@ -23,6 +23,8 @@ function FinancialTruth() {
         text-[#F4F1EA]
         py-12
         lg:py-14
+        px-6
+        lg:px-10
       "
     >
       {/* =====================================================
@@ -210,10 +212,8 @@ function FinancialTruth() {
           grid-cols-1
           items-center
           gap-12
-          px-6
           lg:grid-cols-[1.08fr_0.92fr]
           lg:gap-16
-          lg:px-8
         "
       >
         {/* =================================================

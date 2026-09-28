@@ -205,6 +205,8 @@ function Contact() {
         text-[#F4F1EA]
         scroll-mt-20
         lg:min-h-[calc(100vh-80px)]
+        px-6
+        lg:px-10
       "
     >
       {/* =====================================================
@@ -425,11 +427,8 @@ function Contact() {
           min-h-full
           max-w-7xl
           items-center
-          px-5
           py-10
-          sm:px-6
           sm:py-12
-          lg:px-8
           lg:py-8
         "
       >
@@ -474,7 +473,7 @@ function Contact() {
                 font-black
                 leading-[1.02]
                 tracking-[-0.045em]
-                text-[#A6CBF7]
+                text-[#F4F1EA]
                 sm:text-5xl
                 lg:text-[56px]
               "
