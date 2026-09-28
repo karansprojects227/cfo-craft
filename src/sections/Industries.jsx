@@ -80,7 +80,6 @@ function IndustryVideo({ video }) {
         muted
         loop
         playsInline
-        controls
         className="
           aspect-video
           w-full
