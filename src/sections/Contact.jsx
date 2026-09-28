@@ -474,12 +474,12 @@ function Contact() {
                 font-black
                 leading-[1.02]
                 tracking-[-0.045em]
-                text-[#F4F1EA]
+                text-[#A6CBF7]
                 sm:text-5xl
                 lg:text-[56px]
               "
             >
-              Contact <span className="text-[#A6CBF7]">Us</span>
+              Contact Us
             </h1>
 
             {/* Accent */}

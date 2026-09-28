@@ -181,7 +181,9 @@ function CaseStudies() {
         text-[#F4F1EA]
         sm:px-6
         lg:px-8
-        lg:py-20
+        py-12
+        lg:py-14
+        scroll-mt-[30px]
       "
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}

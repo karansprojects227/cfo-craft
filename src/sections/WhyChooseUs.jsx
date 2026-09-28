@@ -45,10 +45,11 @@ function WhyChooseUs() {
         border-t-2 
         border-t-[#122742]
         px-6
-        py-20
         sm:px-8
         lg:px-10
-        lg:py-20
+        py-12
+        lg:py-14
+        scroll-mt-[30px]
       "
     >
       {/* =====================================================

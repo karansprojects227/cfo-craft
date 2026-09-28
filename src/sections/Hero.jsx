@@ -6,6 +6,8 @@ import {
   Users,
 } from "lucide-react";
 
+import MIS_Financial_Reporting from "../assets/MIS_Financial_Reporting.mp4";
+
 const services = [
   {
     icon: BarChart3,
@@ -421,80 +423,24 @@ function Hero() {
               shadow-black/30
               backdrop-blur-xl
               sm:p-6
+              flex
+              justify-center
+              md:justify-end
             "
           >
-            {services.map((service, index) => {
-              const Icon = service.icon;
-
-              return (
-                <div
-                  key={service.title}
-                  className={`
-                    flex
-                    gap-4
-                    py-4
-                    sm:py-5
-                    ${
-                      index !== services.length - 1
-                        ? "border-b border-white/[0.08]"
-                        : ""
-                    }
-                  `}
-                >
-                  {/* Icon */}
-
-                  <div
-                    className="
-                      flex
-                      h-12
-                      w-12
-                      shrink-0
-                      items-center
-                      justify-center
-                      rounded-full
-                      border
-                      border-[#A6CBF7]/50
-                      bg-[#A6CBF7]/[0.04]
-                      text-[#A6CBF7]
-                      transition-all
-                      duration-300
-                      hover:border-[#A6CBF7]/80
-                      hover:bg-[#A6CBF7]/[0.08]
-                      hover:shadow-[0_0_20px_rgba(0,149,253,0.20)]
-                    "
-                  >
-                    <Icon size={22} strokeWidth={1.7} />
-                  </div>
-
-                  {/* Service Content */}
-
-                  <div className="min-w-0">
-                    <h3
-                      className="
-                        text-base
-                        font-bold
-                        text-[#F4F1EA]
-                        sm:text-lg
-                      "
-                    >
-                      {service.title}
-                    </h3>
-
-                    <p
-                      className="
-                        mt-1
-                        max-w-sm
-                        text-sm
-                        leading-6
-                        text-[#969994]
-                      "
-                    >
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+            <video
+              src={MIS_Financial_Reporting}
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="
+                w-full
+                max-w-[700px]
+                rounded-2xl
+                object-cover
+              "
+            />
           </div>
         </div>
       </div>

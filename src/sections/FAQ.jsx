@@ -288,7 +288,9 @@ function FAQ() {
         overflow-hidden
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
-        scroll-mt-20
+        py-0
+        lg:py-8
+        scroll-mt-[25px]
       "
     >
       {/* =====================================================

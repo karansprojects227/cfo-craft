@@ -17,9 +17,9 @@ function AboutUs() {
         border-t-2 
         border-t-[#122742]
         text-[#F4F1EA]
-        py-20
-        sm:py-24
-        lg:py-20
+        py-12
+        lg:py-14
+        scroll-mt-[25px]
       "
     >
       {/* =====================================================
@@ -444,7 +444,7 @@ function AboutUs() {
             ================================================== */}
 
             <a
-              href="https://youtu.be/sl7bM9oJDSA?si=oLamN5ZULwOa-C2t"
+              href="https://www.youtube.com/watch?v=YfWGymunUr0"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Watch CFO Craft video on YouTube"

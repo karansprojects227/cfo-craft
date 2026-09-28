@@ -13,39 +13,37 @@ import {
 const services = [
   {
     icon: BarChart3,
-    title: "CFO Services",
+    title: "Finance Diagnostic",
     description:
-      "A full-time CFO experience, without the full-time cost that offers clarity, confidence, and long-term financial direction.",
+      "A fixed-fee health check of your finance function. We review books, cash, margins and compliance, then hand you a clear diagnosis and a prioritised action plan — no lock-in.",
   },
+
   {
     icon: CircleDollarSign,
-    title: "Cashflow, Working Capital & Runway Management",
+    title: "Fractional CFO – Starter",
     description:
-      "PLIGHT BLUEict, control and optimize liquidity — so growth never runs out of cash.",
+      "Your core financials, automated from your data and delivered each month — plus a monthly call with a CFO to walk you through the numbers. For businesses whose team can run the books, but has no one to make the numbers make sense.",
   },
+
   {
     icon: TrendingUp,
-    title: "Profitability & Unit Economics Diagnostics",
+    title: "Fractional CFO – Core",
     description:
-      "Identify what drives profit — and fix what silently erodes it.",
+      "An experienced CFO embedded on a monthly retainer — reading your numbers and owning the finance rhythm, without the cost or hiring risk of a full-time CFO.",
   },
+
   {
     icon: Workflow,
-    title: "MIS, SOPs & Finance Process Transformation",
+    title: "Fractional CFO – Growth",
     description:
-      "Build systems that replace guesswork with visibility, discipline and decision-readiness.",
+      "Everything in Core, plus forward-looking FP&A and banking support — for businesses making bigger calls on capex, pricing, hiring and growth.",
   },
+
   {
     icon: Presentation,
-    title: "Fundraising Support & Investor Pack",
+    title: "Specialist & Project Work",
     description:
-      "Investor-ready numbers, decks and diligence support that accelerate funding outcomes.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Compliance, Governance & Internal Controls",
-    description:
-      "Stay audit-clean, structuLIGHT BLUE, and risk-proof with controls that scale as you do.",
+      "Depth on demand, beyond the monthly rhythm — brought in when the stakes justify it: a raise, a system change, a deal, a cash crunch.",
   },
 ];
 
@@ -61,7 +59,9 @@ function Services() {
         border-t-[#122742]
         bg-[linear-gradient(110deg,#0C1B31_0%,#081629_50%,#061323_100%)]
         text-[#F4F1EA]
-        scroll-mt-20
+        py-2
+        lg:py-8
+        scroll-mt-[25px]
       "
     >
       {/* =====================================================
@@ -332,159 +332,120 @@ function Services() {
         ================================================== */}
 
         <div
+  className="
+    grid
+    grid-cols-1
+    border-t
+    border-white/[0.10]
+  "
+>
+  {services.map((service, index) => {
+    const Icon = service.icon;
+
+    return (
+      <article
+        key={service.title}
+        className="
+          group
+          relative
+          min-w-0
+          border-b
+          border-white/[0.10]
+          px-0
+          py-4
+          last:border-b-0
+
+          sm:py-4.5
+          lg:py-5
+        "
+      >
+        {/* Top hover accent */}
+        <span
           className="
-            grid
-            grid-cols-1
-            border-t
-            border-white/[0.10]
-            md:grid-cols-2
-            lg:grid-cols-3
+            absolute
+            left-0
+            top-[-1px]
+            h-[2px]
+            w-0
+            bg-[#A6CBF7]
+            transition-all
+            duration-500
+            group-hover:w-16
           "
-        >
-          {services.map((service, index) => {
-            const Icon = service.icon;
+        />
 
-            return (
-              <article
-                key={service.title}
-                className={`
-                  group
-                  relative
-                  min-w-0
-                  border-b
-                  border-white/[0.10]
-                  px-0
-                  py-5
+        {/* Service Content */}
+        <div className="flex items-start gap-3.5 lg:gap-4">
+          
+          {/* Icon */}
+          <div
+            className="
+              mt-0.5
+              flex
+              h-10
+              w-10
+              shrink-0
+              items-center
+              justify-center
+              rounded-full
+              border
+              border-white/[0.14]
+              bg-white/[0.01]
+              text-[#A6CBF7]
+              transition-all
+              duration-300
 
-                  sm:py-6
+              group-hover:border-[#A6CBF7]/60
+              group-hover:bg-[#A6CBF7]/[0.05]
+            "
+          >
+            <Icon
+              size={17}
+              strokeWidth={1.5}
+            />
+          </div>
 
-                  md:px-5
-                  md:py-6
+          {/* Text */}
+          <div className="min-w-0 flex-1">
+            
+            {/* Title */}
+            <h3
+              className="
+                text-[14px]
+                font-bold
+                leading-[1.3]
+                tracking-[-0.01em]
+                text-[#F4F1EA]
 
-                  lg:min-h-[150px]
-                  lg:px-6
-                  lg:py-6
+                sm:text-[15px]
+                lg:text-[16px]
+              "
+            >
+              {service.title}
+            </h3>
 
-                  ${
-                    index % 3 !== 0
-                      ? "lg:border-l"
-                      : ""
-                  }
+            {/* Description */}
+            <p
+              className="
+                mt-1.5
+                max-w-[850px]
+                text-[11px]
+                leading-[1.5]
+                text-[#858984]
 
-                  ${
-                    index % 2 !== 0
-                      ? "md:border-l lg:border-l"
-                      : ""
-                  }
-                `}
-              >
-                {/* Top hover accent */}
+                sm:text-[12px]
+                lg:text-[13px]
+              "
+            >
+              {service.description}
+            </p>
 
-                <span
-                  className="
-                    absolute
-                    left-0
-                    top-[-1px]
-                    h-[2px]
-                    w-0
-                    bg-[#A6CBF7]
-                    transition-all
-                    duration-500
-                    group-hover:w-16
-                  "
-                />
-
-                {/* =================================================
-                    SERVICE CONTENT
-                ================================================== */}
-
-                <div className="flex items-start gap-4 lg:gap-5">
-                  {/* Icon */}
-
-                  <div
-                    className="
-                      mt-0.5
-                      flex
-                      h-12
-                      w-12
-                      shrink-0
-                      items-center
-                      justify-center
-                      rounded-full
-                      border
-                      border-white/[0.14]
-                      bg-white/[0.01]
-                      text-[#A6CBF7]
-                      transition-all
-                      duration-300
-                      group-hover:border-[#A6CBF7]/60
-                      group-hover:bg-[#A6CBF7]/[0.05]
-                    "
-                  >
-                    <Icon
-                      size={20}
-                      strokeWidth={1.55}
-                    />
-                  </div>
-
-                  {/* Text */}
-
-                  <div className="min-w-0 flex-1">
-                    {/* Title + Arrow */}
-
-                    <div className="flex items-start justify-between gap-3">
-                      <h3
-                        className="
-                          max-w-[340px]
-                          text-[15px]
-                          font-bold
-                          leading-[1.35]
-                          tracking-[-0.015em]
-                          text-[#F4F1EA]
-                          sm:text-[16px]
-                          lg:text-[17px]
-                        "
-                      >
-                        {service.title}
-                      </h3>
-
-                      <ArrowUpRight
-                        size={17}
-                        strokeWidth={1.5}
-                        className="
-                          mt-0.5
-                          shrink-0
-                          text-[#A6CBF7]/50
-                          transition-all
-                          duration-300
-                          group-hover:-translate-y-0.5
-                          group-hover:translate-x-0.5
-                          group-hover:text-[#A6CBF7]
-                        "
-                      />
-                    </div>
-
-                    {/* Full description */}
-
-                    <p
-                      className="
-                        mt-2
-                        max-w-[390px]
-                        text-[12px]
-                        leading-[1.65]
-                        text-[#858984]
-                        sm:text-[13px]
-                        sm:leading-[1.65]
-                      "
-                    >
-                      {service.description}
-                    </p>
-                  </div>
-                </div>
-              </article>
-            );
-          })}
+          </div>
         </div>
+      </article>
+    );
+  })}
+</div>
 
         {/* =================================================
             BOTTOM CTA

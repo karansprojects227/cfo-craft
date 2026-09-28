@@ -282,21 +282,19 @@ const Footer = () => {
             </h3>
 
             <ul className="mt-5 space-y-3">
-              <li className="text-sm text-[#92958F]">CFO Services</li>
+              <li className="text-sm text-[#92958F]">Finance Diagnostic</li>
 
-              <li className="text-sm text-[#92958F]">Cash Flow Management</li>
+              <li className="text-sm text-[#92958F]">Fractional CFO – Starter</li>
 
               <li className="text-sm text-[#92958F]">
-                Profitability Diagnostics
+                Fractional CFO – Core
               </li>
 
               <li className="text-sm text-[#92958F]">
-                MIS & SOP Transformation
+                Fractional CFO – Growth
               </li>
 
-              <li className="text-sm text-[#92958F]">Financial Projections</li>
-
-              <li className="text-sm text-[#92958F]">Business Strategy</li>
+              <li className="text-sm text-[#92958F]">Specialist & Project Work</li>
             </ul>
           </div>
 
@@ -446,7 +444,7 @@ const Footer = () => {
         </div>
 
         {/* =========================================
-      COPYRIGHT / DEVELOPED BY / SOCIAL
+      COPYRIGHT / SOCIAL
   ========================================== */}
 
         <div
@@ -466,19 +464,6 @@ const Footer = () => {
           {/* Copyright */}
           <p className="order-1">
             © CFO CRAFT Advisory Services Pvt. Ltd.
-          </p>
-                
-          {/* Developed By */}
-          <p className="order-3 sm:order-2">
-            Developed by{" "}
-            <span
-              className="
-                font-semibold
-                text-[#A6CBF7]
-              "
-            >
-              Karan Kumar
-            </span>
           </p>
                 
           {/* Social Links */}
