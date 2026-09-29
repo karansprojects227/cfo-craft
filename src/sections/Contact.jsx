@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import {
   ArrowRight,
@@ -121,6 +121,16 @@ function Contact() {
   const [formStatus, setFormStatus] = useState("idle");
   const [errorMessage, setErrorMessage] = useState("");
   let [isFormValid, setIsFormValid] = useState(false);
+
+  const firstInputRef = useRef(null);
+
+  useEffect(() => {
+    if (window.location.hash === "#contact-form") {
+      setTimeout(() => {
+        firstInputRef.current?.focus();
+      }, 100);
+    }
+  }, []);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -275,8 +285,8 @@ function Contact() {
           rotate-[-8deg]
           opacity-30
           "
-          aria-hidden="true"
-          >
+        aria-hidden="true"
+      >
         <div
           className="
             absolute
@@ -595,34 +605,44 @@ function Contact() {
               {/* Right: Button */}
               <button
                 type="button"
+                onClick={() => {
+                  document.getElementById("contact-form")?.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center",
+                  });
+
+                  setTimeout(() => {
+                    firstInputRef.current?.focus();
+                  }, 500);
+                }}
                 className="
-                  group
-                  inline-flex
-                  shrink-0
-                  items-center
-                  gap-2
-                  rounded-lg
-                  border
-                  border-[#A6CBF7]
-                  px-4
-                  py-2.5
-                  text-xs
-                  font-semibold
-                  text-white
-                  transition-all
-                  duration-300
-                  hover:bg-[#A6CBF7]
-                  hover:text-black
-                "
+    group
+    inline-flex
+    shrink-0
+    items-center
+    gap-2
+    rounded-lg
+    border
+    border-[#A6CBF7]
+    px-4
+    py-2.5
+    text-xs
+    font-semibold
+    text-white
+    transition-all
+    duration-300
+    hover:bg-[#A6CBF7]
+    hover:text-black
+  "
               >
                 Schedule a Call
                 <ArrowRight
                   size={15}
                   className="
-                    transition-transform
-                    duration-300
-                    group-hover:translate-x-1
-                  "
+      transition-transform
+      duration-300
+      group-hover:translate-x-1
+    "
                 />
               </button>
             </div>
@@ -691,7 +711,11 @@ function Contact() {
                   </div>
 
                   {/* Form */}
-                  <form onSubmit={handleSubmit} className="space-y-3.5">
+                  <form
+                    id="contact-form"
+                    onSubmit={handleSubmit}
+                    className="space-y-3.5"
+                  >
                     {/* Name + Email */}
                     <div
                       className="
@@ -705,6 +729,7 @@ function Contact() {
                         icon={<UserRound size={17} strokeWidth={1.7} />}
                       >
                         <input
+                          ref={firstInputRef}
                           type="text"
                           name="name"
                           value={formData.name}
