@@ -367,7 +367,7 @@ function AboutUs() {
             <div className="mt-9">
               <a
                 target="_black"
-                href="https://web.whatsapp.com/send?phone=919892560660&text="
+                href="https://wa.me/919892560660"
                 className="
                   group
                   inline-flex

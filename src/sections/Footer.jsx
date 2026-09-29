@@ -4,6 +4,7 @@ import {
   FaFacebookF,
   FaYoutube,
   FaInstagram,
+  FaWhatsapp,
 } from "react-icons/fa";
 import logo from "../assets/cfo-craft-logo.png";
 
@@ -283,17 +284,19 @@ const Footer = () => {
             <ul className="mt-5 space-y-3">
               <li className="text-sm text-[#92958F]">Finance Diagnostic</li>
 
-              <li className="text-sm text-[#92958F]">Fractional CFO – Starter</li>
-
               <li className="text-sm text-[#92958F]">
-                Fractional CFO – Core
+                Fractional CFO – Starter
               </li>
+
+              <li className="text-sm text-[#92958F]">Fractional CFO – Core</li>
 
               <li className="text-sm text-[#92958F]">
                 Fractional CFO – Growth
               </li>
 
-              <li className="text-sm text-[#92958F]">Specialist & Project Work</li>
+              <li className="text-sm text-[#92958F]">
+                Specialist & Project Work
+              </li>
             </ul>
           </div>
 
@@ -403,7 +406,7 @@ const Footer = () => {
 
             {/* CTA */}
             <a
-              href="https://web.whatsapp.com/send?phone=919892560660&text="
+              href="https://wa.me/919892560660"
               target="_blank"
               rel="noopener noreferrer"
               className="
@@ -461,19 +464,18 @@ const Footer = () => {
           "
         >
           {/* Copyright */}
-          <p className="order-1">
-            © CFO CRAFT Advisory Services Pvt. Ltd.
-          </p>
-                
+          <p className="order-1">© CFO CRAFT Advisory Services Pvt. Ltd.</p>
+
+          {/* Social Links */}
           {/* Social Links */}
           <div
             className="
-              order-2
-              flex
-              items-center
-              gap-5
-              sm:order-3
-            "
+    order-2
+    flex
+    items-center
+    gap-5
+    sm:order-3
+  "
           >
             {/* LinkedIn */}
             <a
@@ -482,15 +484,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
               className="
-                text-[#6F726D]
-                transition-colors
-                duration-300
-                hover:text-[#A6CBF7]
-              "
+      text-[#6F726D]
+      transition-colors
+      duration-300
+      hover:text-[#0A66C2]
+    "
             >
               <FaLinkedinIn size={18} />
             </a>
-                
+
             {/* Facebook */}
             <a
               href="https://www.facebook.com/people/CFO-CRAFT/100093439479258/"
@@ -498,15 +500,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Facebook"
               className="
-                text-[#6F726D]
-                transition-colors
-                duration-300
-                hover:text-[#A6CBF7]
-              "
+      text-[#6F726D]
+      transition-colors
+      duration-300
+      hover:text-[#1877F2]
+    "
             >
               <FaFacebookF size={18} />
             </a>
-                
+
             {/* YouTube */}
             <a
               href="https://www.youtube.com/@CFOCRAFT"
@@ -514,15 +516,15 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="YouTube"
               className="
-                text-[#6F726D]
-                transition-colors
-                duration-300
-                hover:text-[#A6CBF7]
-              "
+      text-[#6F726D]
+      transition-colors
+      duration-300
+      hover:text-[#FF0000]
+    "
             >
               <FaYoutube size={18} />
             </a>
-                
+
             {/* Instagram */}
             <a
               href="https://www.instagram.com/cfo.craft"
@@ -530,13 +532,29 @@ const Footer = () => {
               rel="noopener noreferrer"
               aria-label="Instagram"
               className="
-                text-[#6F726D]
-                transition-colors
-                duration-300
-                hover:text-[#A6CBF7]
-              "
+      text-[#6F726D]
+      transition-colors
+      duration-300
+      hover:text-[#E4405F]
+    "
             >
               <FaInstagram size={18} />
+            </a>
+
+            {/* WhatsApp */}
+            <a
+              href="https://wa.me/919892560660"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="WhatsApp"
+              className="
+    text-[#6F726D]
+    transition-colors
+    duration-300
+    hover:text-[#25D366]
+  "
+            >
+              <FaWhatsapp size={18} />
             </a>
           </div>
         </div>
